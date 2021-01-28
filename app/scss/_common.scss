@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNovaT-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@import "_reset.scss";
+
+.nav-pages {
+  margin-top: 40px;
+  a {
+   font-size: 20px;
+ }
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-size: 10.7px;
+}
+
+.wrapper-w {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.contain {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btns {
+  background: #000;
+}
+
+.btn {  
+  display: inline-flex;  
+  justify-content: center;  
+  align-items: center;
+  height: 48px;
+  border: 1px solid #0c369c;
+  background-color: #0c369c;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 25px;
+  min-width: 200px;
+}
+
+.btn-w {
+  border: 1px solid #ffffff;
+  background: none;
+  color: #FFF;
+}
+
+.btn-o {
+  background: none;
+  color: #0c369c;
+  border: 1px solid #0c369c;
+}
+
+.btn-g {
+  border: 1px solid #92ba1f;
+  color: #92ba1f;
+  background: none;
+}
+
+.btn-g-min {
+  background: none;
+  color: #f4f4f4;
+  height: 32px;
+  border: 1px solid #92ba1f;
+  padding: 0 20px;
+}
+
+.btn-span {
+  margin-left: 20px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #E2E2E2;
+}
+
+@import "_top.scss";

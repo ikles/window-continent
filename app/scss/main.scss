@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_common.scss";
+@import "_slider.scss";
+@import "_about.scss";
+@import "_fabricators.scss";
+@import "_get-form1.scss";
+@import "_get-form2.scss";
+@import "_compare.scss";
+@import "_footer.scss";
