@@ -1,16 +1,14 @@
 .fabricators {  
   padding-bottom: 100px;
+  position: relative;
+  z-index: 2;
+  .like-h2-l {  
+    max-width: 566px;  
+  }
 }
 
 .fabricators-w {
   padding-top: 100px;
-}
-
-.fabricators-txt-1 {
-  color: rgb(12, 54, 156);
-  font-size: 48px;
-  width: 566px;
-  margin-bottom: 97px;
 }
 
 .fabricators-row {

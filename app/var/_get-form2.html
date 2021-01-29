@@ -4,9 +4,9 @@
       <div class="get-col-l">
         <div class="get-txt-1">Получите каталог для загородного остекления</div>        
         <div class="get-txt-3">Заполните форму и получите профессиональный инструмент для вашей работы.</div>
-        <form class="get-form">
-          <input class="get-input-1" type="text" placeholder="ваш e-mail" />
-          <input class="get-input-1" type="text" placeholder="Номер телефона" />
+        <form class="get-form get-form-2">
+          <input name="email" class="get-input-1" type="text" placeholder="ваш e-mail" required>
+          <input name="phone" class="get-input-1" type="text" placeholder="Номер телефона" required>
           <div class="get-form-row">
             <label class="get-form-cons">
               <input class="get-form-checkbox" type="checkbox" value="yes" name="confirm-1" checked>
@@ -14,7 +14,9 @@
               </div>
               <div class="get-form-cons-txt">Даю согласие на <a class="get-form-cons-link">обработку персональных данных</a></div>
             </label>
-            <div class="get-form-btn-w"><a href="#" class="btn">РАСЧИТАТЬ</a></div>
+            <div class="get-form-btn-w">              
+              <button type="submit" class="btn">получить каталог</button>
+            </div>
           </div>
         </form>
       </div>

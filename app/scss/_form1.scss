@@ -1,0 +1,57 @@
+.measurer-call {
+  background-image: url("../img/Man.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  padding-bottom: 211px;
+  padding-top: 220px;
+}
+
+.contain {
+}
+
+.measurer-call-w {
+}
+
+.measurer-texts {
+  max-width: 634px;
+  width: 100%;
+}
+
+.measurer-txt-1 {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.measurer-txt-2 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #FFF;
+  line-height: 1.2;
+  max-width: 400px;
+}
+
+.measurer-form {
+  display: flex;
+  margin-top: 70px;  
+
+}
+
+input[type="text"].measurer-input {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 48px;
+  border: 1px solid rgb(153, 153, 153);
+  padding-left: 27px;
+  padding-right: 27px;
+  flex: 0 0 364px;
+  &::placeholder {
+   color: #FFF; 
+  }
+}
+

@@ -39,8 +39,8 @@
 .nav-pages {
   margin-top: 40px;
   a {
-   font-size: 20px;
- }
+    font-size: 20px;
+  }
 }
 
 body {
@@ -130,4 +130,73 @@ body {
   background-color: #E2E2E2;
 }
 
-@import "_top.scss";
+.like-h2-l {
+  color: rgb(12, 54, 156);
+  font-size: 48px;
+  margin-bottom: 97px;  
+}
+
+.like-h2-bg {
+  color: rgb(12, 54, 156);
+  font-size: 48px;
+  line-height: 1.2;
+  background-image: url("../img/quottes.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.all-link {
+  display: inline-block;
+  padding-right: 44px;
+  background-image: url("../img/arr-r-g.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: rgb(146, 186, 31);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.like-h2-w {
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.all-link-w {
+  display: inline-block;
+  padding-right: 44px;
+  background-image: url("../img/arr-link-r-w.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+
+.slick-arrow { 
+  background: none;
+  font-size: 0;
+  bottom: 250px;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: url("../img/arrow-l.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;    
+  position: absolute;
+  top: 50%;
+}
+.slick-prev {
+  left: 0;  
+}  
+.slick-next {
+  right: 0;  
+  transform: rotate(180deg);
+}
+

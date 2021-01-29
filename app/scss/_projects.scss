@@ -1,0 +1,295 @@
+.completed {
+  background-image: url("../img/completed-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  padding-top: 95px;
+  padding-bottom: 92px;
+}
+
+.completed-w {
+}
+
+
+
+.completed-items {
+  margin-top: 95px;
+  height: 640px;
+  .slick-arrow {
+    top: auto;
+    bottom: 250px;
+  }
+  .slick-prev {
+    left: -100px;
+  }  
+  .slick-next {
+    right: -100px;      
+  }
+}
+
+.completed-item {
+}
+
+.completed-nav {
+  display: flex;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+}
+
+.completed-nav-item {
+  &.active {
+    .completed-nav-link       {
+      color: #0c369c;
+      background-color: #fff;
+    }
+  }
+}
+
+.completed-nav-link {  
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  height: 87px;
+  padding: 0 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.completed-tab-conent {
+  background-color: #fff;
+  position: relative;  
+}
+
+.completed-tab-conent-item {
+  height: 0;    
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+  &.active {
+    height: auto;    
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+.completed-tab-top {
+  padding: 20px;
+  border-bottom: 1px solid rgb(244, 244, 244);
+}
+
+.completed-tab-top--brands {
+  padding: 58px 70px 46px 70px
+}
+
+.completed-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.completed-tag {  
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.completed-tag-link {
+  height: 32px;
+  border: 1px solid rgb(244, 244, 244);
+  background-color: rgb(244, 244, 244);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(17, 17, 17);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;  
+  &.active {
+    color: #ffffff;
+    background-color: #0c369c;
+    border: 1px solid #0c369c;
+  }
+  &:hover {
+   color: #ffffff;
+   background-color: #0c369c;
+   border: 1px solid #0c369c; 
+ }
+}
+
+
+
+.completed-tab-bot {
+  padding: 42px 70px 60px;
+  display: flex;
+}
+
+.completed-bot-l {
+  flex: 1 1 auto;
+  padding-right: 41px;
+}
+
+.completed-bot-title {
+  color: rgb(17, 17, 17);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.completed-bot-desc {
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.completed-bot-price {
+  margin-top: 30px;
+}
+
+.completed-bot-price-label {
+  color: rgb(146, 186, 31);
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.completed-bot-price-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.completed-bot-price-price {
+  color: rgb(17, 17, 17);
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.completed-bot-price-cur {
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.completed-bot-price-link-w {
+  margin-left: 49px;
+  padding-bottom: 8px;
+}
+
+.completed-bot-price-link {
+  color: rgb(12, 54, 156);
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(12, 54, 156);
+  padding-bottom: 3px;
+}
+
+.completed-bot-r {
+  flex: 0 0 500px;
+  position: relative;
+}
+
+.completed-slder {
+  width: 500px;
+  height: 252px;  
+}
+
+.completed-slde {
+  display: block;
+  height: 100%;
+  position: relative;
+  &:focus {
+    outline: none;
+  }
+}
+
+.completed-slde-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.completed-slde-dots {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  display: flex;
+  li {
+    margin-left: 6px;
+    margin-right: 6px;
+
+  }
+  button {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(255, 255, 255);    
+    background: none;
+    &:focus {
+      outline: none;      
+    }
+    &:active {
+      outline: none;      
+      background: none;
+    }
+  }
+  .slick-active {
+    button {
+      border: 2px solid rgb(255, 255, 255);
+      background-color: #ffffff;      
+    }
+  }
+}
+
+
+.completed-slde-link {
+  &:before {
+   content: "";
+   position: absolute;
+   right: 15px;
+   bottom: 15px;
+   z-index: 10;  
+   display: block;  
+   background-image: url("../img/expand.svg");
+   background-repeat: no-repeat;
+   background-position: left top;
+   width: 14px;
+   height: 14px;
+   cursor: pointer;
+ }
+}  
+
+.completed-brands {
+  display: flex;
+  label {    
+    flex: 0 0 25%;
+  }
+}
+input[type="radio"].completed-radio {
+  display: none;
+  + span {
+    display: inline-flex;    
+    align-items: center;            
+    justify-content: center;
+    width: 100%;
+    height: 88px;
+    border: 1px solid #f4f4f4;
+    background-color: #ffffff;
+    img {
+      width: 140px;
+      height: auto;
+    }
+  }
+  &:checked {
+    + span {
+     border: 3px solid #92ba1f; 
+   }      
+ }
+}

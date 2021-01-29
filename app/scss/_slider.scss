@@ -4,17 +4,6 @@
 .slider {
   position: relative;
   .slick-arrow { 
-    background: none;
-    font-size: 0;
-    bottom: 250px;
-    width: 56px;
-    height: 56px;
-    border: 1px solid rgb(255, 255, 255);
-    background-image: url("../img/arrow-l.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 10;    
-    position: absolute;
   }
   .slider-dots {
     position: absolute;
@@ -38,13 +27,10 @@
     }
   }
   .slick-prev {
-    left: 100px;
-    top: 50%;
+    left: 100px;    
   }  
   .slick-next {
-    right: 100px;
-    top: 50%;
-    transform: rotate(180deg);
+    right: 100px;      
   }
 }
 

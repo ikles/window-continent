@@ -2,16 +2,17 @@
   padding-top: 100px;
   padding-bottom: 100px;
   margin-top: 200px;
+  .like-h2-l {
+    max-width: 570px;
+    margin-bottom: -130px;
+  }
 }
 
 .contain {
 }
 
 .compare-w {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  
 }
 
 .compare-head {
@@ -103,11 +104,13 @@
 
 
 .compare-table-item {
-  width: 10px;
-  height: 100%;
+  flex: 0 0 10px;  
   background: rgb(243, 240, 230);
   margin-right: 4px;
   height: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
   &.green {    
     background: rgb(146, 186, 31);    
   }
