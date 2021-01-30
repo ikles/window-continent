@@ -115,10 +115,10 @@
     border: 1px solid #0c369c;
   }
   &:hover {
-   color: #ffffff;
-   background-color: #0c369c;
-   border: 1px solid #0c369c; 
- }
+    color: #ffffff;
+    background-color: #0c369c;
+    border: 1px solid #0c369c; 
+  }
 }
 
 
@@ -216,12 +216,7 @@
   left: 28px;
   bottom: 20px;
   display: flex;
-  li {
-    margin-left: 6px;
-    margin-right: 6px;
-
-  }
-  button {
+  li {      
     font-size: 0;
     padding: 0;
     margin: 0;
@@ -232,6 +227,9 @@
     height: 10px;
     border: 2px solid rgb(255, 255, 255);    
     background: none;
+    margin-left: 6px;
+    margin-right: 6px;
+    cursor: pointer;
     &:focus {
       outline: none;      
     }
@@ -240,30 +238,29 @@
       background: none;
     }
   }
-  .slick-active {
-    button {
-      border: 2px solid rgb(255, 255, 255);
-      background-color: #ffffff;      
-    }
+
+  .slick-active {    
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #ffffff;          
   }
 }
 
 
 .completed-slde-link {
   &:before {
-   content: "";
-   position: absolute;
-   right: 15px;
-   bottom: 15px;
-   z-index: 10;  
-   display: block;  
-   background-image: url("../img/expand.svg");
-   background-repeat: no-repeat;
-   background-position: left top;
-   width: 14px;
-   height: 14px;
-   cursor: pointer;
- }
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 10;  
+    display: block;  
+    background-image: url("../img/expand.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+  }
 }  
 
 .completed-brands {
@@ -289,7 +286,17 @@ input[type="radio"].completed-radio {
   }
   &:checked {
     + span {
-     border: 3px solid #92ba1f; 
-   }      
- }
+      border: 3px solid #92ba1f; 
+    }      
+  }
 }
+
+
+/* .tabs_content_item {
+opacity: 0;
+visibility: hidden;  
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+} */

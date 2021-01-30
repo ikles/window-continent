@@ -62,7 +62,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'fileinclude'], funct
 	gulp.watch('app/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/var/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами var
 	gulp.watch('app/result/*.html', browserSync.reload); // Наблюдение за HTML файлами в result
-	gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
+	gulp.watch('app/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });
 
 gulp.task('clean', function() {

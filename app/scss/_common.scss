@@ -122,12 +122,20 @@ body {
   width: 100%;
 }
 
-
+.like-h2-wrap {
+  width: 100%;
+}
 
 .divider {
   height: 1px;
   width: 100%;
   background-color: #E2E2E2;
+}
+
+.like-h2 {
+  color: rgb(12, 54, 156);
+  font-size: 48px;
+  line-height: 1.2;
 }
 
 .like-h2-l {
@@ -140,9 +148,21 @@ body {
   color: rgb(12, 54, 156);
   font-size: 48px;
   line-height: 1.2;
-  background-image: url("../img/quottes.png");
-  background-repeat: no-repeat;
-  background-position: right center;
+  position: relative;
+  display: inline-block;
+  &:before {
+    position: absolute;
+    right: -55px;
+    bottom: -10px;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/quottes.png");
+    background-repeat: no-repeat;
+    background-position: right center; 
+    z-index: -1;
+  }  
 }
 
 .all-link {

@@ -1,5 +1,6 @@
 .recommendations {
   padding-top: 86px;
+  padding-bottom: 100px;
 }
 
 .recomm-w {
@@ -50,10 +51,26 @@
   margin-top: 102px;
   display: flex;
   justify-content: space-between;
+  .slick-list {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .slick-arrow {
+    top: 218px; 
+    border: 1px solid #ccc;
+    background-image: url('../img/arrow-l-gray.svg');
+  }
+  .slick-prev {
+    left: -175px;
+  }
+  .slick-next {
+    right: -175px;
+  }
 }
 
 .recomm-list-item {
   width: calc(100% / 3 - 13px);
+  padding: 0 15px;
 }
 
 .recomm-list-img-w {
@@ -66,30 +83,45 @@
   position: relative;
   margin-top: 0px;
   margin-bottom: 40px;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(12, 54, 156);
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(12, 54, 156);
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("../img/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;  
+    transition: 0.5s;
+  }
+    &:hover {
+    &:before {
+      opacity: 0.1;
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
 }
 
-.recomm-list-plus {
-  position: absolute;
-  display: block;
-  width: 97px;
-  height: 97px;
-  background-color: rgb(12, 54, 156);
-  border-radius: 50%;
-  overflow: hidden;
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
-.recomm-list-before {
-  position: absolute;
-  z-index: 2;
-  background-color: rgb(12, 54, 156);
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
+
+
 
 .recomm-item-bot {
   display: block;
