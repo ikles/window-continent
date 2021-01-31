@@ -20,6 +20,7 @@ $font2: 'Ubuntu', sans-serif;
 @import "_top.scss";
 @import "_slider.scss";
 @import "_about.scss";
+@import "_cats.scss";
 @import "_fabricators.scss";
 @import "_get-form1.scss";
 @import "_get-form2.scss";
@@ -29,3 +30,16 @@ $font2: 'Ubuntu', sans-serif;
 @import "_recommendations.scss";
 @import "_articles.scss";
 @import "_footer.scss";
+
+.main-body {
+  .cat-grid {
+
+  }
+  .cat-grid-w {
+    border-top: 1px solid #E2E2E2;    
+    border-bottom: 1px solid #E2E2E2;        
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-bottom: 100px;
+  }
+}
