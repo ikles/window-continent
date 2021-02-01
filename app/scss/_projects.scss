@@ -5,6 +5,7 @@
   background-size: cover;
   padding-top: 95px;
   padding-bottom: 92px;
+  margin-bottom: 106px;
 }
 
 .completed-w {
@@ -13,17 +14,17 @@
 
 
 .completed-items {
-  margin-top: 95px;
+  margin-top: 101px;
   height: 640px;
   .slick-arrow {
     top: auto;
-    bottom: 250px;
+    bottom: 173px;
   }
   .slick-prev {
-    left: -100px;
+    left: -177px;
   }  
   .slick-next {
-    right: -100px;      
+    right: -177px;      
   }
 }
 
@@ -56,7 +57,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  &:hover {
+    color: #0c369c;
+    background-color: #fff;
+  }
 }
 
 .completed-tab-conent {
@@ -78,7 +82,7 @@
 
 
 .completed-tab-top {
-  padding: 20px;
+  padding: 19px 20px 11px 20px;
   border-bottom: 1px solid rgb(244, 244, 244);
 }
 
@@ -124,7 +128,7 @@
 
 
 .completed-tab-bot {
-  padding: 42px 70px 60px;
+  padding: 52px 70px 60px;
   display: flex;
 }
 
@@ -136,7 +140,7 @@
 .completed-bot-title {
   color: rgb(17, 17, 17);
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .completed-bot-desc {
@@ -146,13 +150,14 @@
 }
 
 .completed-bot-price {
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 .completed-bot-price-label {
   color: rgb(146, 186, 31);
   font-size: 13px;
   line-height: 1.2;
+  margin-bottom: 5px;
 }
 
 .completed-bot-price-row {
@@ -164,6 +169,8 @@
   color: rgb(17, 17, 17);
   font-size: 24px;
   line-height: 1.3;
+  display: flex;  
+  align-items: flex-start;
 }
 
 .completed-bot-price-cur {
@@ -171,6 +178,7 @@
   font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
+  margin-left: 5px;
 }
 
 .completed-bot-price-link-w {
@@ -184,6 +192,9 @@
   font-weight: 600;
   border-bottom: 1px solid rgb(12, 54, 156);
   padding-bottom: 3px;
+  &:hover {
+    border: none;
+  }
 }
 
 .completed-bot-r {
@@ -279,6 +290,10 @@ input[type="radio"].completed-radio {
     height: 88px;
     border: 1px solid #f4f4f4;
     background-color: #ffffff;
+    cursor: pointer;
+    &:hover {
+      border: 3px solid #92ba1f; 
+    }
     img {
       width: 140px;
       height: auto;

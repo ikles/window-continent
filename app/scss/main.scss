@@ -20,10 +20,25 @@ $font2: 'Ubuntu', sans-serif;
 @import "_top.scss";
 @import "_slider.scss";
 @import "_about.scss";
+@import "_grid.scss";
 @import "_cats.scss";
 @import "_fabricators.scss";
 @import "_get-form1.scss";
 @import "_get-form2.scss";
+@import "_services.scss";
+
+
+.useful-videos {
+  padding-top: 100px;
+  .all-link {
+    margin-top: 28px;
+  }
+  .recomm-videos {
+    margin-top: 106px;
+  }
+}
+
+
 @import "_compare.scss";
 @import "_projects.scss";
 @import "_form1.scss";
@@ -35,11 +50,13 @@ $font2: 'Ubuntu', sans-serif;
   .cat-grid {
 
   }
+  .services {
+    margin-bottom: 103px;
+  }
   .cat-grid-w {
     border-top: 1px solid #E2E2E2;    
     border-bottom: 1px solid #E2E2E2;        
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;    
+    padding-bottom: 94px;
   }
 }

@@ -21,8 +21,23 @@ jQuery(document).ready(function( $ ) {
 
 
 
+  $('.wrapper').prepend('<span class="eye-3"></span>');
 
 
+  $('.eye-3').click(function (e) {
+    e.preventDefault();
+    $('body').toggleClass('active');
+  });
+
+
+  $('div.lazy').lazy();
+
+
+  $('img.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 200,
+    threshold: 0,  
+  });
 
 
 
@@ -209,7 +224,7 @@ jQuery(document).ready(function( $ ) {
     cssEase: 'ease-out',    
   });
 /*  setTimeout(function () {
-  },7000);*/
+},7000);*/
 
 
 

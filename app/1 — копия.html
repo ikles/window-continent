@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=1200px">
+  <!--meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1"-->
+  <title>Главная</title>   
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="main-body">
+  <div class="wrapper-w">
+    <div class="wrapper">          
+      @@include('var/_top.html')
+      @@include('var/_slider.html')
+      @@include('var/_about.html')
+      @@include('var/_cats.html')
+      @@include('var/_fabricators.html')      
+      @@include('var/_get-form1.html')
+      @@include('var/_services.html')
+      @@include('var/_get-form2.html')      
+      <div class="useful-videos">
+        <div class="contain">
+          <div class="useful-videos-w">            
+            <div class="like-h2">Полезные видео</div>            
+            <a href="#" class="all-link">все видео</a>      
+            @@include('var/_recomm-videos.html')            
+          </div>
+        </div>
+      </div>
+      @@include('var/_compare.html')
+      @@include('var/_projects.html')
+      @@include('var/_form1.html')
+      @@include('var/_recommendations.html')
+      @@include('var/_articles.html')
+      @@include('var/_footer.html')
+    </div><!--wrapper-->
+  </div><!--wrapper-w-->  
+  <script src="js/jquery-3.4.1.min.js"></script>      
+  <script src="js/slick.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+

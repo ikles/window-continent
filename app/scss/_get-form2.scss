@@ -1,10 +1,15 @@
 .get-2 {
-
+  height: 755px;
+  padding-top: 95px;
+  overflow: hidden;
+  .get-txt-1 {
+    margin-bottom: 59px;
+  }
 }
 
 .get-img-2 {
-  left: -250px;
-  top: 0;
+  left: -379px;
+  top: -95px;
   position: absolute;
 }
 .get-txt-3 {
@@ -13,6 +18,7 @@
   font-weight: 300;
   margin-bottom: 49px;  
   max-width: 457px;
+  line-height: 1.2;
 }
 
 

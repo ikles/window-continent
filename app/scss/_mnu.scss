@@ -19,6 +19,9 @@
   }
   .mega-mnu-butt {
     color: #111111;
+    &:hover {
+      color: #FFF;
+    }
   }
   .mega-mnu-ul-big a {
     color: #111;

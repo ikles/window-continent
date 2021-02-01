@@ -1,5 +1,5 @@
 .top {
-  padding-top: 10px;
+  padding-top: 14px;
   padding-bottom: 10px;
 }
 
@@ -29,6 +29,7 @@
 .top-compare {
   display: flex;
   align-items: center;
+  margin-top: -8px;
   &:hover {
     .top-compare-txt-1 {
       text-decoration: underline;
@@ -62,8 +63,8 @@
 }
 
 .top-1 {
-  padding-top: 13px;
-  padding-bottom: 20px;
+  padding-top: 7px;
+  padding-bottom: 23px;
 }
 
 
@@ -77,13 +78,17 @@
   height: 68px;
   display: block;
   margin-right: 2px;
+  margin-top: -8px;
+  margin-right: 36px;
 }
 
 .top-1-item-1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 44px;
+  margin-top: 9px;
+  margin-right: 55px;
 }
 
 .top-1-txt-1 {
@@ -97,9 +102,8 @@
   color: rgb(12, 54, 156);
   font-size: 13px;  
   width: 170px;
-  margin-left: 13px;
-  line-height: 1.2;
-  margin-right: 30px;
+  margin-left: 17px;
+  line-height: 1.2;  
   font-family: $font2;
 }
 
@@ -111,6 +115,7 @@
   background-position: left center;
   background-image: url("../img/loupe-1.svg");
   justify-content: center;
+  margin-top: 7px;
 }
 
 input[type="text"].top-1-input {
@@ -123,15 +128,21 @@ input[type="text"].top-1-input {
 .top-1-col-2 {
   display: flex;
   align-items: center;
+  margin-top: 2px;
 }
 
 .top-1-contacts {
+  margin-top: 3;
 }
 
-.top-1-txt-3 {
+.top-1-txt-3, .top-1-txt-4 {
   color: rgb(153, 153, 153);
   font-size: 11px;
-  margin-bottom: 0px;
+  margin-bottom: 12px;
+}
+
+.top-1-txt-4 {
+  margin-bottom: 0;
 }
 
 .top-1-link-1 {
@@ -147,22 +158,27 @@ input[type="text"].top-1-input {
   font-size: 13px;
   font-weight: 300;
   height: 28px;
-  border: 1px solid rgb(146, 186, 31);
-  display: flex;
+  border: 1px solid rgb(146, 186, 31);  
   align-items: center;
   justify-content: center;
   margin-left: 14px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-right: 35px;
   text-transform: uppercase;
+  display: inline-flex;
+  padding: 0 10px;
+  margin-top: 8px;
+  &:hover {
+    background-color: rgb(146, 186, 31);
+    color: #fff;
+  }
 }
 
 .top-1-mail {
   color: rgb(12, 54, 156);
   font-size: 21px;
   font-weight: 300;
-  margin-left: 36px;
-  margin-right: 46px;
+  margin-top: 5px;
+  display: inline-block;  
   &:hover {
     text-decoration: underline;
   }
@@ -170,12 +186,12 @@ input[type="text"].top-1-input {
 
 .top-1-socials {
   display: flex;
+  margin-left: 28px;
 }
 
 .top-1-social {
   display: block;
-  margin-left: 13px;
-  margin-right: 7px;
+  margin-left: 13px;    
 }
 
 

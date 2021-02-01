@@ -2,24 +2,9 @@
   width: 100%;
 }
 
-.about-social > img {
-  width: 100%;
-}
-
-.about-social > img {
-  width: 100%;
-}
-
-.about-social > img {
-  width: 100%;
-}
-
 .about {
-  padding-top: 117px;
-  padding-bottom: 100px;
-}
-
-.contain {
+  padding-top: 121px;
+  padding-bottom: 103px;
 }
 
 .about-w {
@@ -27,13 +12,16 @@
 }
 
 .about-col-1 {
-  margin-right: 124px;
+  margin-right: 124px;  
+  flex-grow: 1;
 }
 
 .about-txt-1 {
   color: rgb(17, 17, 17);
   font-size: 20px;
-  margin-bottom: 65px;
+  margin-bottom: 75px;
+  line-height: 1.4;
+  padding-right: 28px;
 }
 
 .about-row {
@@ -51,24 +39,23 @@
   color: rgb(146, 186, 31);
   font-size: 50px;
   font-weight: 300;
-  margin-bottom: 6px;
+  margin-bottom: 13px;
 }
 
 .about-txt-3 {
   color: rgb(153, 153, 153);
   font-size: 14px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .about-btn-w {
 }
 
-.btn.btn-o {
-}
-
-
-
 .about-col-2 {
+  width: 473px;
+  flex: none;
+  margin-top: -4px;
 }
 
 .about-video {
@@ -78,11 +65,36 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 267px;
+  background-color: #000;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(#000, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;    
+    transition: 0.5s;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .about-video-span {
   display: inline-block;
   position: absolute;
+  background: url("../img/play.svg") $nr center;
+  width: 68px;
+  height: 50px;
 }
 
 .about-contacts {
@@ -107,6 +119,9 @@
 .about-cont-link {
   color: rgb(47, 128, 237);
   font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .about-cont-txt-2 {
@@ -121,9 +136,9 @@
 }
 
 .about-social {
-    display: inline-flex;
-    align-items: center;
-    height: 21px;
-    width: 20px;
-    margin-right: 31px;
+  display: inline-flex;
+  align-items: center;
+  height: 21px;
+  width: 20px;
+  margin-right: 31px;
 }

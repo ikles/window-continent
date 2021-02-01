@@ -1,7 +1,7 @@
 .get {
   background-color: rgb(244, 244, 244);
-  padding-top: 185px;
-  padding-bottom: 137px;
+  padding-top: 177px;
+  padding-bottom: 137px;  
 }
 
 .contain {
@@ -19,7 +19,8 @@
   font-weight: 100;
   text-transform: uppercase;
   width: 740px;
-  margin-bottom: 59px;
+  margin-bottom: 47px;
+  line-height: 1.2;
 }
 
 .get-txt-2 {
@@ -88,7 +89,7 @@ input[type="text"].get-input-1 {
 
 .get-img-1 {
   position: absolute;
-  right: -700px;
-  top: -450px;
+  right: -745px;
+  top: -465px;
   z-index: 0;
 }

@@ -4,7 +4,7 @@
   background-position: left top;
   background-size: cover;
   padding-bottom: 211px;
-  padding-top: 220px;
+  padding-top: 213px;
 }
 
 .contain {
@@ -23,7 +23,8 @@
   font-size: 64px;
   font-weight: 100;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 74px;
+  line-height: 1.2;
 }
 
 .measurer-txt-2 {
@@ -37,7 +38,10 @@
 .measurer-form {
   display: flex;
   margin-top: 70px;  
-
+  max-width: 400px;
+  .btn {
+    padding: 0 10px;
+  }
 }
 
 input[type="text"].measurer-input {

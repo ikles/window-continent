@@ -3,12 +3,13 @@
   position: relative;
   z-index: 2;
   .like-h2-l {  
-    max-width: 566px;  
+    max-width: 586px;  
+    line-height: 1.2;
   }
 }
 
 .fabricators-w {
-  padding-top: 100px;
+  padding-top: 103px;
 }
 
 .fabricators-row {
@@ -16,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: -15px;
 }
 
 .fabricator {
@@ -43,4 +45,9 @@
   background-image: url("../img/table.svg");
   background-repeat: no-repeat;
   background-position: left 20px center;
+  &:hover {
+    background-color: rgb(12, 54, 156);
+    color: #FFF;
+    background-image: url("../img/table-w.svg");    
+  }
 }

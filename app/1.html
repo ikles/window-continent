@@ -19,14 +19,24 @@
 </head>
 <body class="main-body">
   <div class="wrapper-w">
-    <div class="wrapper">    
+    <div class="wrapper">          
       @@include('var/_top.html')
       @@include('var/_slider.html')
       @@include('var/_about.html')
       @@include('var/_cats.html')
       @@include('var/_fabricators.html')      
       @@include('var/_get-form1.html')
-      @@include('var/_get-form2.html')
+      @@include('var/_services.html')
+      @@include('var/_get-form2.html')      
+      <div class="useful-videos">
+        <div class="contain">
+          <div class="useful-videos-w">            
+            <div class="like-h2">Полезные видео</div>            
+            <a href="#" class="all-link">все видео</a>      
+            @@include('var/_recomm-videos.html')            
+          </div>
+        </div>
+      </div>
       @@include('var/_compare.html')
       @@include('var/_projects.html')
       @@include('var/_form1.html')
@@ -38,6 +48,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/lazyload.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

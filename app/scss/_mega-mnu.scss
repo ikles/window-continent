@@ -4,7 +4,7 @@
 }
 
 .mega-mnu-col {
-  width: calc(100% / 4 - 53px);
+  width: calc(100% / 4 - 23px);
 }
 
 .mega-mnu-title {
@@ -15,18 +15,21 @@
   margin-bottom: 22px;
 }
 
-.mega-mnu-butt {
-  width: 86px;
+.mega-mnu-butt {  
   height: 32px;
-  border: 1px solid rgb(146, 186, 31);
-  display: flex;
+  border: 1px solid rgb(146, 186, 31);  
+  display: inline-flex;
   align-items: center;
+  padding: 0 20px;
   justify-content: center;
   color: rgb(244, 244, 244);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 19px;
+  &:hover {
+    background: rgb(146, 186, 31);
+  }
 }
 
 .mega-mnu-ul {
@@ -58,7 +61,7 @@
 
 .mega-mnu-ul-big {
   li {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
 
   a {
@@ -69,6 +72,9 @@
     display: inline-block;
     border-bottom: 1px solid rgb(146, 186, 31);
     padding-bottom: 8px;
+    &:hover {
+      border-color: transparent;
+    }
   }
 }
 
