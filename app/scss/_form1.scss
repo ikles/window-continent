@@ -1,7 +1,7 @@
 .measurer-call {
   background-image: url("../img/Man.jpg");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: right top;
   background-size: cover;
   padding-bottom: 211px;
   padding-top: 213px;
@@ -56,6 +56,64 @@ input[type="text"].measurer-input {
   flex: 0 0 364px;
   &::placeholder {
    color: #FFF; 
+ }
+}
+@media (max-width: 1199px) {
+  .measurer-call {
+    background-position: right -340px top;
+  }  
+}
+
+@media (max-width: 992px) {
+  .measurer-call {
+    background-position: right 0px top;
+    padding: 50px 0;
+    margin-top: 0; 
+  }
+  .measurer-txt-1 {
+   font-size: 42px;
+   margin-bottom: 40px;
+ }
+ .measurer-txt-2 {
+   font-size: 16px;
+ }
+}
+
+@media (max-width: 768px) {
+  .measurer-txt-1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }  
+  .measurer-form {
+    margin-top: 25px;
+    margin-right: 0;
+    width: 100%;   
+    max-width: 100%; 
+  }
+  .measurer-form .btn {
+    flex: 0 0 150px;
+  }
+  input[type="text"].measurer-input {
+    flex: 1 1 auto;
   }
 }
 
+@media (max-width: 375px) {
+  .measurer-call {
+    background-image: url("../img/Man@375.jpg");
+    padding-bottom: 36px;    
+  }
+  .measurer-form {   
+    flex-wrap: wrap;
+  }
+  .measurer-form .btn {
+    flex: 1 1 auto;
+    margin-top: 16px;
+  }
+  .measurer-txt-1 {
+    max-width: 270px;
+  }
+  .measurer-txt-2 {
+    max-width: 212px;
+  } 
+}

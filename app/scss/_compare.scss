@@ -12,7 +12,7 @@
 }
 
 .compare-w {
-  
+
 }
 
 .compare-head {
@@ -117,4 +117,111 @@
   &.green {    
     background: rgb(146, 186, 31);    
   }
+}
+@media (max-width: 1199px) {
+  .compare-table-txt {
+    font-size: 12px;
+  }   
+  .compare-table-img-w {
+    margin-left: 7px;    
+    background-size: 80%;
+    margin-right: 2px;
+  }
+  .compare .like-h2-l {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .compare .like-h2-l {
+    text-align: left;
+  } 
+  .compare {
+    padding: 50px 0;
+  }
+  .compare-head-img-w {
+    width: 110px;
+    height: 136px;
+    margin-bottom: 35px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .compare-head-txt-2 {    
+    font-size: 16px;
+  }
+  .compare-table-row {    
+    flex-wrap: wrap;
+  }
+  .compare-col {
+    width: 50%;        
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 17px;
+    padding-top: 4px;
+  }
+  .compare-col-1 {
+    width: 100%;    
+    justify-content: flex-start;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  .compare-col-2 {
+    padding-right: 4px;    
+    justify-content: flex-start;
+  }
+  .compare-col-3 {
+    padding-left: 4px;    
+    justify-content: flex-end;
+  }
+  .compare-table-row-th {
+   margin-bottom: 0; 
+ }
+}
+@media (max-width: 768px) {
+  .compare-table-item {
+    flex: 0 0 8.8px;
+  } 
+  .compare .like-h2-l {
+    font-size: 24px;    
+  }
+}
+
+
+@media (max-width: 640px) {
+  .compare-table-item {
+    flex: 0 0 7.2px;    
+    height: 35px;
+    margin-right: 4px;
+  } 
+}
+
+@media (max-width: 570px) {
+  .compare-table-item {
+    flex: 0 0 5.2px;    
+    height: 30px;
+    margin-right: 4px;
+  } 
+}
+
+@media (max-width: 375px) {
+  .compare-table-item {
+    flex: 0 0 5px;
+    height: 21px;
+    margin-right: 2px;
+  } 
+}
+
+@media (max-width: 360px) {
+  .compare-table-item {
+    flex: 0 0 4px;    
+  } 
 }

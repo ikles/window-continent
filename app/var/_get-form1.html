@@ -17,7 +17,13 @@
         </form>
       </div><!--get-col-l-->
       <div class="get-col-r">
-        <img alt="MacBook" title="MacBook" src="img/MacBook.png" class="get-img-1">
+        <picture>
+          <source class="lazy" srcset="img/MacBook.png" type="image/jpeg" media="(min-width:768px)" />      
+          <source class="lazy" srcset="img/MacBook@768.png" type="image/jpeg" media="(min-width:570px)" />
+          <source class="lazy" srcset="img/MacBook@570.png" type="image/jpeg" media="(min-width:376px)" />
+          <source class="lazy" srcset="img/MacBook@375.png" type="image/jpeg" media="(min-width:200px)" />              
+          <img alt="MacBook" title="MacBook" src="img/MacBook.png" class="lazy get-img-1">              
+        </picture>        
       </div>
     </div>
   </div>

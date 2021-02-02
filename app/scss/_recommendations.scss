@@ -171,3 +171,135 @@
   display: block;
   margin-top: 13px;
 }
+
+@media (max-width : 1720px) {
+  .recomm-list .slick-arrow {
+    top: auto;
+    bottom: -150px;
+  }
+  .recomm-list .slick-next {
+    right: 0;
+  }
+  .recomm-list {
+    .slick-dots {
+      bottom: -125px;
+      left: 50%;
+      position: absolute;
+      display: flex;
+      transform: translate(-50%, 0);
+      li {
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #0C369C;
+        background: none;
+        margin-left: 6px;
+        margin-right: 6px;
+        cursor: pointer;
+        &.slick-active {
+          background-color: #0C369C;
+        }
+      }
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+  }  
+  .recomm-list-item {
+
+  }
+
+}
+
+@media (max-width: 992px) {
+  .recomm-videos {
+    min-width: 600px;
+    width: 100%;
+    margin-top: 52px;
+    padding-bottom: 50px;
+  }
+  .recomm-videos-item {
+    width: calc(100% / 3 - 4.5px);
+  }  
+  .recomm-videos-img-w {
+    height: 110px;
+    margin-bottom: 13px;
+  }
+  .recomm-item-title {
+    font-size: 14px;
+  }
+  .recommendations {
+    padding: 50px 0;
+    .like-h2-bg {
+      margin-bottom: 0;
+    }  
+  }
+  .recomm-list {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .recomm-videos-w {    
+    overflow-x: scroll;
+    position: relative;
+    min-height: 260px;
+    margin-right: -55px;
+    .recomm-videos {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }  
+  .recomm-videos-play {
+    width: 28px;
+    height: 20px;    
+    background-size: cover;
+  }
+  .recomm-item-name {
+    font-size: 13px;
+  }
+  .recomm-item-pos {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+  .recomm-list-img-w {    
+    overflow: hidden;
+    height: 205px;
+    width: 168px;
+    margin-bottom: 18px;
+    img {
+      max-width: 80%;
+      height: auto;
+    }
+  }   
+  .recomm-list .slick-arrow {
+    bottom: -85px;
+  }
+  .recomm-list .slick-dots {
+    bottom: -60px;
+  }
+
+}
+
+@media (max-width: 570px) {
+  .recomm-videos-w {        
+    margin-right: -15px;    
+  }  
+}
+
+@media (max-width: 374px) {
+  .recomm-list-item {
+    text-align: center;
+  }
+  .recomm-list-img-w {
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}

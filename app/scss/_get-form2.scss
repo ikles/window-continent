@@ -10,7 +10,7 @@
 .get-img-2 {
   left: -379px;
   top: -95px;
-  position: absolute;
+  position: absolute;  
 }
 .get-txt-3 {
   color: rgb(153, 153, 153);
@@ -68,4 +68,56 @@ input[type="checkbox"].get-form-checkbox {
   text-decoration: underline;
   line-height: 1.2;
   display: block;
+}
+
+@media (max-width: 1199px) {
+  .get-img-2 {
+    left: -309px;
+  }
+}
+
+@media (max-width: 992px) {
+  .get-img-2 {
+    left: -169px;
+  } 
+  .get-2 {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-form-row {  
+    flex-wrap: wrap;   
+  }
+  .get-form-cons {
+    margin-bottom: 23px;
+    padding-right: 0;
+  }
+  .get-2 {
+    .get-form-btn-w {
+      width: 100%; 
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  .get-img-2 {
+    left: -219px;
+    top: -150px;
+  }
+}
+
+@media (max-width: 640px) {
+  .get-img-2 {
+    position: static;    
+    margin-top: -50px;
+    width: calc(100% + 50px);    
+    margin-left: -25px;
+    margin-bottom: 40px;
+  }
+  .get-2 {
+   .get-col-r {
+     
+   } 
+  }  
 }

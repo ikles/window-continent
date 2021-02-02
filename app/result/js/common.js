@@ -21,13 +21,13 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('.wrapper').prepend('<span class="eye-3"></span>');
+/*  $('.wrapper').prepend('<span class="eye-3"></span>');
 
 
   $('.eye-3').click(function (e) {
     e.preventDefault();
     $('body').toggleClass('active');
-  });
+  });*/
 
 
   $('div.lazy').lazy();
@@ -43,12 +43,12 @@ jQuery(document).ready(function( $ ) {
 
 
 
-/*  $().fancybox({
-    selector: '.completed-slder-1 .completed-slde-link',    
-    arrows: true,
+  $().fancybox({
+    selector: '.recomm-list-img-w',    
+    arrows: false,
     infobar: false,
     smallBtn: false,
-    toolbar: false,
+    toolbar: true,
     iframe : {
       css : {
         width : '950px'
@@ -57,7 +57,7 @@ jQuery(document).ready(function( $ ) {
     slideClass: "myClass",
     baseClass: "myclass"
   });
-
+/*
 
   $('.completed-slder-1').slick({
     infinite: true,    
@@ -244,23 +244,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-var gallery = $('.recomm-list-item a.recomm-list-img-w');
-$('.recomm-list-item a.recomm-list-img-w').on('click', function(e) {
-  e.preventDefault();  
-  var totalSlides = +$(this).parents('.recomm-list').slick("getSlick").slideCount,
-  dataIndex = +$(this).parents('.recomm-list-item').data('slick-index'),
-  trueIndex;
-  switch(true){
-    case (dataIndex<0):
-    trueIndex = totalSlides+dataIndex; break;
-    case (dataIndex>=totalSlides):
-    trueIndex = dataIndex%totalSlides; break;
-    default: 
-    trueIndex = dataIndex;
-  }    
-  $.fancybox.open(gallery,{}, trueIndex);
-  return false;
-});
+
 
 $('.recomm-list').slick({
   slidesToShow: 3,
@@ -268,7 +252,21 @@ $('.recomm-list').slick({
   dots: true,
   customPaging: function() {
     return ''
-  }
+  },  
+  responsive: [
+  {
+    breakpoint: 641,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 361,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  ]
 });
 
 
@@ -314,21 +312,6 @@ $('.slider').slick({
   autoplay: false,
   autoplaySpeed: 24000,
   cssEase: 'ease-out',    
-  responsive: [
-
-  {
-    breakpoint: 1381,
-    settings: {
-      slidesToShow: 5        
-    }
-  },
-  {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 4
-    }
-  }
-  ]
 });
 
 
@@ -348,7 +331,7 @@ $('.pop-close, .modal-overlay').click(function(e) {
 
 
 
-  //$('select').fancySelect();
+$('select').fancySelect();
 
 }); //ready
 

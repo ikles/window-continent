@@ -245,3 +245,74 @@ input[type="text"].top-1-input {
   width: 11px;
   height: 6px;
 }
+
+@media (max-width: 1720px) {
+  .top, .top-1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .top-1-item-1 {
+    display: none;
+  }
+  .top-1-form {
+    margin-left: 45px;
+  }
+  .top-mnu-2 > li > a {
+    padding: 0 10px;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .top-1-contacts {
+    display: none; 
+  }
+  .top-compare {
+    margin-top: 0;
+  }
+  .top-mnu-2 {
+    display: none;
+  }
+  .top {    
+    display: none;
+  }
+  .top-1 {
+    padding: 15px;
+  }
+  .top-1-logo {
+    margin-top: 0;
+  }
+  .top-1-col-2 {
+    display: none;
+  }
+  .top-1-col-1 {
+    width: 100%;
+  }
+  .top-1-form {
+    margin-left: 0;
+  }
+  .col-mnu {
+    margin-left: auto;
+    order: 4;
+  }
+  .toggle-mnu {
+    width: 32px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  input[type="text"].top-1-input {
+    width: 0;
+  }
+  .top-1-form {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 375px) {
+  /**/
+}
+@media (max-width: 320px) {
+  /**/
+}
