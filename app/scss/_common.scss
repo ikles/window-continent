@@ -36,12 +36,7 @@
 
 @import "_reset.scss";
 
-.nav-pages {
-  margin-top: 40px;
-  a {
-    font-size: 20px;
-  }
-}
+
 
 body {
   font-family: "Proxima Nova", sans-serif;
@@ -133,9 +128,9 @@ a, button {
   color: #0c369c;
   border: 1px solid #0c369c;
   &:hover {
-   background-color: #0c369c; 
-   color: #fff;
- }
+    background-color: #0c369c; 
+    color: #fff;
+  }
 }
 
 .btn-g {
@@ -162,6 +157,13 @@ a, button {
 
 .w100 {
   width: 100%;
+}
+
+.like-h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: rgb(12, 54, 156);
+  margin-bottom: 40px;
 }
 
 .like-h2-wrap {
@@ -373,3 +375,42 @@ body {
 }
 
 
+input[type="checkbox"].get-form-checkbox {
+  display: none;
+  &:checked {
+    + div {
+      background-image: url("../img/check-3.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.get-form-cons-check {
+  flex: 0 0 20px;
+  height: 20px;
+  background-color: rgb(146, 186, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.get-form-cons {
+  cursor: pointer;
+}
+
+.bread {
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  span {    
+  }
+  a {
+
+    color: #000;
+  }
+}

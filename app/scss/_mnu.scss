@@ -3,7 +3,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 12;
   background-color: #FFF; 
   width: 100%;
   padding: 84px 0 70px;
@@ -45,8 +45,7 @@
   width: 24px;
   height: 20px;
   margin: 0;
-  margin-top: 25px;
-  z-index: 10;
+  margin-top: 25px;  
 }
 .toggle-mnu:focus {
   outline: none;
@@ -71,7 +70,7 @@
     background: #0C369C;
     transition: all 0.3s;    
     backface-visibility: hidden;       
-    
+
   }
 }
 .toggle-mnu span:after {
@@ -81,9 +80,24 @@
 
 }
 
-.toggle-mnu.on span {
-  background-color: transparent;
+.toggle-mnu.on {  
+  display: none;
+  span {
+    background-color: transparent;
+  }
 }
+
+.top-close-w {
+  display: flex;  
+      margin-top: -35px;
+      margin-bottom: 15px;
+}
+.top-close {
+  width: 24.5px;
+  height: 24.5px;
+  background: url("../img/top-close.svg") $nr 0 0;
+}
+
 .toggle-mnu.on span:before    {
   transform: rotate(45deg) translate(5px, 5px);
   top: -6px;
@@ -95,6 +109,16 @@
 .toggle-mnu.on + #menu {
   opacity: 1;
   visibility: visible;
+}
+
+
+@media (max-width: 1199px) {
+
+.top-close-w {
+  -webkit-justify-content: flex-end;
+            justify-content: flex-end;  
+  
+}
 }
 
 
