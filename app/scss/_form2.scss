@@ -1,0 +1,46 @@
+@import "_form1.scss";
+
+.help-call {
+  padding-top: 100px;
+  padding-bottom: 98px;
+  background: #F4F4F4;
+  margin-top: 158px;  
+  margin-bottom: 126px;
+  .measurer-txt-1 {
+    color: #0C369C;
+    margin-bottom: 50px;
+  }
+  .measurer-txt-2 {
+    color: #111;
+    max-width: 534px;
+  }
+  .measurer-form {
+    max-width: 470px;
+    margin-top: 25px;
+    .btn {
+      padding: 0 10px;      
+      flex-grow: 1;
+    }
+  }
+  input[type="text"].measurer-input {
+    color: #111;
+    &::placeholder {
+      color: #111;
+    }
+    flex: 0 0 232px;
+  }
+  .measurer-call-w {
+    display: flex;
+  }
+}
+
+.help-call-r {  
+  flex-grow: 1;
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+  }
+}

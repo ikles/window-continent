@@ -20,8 +20,7 @@ $font2: 'Ubuntu', sans-serif;
 @import "_top.scss";
 @import "_list-products.scss";
 
-@import "_get-form1.scss";
-@import "_get-form2.scss";
+@import "_form2.scss";
 
 
 @import "_footer.scss";
@@ -30,7 +29,19 @@ $font2: 'Ubuntu', sans-serif;
 .list-products-body {
   .bread-w {
     margin: 20px 0;
+  }  
+  .pagin-w {
+    margin-top: auto;
   }
+}
+
+
+@media (max-width: 992px) {
+.list-products-body { 
+  .pagin-w {
+    margin-top: 40px;
+  }
+}  
 }
 
 @import "_hides.scss";

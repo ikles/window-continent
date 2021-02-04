@@ -23,13 +23,13 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  //$('.wrapper').prepend('<span class="eye-3"></span>');
+/*  $('.wrapper').prepend('<span class="eye-3"></span>');
 
 
   $('.eye-3').click(function (e) {
     e.preventDefault();
     $('body').toggleClass('active');
-  });
+  });*/
 
 
   $('div.lazy').lazy();
@@ -115,6 +115,83 @@ jQuery(document).ready(function( $ ) {
 
 
 
+/*  var gallery1 = $('.completed-slder-1 .completed-slde-link');
+  $('.completed-slder-1 .completed-slde-link').on('click', function(e) {
+    e.preventDefault();  
+    var totalSlides1 = +$(this).parents('.completed-slder').slick("getSlick").slideCount,
+    dataIndex1 = +$(this).parents('.completed-slde').data('slick-index'),
+    trueIndex1;
+    switch(true){
+      case (dataIndex1<0):
+      trueIndex1 = totalSlides1+dataIndex1; break;
+      case (dataIndex1>=totalSlides1):
+      trueIndex1 = dataIndex1%totalSlides1; break;
+      default: 
+      trueIndex1 = dataIndex1;
+    }    
+    $.fancybox.open(gallery1,{}, trueIndex1);
+    return false;
+  });
+
+  $('.completed-slder-1').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    dotsClass: 'completed-slde-dots',
+    customPaging: function() {
+      return ''
+    }
+  });*/
+
+
+
+
+
+
+
+
+
+
+/*  $('.completed-slder-2').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,
+    dots: true, 
+    arrows: false,   
+    dotsClass: 'completed-slde-dots',
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out',    
+  });
+
+  $('.completed-slder-3').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,
+    dots: true, 
+    arrows: false,   
+    dotsClass: 'completed-slde-dots',
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out',    
+  });
+
+  $('.completed-slder-4').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,
+    dots: true, 
+    arrows: false,   
+    dotsClass: 'completed-slde-dots',
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out',    
+  });
+  */
+
   function tabs(controlClass, ContentClass) {
     $(controlClass).find('.tabs_control_link').click(function (e) {
       e.preventDefault();
@@ -153,6 +230,24 @@ jQuery(document).ready(function( $ ) {
 
 
 
+/*  $('.completed-items').on('swipe', function(event, slick, direction){
+   if (direction == 'left') {    
+    setTimeout(function () {
+      tabs('.tabs-control-1', '.tabs_content-1');
+      tabs('.tabs-control-2', '.tabs_content-2');
+    }, 700);
+  }
+  else {
+    tabs('.tabs-control-1', '.tabs_content-1');
+    tabs('.tabs-control-2', '.tabs_content-2');
+  }
+});*/
+
+
+
+
+
+
 $('.recomm-list').slick({
   slidesToShow: 3,
   arrows: true,
@@ -175,6 +270,28 @@ $('.recomm-list').slick({
   },
   ]
 });
+
+
+/*$('.recomm-list').slick({
+  infinite: true,    
+  slidesToShow: 3,
+  speed: 500,
+  dots: false, 
+  arrows: true,    
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 24000,
+  cssEase: 'ease-out',    
+});*/
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,70 +330,6 @@ $('.pop-close, .modal-overlay').click(function(e) {
   $('.modal-overlay').fadeOut();
   $('body').removeClass('ohi');
 });
-
-
-$('.product-filter-w').each(function () {
-  let link = $(this).find('.product-filter-row');
-  let minus = $(this).find('.product-filter-item-1');
-  let cont = $(this).find('.product-filter-cont');
-  let all = $(this).find('.filter-check-all');
-  let checkHide = $(this).find('.filter-check-hide');
-  link.click(function (e) {
-    e.preventDefault();
-    cont.toggleClass('off');
-    minus.toggleClass('off');
-  });
-
-
-  all.click(function (e) {
-    e.preventDefault();
-    checkHide.toggleClass('on');
-  });
-
-});
-
-
-$("#calc-height").slider({
-  range: "min",
-  value: 3000,
-  min: 0,
-  max: 13000,
-  slide: function( event, ui ) {
-    $( "#amount-height" ).val( ui.value );
-  }
-});
-$( "#amount-height" ).val( $( "#calc-height" ).slider( "value" ));
-
-$("#calc-width").slider({
-  range: "min",
-  value: 6000,
-  min: 0,
-  max: 13000,
-  slide: function( event, ui ) {
-    $( "#amount-width" ).val( ui.value );
-  }
-});
-$( "#amount-width" ).val( $( "#calc-width" ).slider( "value" ));
-
-
-$( "#slider-range" ).slider({
-  range: true,
-  min: 0,
-  max: 1000000,
-  values: [ 250000, 769990 ],
-  slide: function( event, ui ) {
-    let one = ui.values[0].toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
-    $( "#amount" ).val(one);
-    let two = ui.values[1].toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '); 
-    $( "#amount2" ).val(two);
-  }
-});
-
-
-
-
-
-
 
 
 
