@@ -1,0 +1,21 @@
+div.fancy-select {
+  width: 100%;
+}
+div.fancy-select div.trigger,
+div.fancy-select ul.options {
+  width: 100%;
+  min-width: auto;
+  border-radius: 0;
+}
+div.fancy-select div.trigger {
+  background: none;
+  padding: 12px 15px;
+}
+
+div.fancy-select div.trigger:after {
+  right: 15px;
+}
+
+div.fancy-select div.trigger {
+  color: #000;
+}

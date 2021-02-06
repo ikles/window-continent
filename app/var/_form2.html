@@ -16,8 +16,13 @@
           <button type="submit" class="btn btn-b w100">получить консультацию</button>
         </form>
       </div>
-      <div class="help-call-r">
-        <img src="img/doors.png" alt="doors" title="doors">
+      <div class="help-call-r">        
+        <picture>
+          <source class="lazy" srcset="img/doors.png" type="image/png" media="(min-width:768px)" />                
+          <source class="lazy" srcset="img/doors-pda.png" type="image/png" media="(min-width:200px)" />
+          <img data-src="img/doors.png" alt="doors" title="doors" src="img/pixel.gif" class="lazy">
+        </picture>        
+        
       </div><!--help-call-r-->
     </div>
   </div>

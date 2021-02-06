@@ -273,12 +273,30 @@ $( "#slider-range" ).slider({
 });
 
 
+$('.product-filter-open-link').click(function (e) {
+  //e.preventDefault();
+  //$('.filter-left').toggleClass('on');
+  $('.filter-left').slideToggle({
+    duration: 500,
+    easing: "swing"
+  });
+  $('.overlay').fadeToggle();
+});
 
+$('.fil-close').click(function (e) {
+  e.preventDefault();
+  //$('.filter-left').removeClass('on');
+  $('.filter-left').slideUp({
+    duration: 500,
+    easing: "swing"
+  });
+  $('.overlay').fadeOut();
+});
 
-
-
-
-
+$('.overlay').click(function () {
+  $(this).fadeOut();
+  $('.pop, .filter-left').fadeOut();
+});
 
 $('select').fancySelect();
 
