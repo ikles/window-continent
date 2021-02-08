@@ -414,9 +414,6 @@ input[type="text"].top-1-input {
   .top-1-form {
     padding-left: 20px; } }
 
-@media (max-width: 375px) {
-  /**/ }
-
 @media (max-width: 320px) {
   /**/ }
 
@@ -1334,30 +1331,6 @@ input[type="text"].get-input-1 {
           flex-grow: 1;
   padding-right: 30px; }
 
-input[type="checkbox"].get-form-checkbox {
-  display: none; }
-  input[type="checkbox"].get-form-checkbox:checked + div {
-    background-image: url("../img/check-3.svg");
-    background-repeat: no-repeat;
-    background-position: center; }
-
-.get-form-cons-check {
-  -webkit-flex: 0 0 20px;
-      -ms-flex: 0 0 20px;
-          flex: 0 0 20px;
-  height: 20px;
-  background-color: #92ba1f;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 25px; }
-
 .w-span {
   display: block;
   width: 12px;
@@ -2096,36 +2069,6 @@ div.fancy-select div.trigger {
   height: 100%;
   width: 100%;
   object-fit: cover; }
-
-.completed-slde-dots {
-  position: absolute;
-  left: 28px;
-  bottom: 20px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .completed-slde-dots li {
-    font-size: 0;
-    padding: 0;
-    margin: 0;
-    display: block;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 10px;
-    height: 10px;
-    border: 2px solid white;
-    background: none;
-    margin-left: 6px;
-    margin-right: 6px;
-    cursor: pointer; }
-    .completed-slde-dots li:focus {
-      outline: none; }
-    .completed-slde-dots li:active {
-      outline: none;
-      background: none; }
-  .completed-slde-dots .slick-active {
-    border: 2px solid white;
-    background-color: #ffffff; }
 
 .completed-slde-link:before {
   content: "";
@@ -3175,6 +3118,38 @@ input[type="text"].measurer-input {
   .footer-3-mnu a {
     font-size: 11px; } }
 
+.main-body .services {
+  margin-bottom: 103px; }
+
+.main-body .cat-grid-w {
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  padding-top: 96px;
+  padding-bottom: 94px; }
+
+@media (max-width: 992px) {
+  .about {
+    padding: 50px 0; }
+  .fabricators {
+    padding-bottom: 50px; }
+  .fabricators-w {
+    padding-top: 50px; }
+  .get {
+    padding-bottom: 35px;
+    padding-top: 50px; }
+  .cat-grid-w {
+    padding: 50px 0 !important; }
+  .main-body .services {
+    padding-top: 50px;
+    margin-bottom: 50px; }
+  .useful-videos {
+    padding-top: 50px; }
+    .useful-videos .like-h2 {
+      margin-bottom: 0; }
+    .useful-videos .recomm-videos {
+      margin-top: 50px;
+      padding-bottom: 50px; } }
+
 .show-320,
 .show-360,
 .show-480,
@@ -3249,34 +3224,54 @@ input[type="text"].measurer-input {
   .show-320 {
     display: block; } }
 
-.main-body .services {
-  margin-bottom: 103px; }
+div.fancy-select {
+  width: 100%; }
 
-.main-body .cat-grid-w {
-  border-top: 1px solid #E2E2E2;
-  border-bottom: 1px solid #E2E2E2;
-  padding-top: 96px;
-  padding-bottom: 94px; }
+div.fancy-select div.trigger,
+div.fancy-select ul.options {
+  width: 100%;
+  min-width: auto;
+  border-radius: 0; }
 
-@media (max-width: 992px) {
-  .about {
-    padding: 50px 0; }
-  .fabricators {
-    padding-bottom: 50px; }
-  .fabricators-w {
-    padding-top: 50px; }
-  .get {
-    padding-bottom: 35px;
-    padding-top: 50px; }
-  .cat-grid-w {
-    padding: 50px 0 !important; }
-  .main-body .services {
-    padding-top: 50px;
-    margin-bottom: 50px; }
-  .useful-videos {
-    padding-top: 50px; }
-    .useful-videos .like-h2 {
-      margin-bottom: 0; }
-    .useful-videos .recomm-videos {
-      margin-top: 50px;
-      padding-bottom: 50px; } }
+div.fancy-select div.trigger {
+  background: none;
+  padding: 12px 15px; }
+
+div.fancy-select div.trigger:after {
+  right: 15px; }
+
+div.fancy-select div.trigger {
+  color: #000; }
+
+.completed-slde-dots {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .completed-slde-dots li {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    background: none;
+    margin-left: 6px;
+    margin-right: 6px;
+    cursor: pointer; }
+    .completed-slde-dots li:focus {
+      outline: none; }
+    .completed-slde-dots li:active {
+      outline: none;
+      background: none; }
+  .completed-slde-dots .slick-active {
+    border: 2px solid white;
+    background-color: #ffffff; }
+
+.nobrd {
+  border: none; }

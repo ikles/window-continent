@@ -1,3 +1,20 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
 @font-face {
   font-family: "Proxima Nova";
@@ -208,6 +225,14 @@ a, button {
     background-position: right center; 
     z-index: -1;
   }  
+}
+
+.like-h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
 }
 
 .all-link {
@@ -547,9 +572,29 @@ input[type="checkbox"].get-form-checkbox {
   }
 }
 
+.grid-row-15 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 
 
+.show-all-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0C369C;
+  border-bottom: 1px solid #0C369C;
+  padding-bottom: 3px;
+  display: inline-block;
+}
 
+
+  .swiper-button {
+    &:focus,
+    &:active,
+    &:hover {
+      outline: none;
+    }
+}
 
 
 
