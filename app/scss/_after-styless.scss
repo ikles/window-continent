@@ -57,3 +57,9 @@ div.fancy-select div.trigger {
 .nobrd {
   border: none;
 }
+
+@media (max-width: 640px) {
+  .help-call .measurer-form .btn {
+    margin-top: 0;
+  }
+}

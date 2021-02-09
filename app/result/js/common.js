@@ -22,43 +22,43 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-
-//$('.wrapper').prepend('<span class="eye-3"></span>');
-
-
-$('.eye-3').click(function (e) {
-  e.preventDefault();
-  $('body').toggleClass('active');
-});
+/*
+  $('.wrapper').prepend('<span class="eye-3"></span>');*/
 
 
-$('div.lazy').lazy();
+  $('.eye-3').click(function (e) {
+    e.preventDefault();
+    $('body').toggleClass('active');
+  });
 
 
-$('img.lazy').lazy({
-  effect: "fadeIn",
-  effectTime: 200,
-  threshold: 0,  
-});
+  $('div.lazy').lazy();
 
 
+  $('img.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 200,
+    threshold: 0,  
+  });
 
 
 
-$().fancybox({
-  selector: '.recomm-list-img-w',    
-  arrows: false,
-  infobar: false,
-  smallBtn: false,
-  toolbar: true,
-  iframe : {
-    css : {
-      width : '950px'
-    }
-  },    
-  slideClass: "myClass",
-  baseClass: "myclass"
-});
+
+
+  $().fancybox({
+    selector: '.recomm-list-img-w',    
+    arrows: false,
+    infobar: false,
+    smallBtn: false,
+    toolbar: true,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
 /*
 
 $('.completed-slder-1').slick({
@@ -321,7 +321,7 @@ new Swiper('.options-products-slider-cont', {
   //перетаскивать скролл мышью
   draggable: true
 },
-slidesPerView: 6,
+slidesPerView: 'auto',
 //перетаскивание на пк
 simulateTouch: true,
 //чувствительность свайпа
@@ -331,6 +331,18 @@ touchAngle: 45,
 navigation: {
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev'
+},
+breakpoints: {
+ 481: {
+   slidesPerView: 'auto', 
+   spaceBetween: 10,   
+ },
+
+200: {   
+   slidesPerView: 2, 
+   spaceBetween: 8,
+   loop: false,
+ },
 },
 
 });
@@ -354,7 +366,24 @@ navigation: {
   nextEl: '.swiper-button-next-2',
   prevEl: '.swiper-button-prev-2'
 },
-
+loop: true,
+breakpoints: {
+ 992: {
+   slidesPerView: 4, 
+   spaceBetween: 10,
+   loop: true,
+ },
+ 768: {
+   slidesPerView: 3, 
+   spaceBetween: 10,
+   loop: false,
+ },
+ 200: {   
+   slidesPerView: 2, 
+   spaceBetween: 3,
+   loop: false,
+ },
+},
 });
 
 
@@ -377,7 +406,24 @@ navigation: {
   nextEl: '.swiper-button-next-3',
   prevEl: '.swiper-button-prev-3'
 },
-
+loop: true,
+breakpoints: {
+ 992: {
+   slidesPerView: 4, 
+   spaceBetween: 10,
+   loop: true,
+ },
+ 768: {
+   slidesPerView: 3, 
+   spaceBetween: 10,
+   loop: false,
+ },
+ 200: {   
+   slidesPerView: 2, 
+   spaceBetween: 3,
+   loop: false,
+ },
+},
 });
 
 

@@ -305,10 +305,17 @@ body {
   font-size: 10.7px;
   position: relative; }
 
+.wrapper-main {
+  width: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto; }
+
 .wrapper-w {
   max-width: 1920px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  overflow: hidden; }
 
 .wrapper {
   overflow: hidden;
@@ -538,7 +545,14 @@ img.lazy {
     margin-bottom: 40px; }
   .like-h1 {
     margin-bottom: 30px;
-    font-size: 24px; } }
+    font-size: 24px; }
+  .bread-back {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 30px;
+    background: url("../img/arr-l-mob.svg") no-repeat left center;
+    color: #000; } }
 
 @media (max-width: 768px) {
   .contain {
@@ -591,6 +605,10 @@ img.lazy {
     .pagin.show-570 .pagin-right {
       margin-left: unset; } }
 
+@media (max-width: 480px) {
+  .like-h3 {
+    font-size: 20px; } }
+
 @media (max-width: 360px) {
   .like-h1 {
     margin-bottom: 20px; } }
@@ -630,6 +648,9 @@ input[type="checkbox"].get-form-checkbox {
 
 .get-form-cons {
   cursor: pointer; }
+
+.tabs_control_link:focus, .tabs_control_link:active, .tabs_control_link:hover {
+  outline: none; }
 
 .bread {
   color: #999999;
@@ -768,6 +789,11 @@ input[type="checkbox"].get-form-checkbox {
 .swiper-button:focus, .swiper-button:active, .swiper-button:hover {
   outline: none; }
 
+.contain-1720 {
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*********************/
 /*********************/
 /*********************/
@@ -778,7 +804,7 @@ input[type="checkbox"].get-form-checkbox {
 /*********************/
 /*********************/
 body.active {
-  background: url("../img/1920.jpg") no-repeat top 0px center; }
+  background: url("../img/1920.jpg") no-repeat top 28px center; }
   body.active .wrapper {
     opacity: 0.4; }
 

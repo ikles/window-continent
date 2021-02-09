@@ -1,14 +1,14 @@
 .get-2 {
   height: 755px;
   padding-top: 95px;
-  overflow: hidden;
+  overflow: hidden;  
   .get-txt-1 {
     margin-bottom: 59px;
   }
 }
 
 .get-img-2 {
-  left: -379px;
+  left: -399px;
   top: -95px;
   position: absolute;  
 }
@@ -96,7 +96,16 @@
   }
   .get-2 {
    .get-col-r {
-     
+
    } 
+ }  
+}
+
+@media (max-width: 480px) {
+  .get-2 .get-txt-1 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
   }  
 }

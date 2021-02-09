@@ -20,33 +20,43 @@
 <![endif]-->
 </head>
 <body class="main-body">
-  <div class="wrapper-w">
-    <div class="wrapper">          
-      @@include('var/_top.html')
-      @@include('var/_slider.html')
-      @@include('var/_about.html')
-      @@include('var/_cats.html')
-      @@include('var/_fabricators.html')      
-      @@include('var/_get-form1.html')
-      @@include('var/_services.html')
-      @@include('var/_get-form2.html')      
-      <div class="useful-videos">
-        <div class="contain">
-          <div class="useful-videos-w">            
-            <div class="like-h2">Полезные видео</div>            
-            <a href="#" class="all-link">все видео</a>      
-            @@include('var/_recomm-videos.html')            
+  <div class="wrapper-main">
+    @@include('var/_top.html')  
+    <div class="wrapper-w">
+      <div class="wrapper">
+        @@include('var/_slider.html')
+        @@include('var/_about.html')
+        @@include('var/_cats.html')    
+        @@include('var/_fabricators.html')      
+      </div><!--wrapper-->        
+    </div><!--wrapper-w-->        
+    @@include('var/_get-form1.html')
+    <div class="wrapper-w">
+      <div class="wrapper">
+        @@include('var/_services.html')
+      </div>
+    </div>
+    @@include('var/_get-form2.html')      
+    <div class="wrapper-w">
+      <div class="wrapper">
+        <div class="useful-videos">
+          <div class="contain">
+            <div class="useful-videos-w">            
+              <div class="like-h2">Полезные видео</div>            
+              <a href="#" class="all-link">все видео</a>      
+              @@include('var/_recomm-videos.html')            
+            </div>
           </div>
         </div>
-      </div>
-      @@include('var/_compare.html')
-      @@include('var/_projects.html')
-      @@include('var/_form1.html')
-      @@include('var/_recommendations.html')
-      @@include('var/_articles.html')
-      @@include('var/_footer.html')
-    </div><!--wrapper-->
-  </div><!--wrapper-w-->  
+        @@include('var/_compare.html')
+        @@include('var/_projects.html')
+        @@include('var/_form1.html')
+        @@include('var/_recommendations.html')
+        @@include('var/_articles.html')      
+      </div><!--wrapper-->
+    </div><!--wrapper-w-->  
+    @@include('var/_footer.html')
+  </div><!--wrapper-main-->
   <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>

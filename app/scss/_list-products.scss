@@ -1,9 +1,7 @@
 @import '_fancySelect.scss';
 
 .product-img-w {
-  img {
-    width: 100%;
-    height: 100%;
+  img {    
     object-fit: cover;
   }
 }
@@ -712,14 +710,7 @@ input[type="text"].product-filter-input-2 {
   .product {
     padding-bottom: 50px;
   }
-  .bread-back {
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-left: 30px;
-    background: url("../img/arr-l-mob.svg") $nr $lc;
-    color: #000;
-  }
+
 }
 @media (max-width: 768px) {
   .product-item-row {
