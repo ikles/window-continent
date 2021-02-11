@@ -100,6 +100,7 @@ a, button {
   background: #000;
 }
 
+
 .btn {  
   display: inline-flex;  
   justify-content: center;  
@@ -181,6 +182,16 @@ a, button {
 
 .btn-span {
   margin-left: 20px;
+}
+
+.btn-dwn {
+  background-image: url("../img/download.svg");
+  background-position: left 18px center;
+  padding-left: 59px;
+  background-repeat: no-repeat;
+  &:hover {
+    background-image: url("../img/download-w.svg");
+  }
 }
 
 .w100 {
@@ -647,7 +658,7 @@ input[type="checkbox"].get-form-checkbox {
 
 body {  
   &.active {
-    background: url("../img/1920.jpg") no-repeat top 28px center;
+    background: url("../img/375.jpg") no-repeat top -78px center;
     .wrapper {
       opacity: 0.4;
     } 

@@ -213,8 +213,34 @@
 }
 
 @media (max-width: 480px) {
+  .compare-table-img-w {
+    width: 16px; 
+    height: 16px;    
+            background-size: cover;
+  }  
+  .compare-table-row {     
+    margin-bottom: 12.5px;
+    border-bottom: 1px solid #f3f0e6;
+    padding-bottom: 17px;
+    &:nth-child(1) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }    
+    .compare-col {
+      padding-top: 0px;
+      padding-bottom: 0;
+      border: none;
+    }
+    .compare-col-1 {
+    padding-bottom: 3.5px;
+  }    
+    &:nth-child(2) {
+      margin-top: 5px;
+      margin-top: 20px;
+    }    
+  }
   .compare-table-item {
-    flex: 0 0 5px;
+    flex: 0 0 5.4px;
     height: 21px;
     margin-right: 2px;
   } 

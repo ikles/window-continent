@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_top.scss";
+@import "_card-top-columns";
+@import "_projects.scss";
+@import "_form2.scss";
+
+
+@import "_cat-grid-item.scss";
+
+.reynaers-aluminium-body {
+
+}
+
+.manufacturers-img-w {
+  margin-bottom: 33px;
+  margin-top: 38px;
+}
+
+.manufacturers-grid-cats {
+  margin-top: 100px;
+}
+.manufacturers-grid-items {
+  width: 100%;
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: space-between;
+  .cat-grid-item {
+    width: calc(100%/ 4 - 22.5px);
+    height: 590px;
+    margin-bottom: 30px;
+    border: none;
+  }  
+}
+
+
+@import "_footer.scss";
+@import "_hides.scss";
+@import "_after-styless.scss";

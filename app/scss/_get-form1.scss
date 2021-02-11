@@ -106,7 +106,10 @@ input[type="text"].get-input-1 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) {  
+  .get {
+    padding-bottom: 50px;
+  }  
   .get-txt-1 {
     font-size: 42px;
   }
@@ -168,9 +171,17 @@ input[type="text"].get-input-1 {
 }
 
 @media (max-width: 480px) {
-  .get-img-1 {
-    width: 356px;    
-    margin-left: 0;
+  .get-1 {
+    margin-top: 68px;
+    padding-top: 0;    
+  }
+  
+  .get-img-1 {    
+    width: 546px;    
+    margin: auto;
+    margin-top: -117px;
+    transform: translate(-50%, 0);
+    margin-left: calc(50% - 13px);
   }
   .get-form-row {
     flex-wrap: wrap;
@@ -183,7 +194,8 @@ input[type="text"].get-input-1 {
     margin-bottom: 24px;
   }
   .get-txt-1 {
-    width: 340px;
+    max-width: 360px;
+    font-weight: 400;
   }
 }
 

@@ -22,8 +22,8 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-/*
-  $('.wrapper').prepend('<span class="eye-3"></span>');*/
+
+  $('.wrapper').prepend('<span class="eye-3"></span>');
 
 
   $('.eye-3').click(function (e) {
@@ -141,15 +141,26 @@ $('.completed-items').slick({
   infinite: true,    
   slidesToShow: 1,
   speed: 500,
-  dots: false, 
+  dots: false,   
   arrows: true,    
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 24000,
-  cssEase: 'ease-out',    
+  cssEase: 'ease-out', 
+   responsive: [
+  {
+    breakpoint: 481,
+    settings: {
+      dots: true, 
+      dotsClass: 'completed-slde-dots-2',
+    }
+  },
+  ]   
 });
 /*  setTimeout(function () {
 },7000);*/
+
+
 
 
 
@@ -313,7 +324,7 @@ $('select').fancySelect();
 
 
 
-
+if ( $('.options-products-slider-cont').length ) {
 new Swiper('.options-products-slider-cont', {
 
   scrollbar: {
@@ -338,7 +349,7 @@ breakpoints: {
    spaceBetween: 10,   
  },
 
-200: {   
+ 200: {   
    slidesPerView: 2, 
    spaceBetween: 8,
    loop: false,
@@ -346,8 +357,10 @@ breakpoints: {
 },
 
 });
+}
 
 
+if ( $('.config-block-slider').length ) {
 new Swiper('.config-block-slider', {
 
   scrollbar: {
@@ -385,9 +398,9 @@ breakpoints: {
  },
 },
 });
+}
 
-
-
+if ( $('.table-compare-slider').length ) {
 new Swiper('.table-compare-slider', {
 
   scrollbar: {
@@ -425,7 +438,7 @@ breakpoints: {
  },
 },
 });
-
+}
 
 
 $('.options-products').each(function () {  
@@ -442,6 +455,19 @@ $('.options-products').each(function () {
     });
   })
 });
+
+
+
+if (window.matchMedia("(max-width: 480px)").matches) {
+  $('.completed-bot-price-link').each(function () {
+    $(this).text('Подробнее');
+  });
+} else {
+  $('.completed-bot-price-link').each(function () {
+    $(this).text('Подробнее о проекте');
+  });
+}
+
 
 
 }); //ready

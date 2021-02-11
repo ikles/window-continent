@@ -1698,7 +1698,7 @@ input[type="text"].measurer-input {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; } }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .measurer-call {
     background-image: url("../img/Man@375.jpg");
     padding-bottom: 36px; }

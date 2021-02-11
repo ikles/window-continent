@@ -196,13 +196,14 @@
         overflow: hidden;
         width: 10px;
         height: 10px;
-        border: 2px solid #0C369C;
+        border: 2px solid #F4F4F4;
         background: none;
         margin-left: 6px;
         margin-right: 6px;
         cursor: pointer;
         &.slick-active {
           background-color: #0C369C;
+          border: 2px solid #0C369C;
         }
       }
     }
@@ -286,14 +287,42 @@
     bottom: -60px;
   }
 
+  .recomm-list {
+    .slick-list {
+      margin-right: -3.75px;
+      margin-left: -3.75px;
+    }
+    .slick-slide {
+      padding: 0 3.75px;
+      > div {
+
+      }  
+    }
+
+  }
+  .recomm-list-item {
+    padding: 0;
+    width: auto;
+  }
+  .recomm-list-img-w {
+    width: auto;
+  }
+
 }
 
 @media (max-width: 570px) {
   .recomm-videos-w {        
-    margin-right: -15px;    
+    margin-right: -15px;
   }  
 }
 
+@media (max-width: 480px) {
+  .recommendations {
+    .like-h2-bg:before {
+      display: none;
+    }
+  }
+}
 @media (max-width: 374px) {
   .recomm-list-item {
     text-align: center;

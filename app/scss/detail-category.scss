@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_top.scss";
+@import "_card-top-columns";
+@import "_projects.scss";
+@import "_form2.scss";
+
+
+@import "_cat-grid-item.scss";
+
+.detail-category-body {
+ .catalog-w {
+   border-bottom: 1px solid #E2E2E2;
+   padding-bottom: 50px;     
+ }
+ .catalog {
+   margin-bottom: 100px;
+ }
+ .catalog-txt-2 {
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-size: 14px;
+ }
+}//
+
+.intresting {
+  padding-bottom: 100px;
+}
+.intresting-items {
+  display: flex;  
+  justify-content: space-between;
+  margin-top: 100px;  
+}
+.intresting-item {
+  width: calc(100% / 3 - 20px);
+  height: 370px;
+  border: none;
+}
+
+
+.detail-category-butt-w {
+  margin-top: 16px;
+}
+
+.compare-cat-img-w {
+  margin-left: 17px;
+  background: url('../img/question.svg') no-repeat center;
+  width: 23px;
+  height: 23px;
+}
+
+.compare-cat-txt {
+  font-size: 18px;
+  text-align: left;
+  color: #111111;
+}
+
+.compare-category {
+  margin-bottom: 100px;
+}
+.compare-category-table-w {
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 100px;  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  tr {
+    display: flex;
+    &:nth-child(1) {
+      td {
+        border-top: none;
+        border-left: none;
+        border-right: none;        
+        justify-content: center;
+        padding-right: 0;
+      }
+    }
+  }
+  td {
+    border: 1px solid #F3F0E6;
+    border-collapse: collapse;
+    display: flex;    
+    align-items: center;
+    width: calc(100% / 4);
+    padding: 18px 0 20px 0;    
+    justify-content: flex-end;
+    padding-right: 22px;
+    font-size: 18px;
+    color: #999;
+    a {
+      color: #0C369C;
+    }
+    img {
+      width: 140px;
+      height: auto;
+    }
+    img.country-icon {
+     margin-right: 10px; 
+     width: 24px;
+     height: 24px;
+   }
+   &:nth-child(1) {
+    width: 370px;
+    flex: none;
+    text-align: left;
+    border-left: none;
+  }    
+}
+}
+
+
+@import "_footer.scss";
+@import "_hides.scss";
+@import "_after-styless.scss";
