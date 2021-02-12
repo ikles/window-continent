@@ -307,8 +307,8 @@ input[type="text"].top-1-input {
 @media (max-width: 1199px) {
   .top-close-w {
     -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-        justify-content: flex-end; } }
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
 
 .top-mnu-2 {
   display: -webkit-flex;
@@ -382,7 +382,7 @@ input[type="text"].top-1-input {
   .top-mnu-2 > li > a {
     padding: 0 10px; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .top-1-contacts {
     display: none; }
   .top-compare {
@@ -467,8 +467,13 @@ input[type="text"].top-1-input {
   .top-1-logo {
     margin-right: auto; } }
 
-@media (max-width: 320px) {
-  /**/ }
+@media (max-width: 359px) {
+  .top-1-social {
+    margin-left: 5px; }
+  .top-1-form {
+    margin-left: 16px; }
+  .col-mnu {
+    margin-left: 16px; } }
 
 .product-item {
   width: 270px;

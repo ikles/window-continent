@@ -55,3 +55,32 @@
   background-color: #0C369C;
   background-image: url('../img/arr-link-r-w.svg');
 }
+
+@media (max-width: 992px) {
+  .cat-grid-txt {
+    font-size: 10px;
+  }
+  .cat-grid-item img {
+    max-width: 80%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .cat-grid-item {
+    width: calc(50%);
+    height: 245px;
+    border: 4px solid #fff;
+  }
+
+  .cat-grid-arr {
+    background-size: 12px;
+  }
+
+  .cat-grid-item img {
+    max-height: 142px;
+    width: auto;
+    max-width: 100%;
+  }
+}

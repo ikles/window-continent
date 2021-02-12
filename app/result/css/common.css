@@ -802,6 +802,47 @@ input[type="checkbox"].get-form-checkbox {
   margin-left: auto;
   margin-right: auto; }
 
+.swiper-button-2 {
+  top: 50%;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  background-image: url("../img/arrow-l-gray.svg");
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .swiper-button-2:hover {
+    background-color: #0C369C;
+    background-image: url("../img/arrow-l.svg");
+    border-color: #0C369C; }
+  .swiper-button-2:hover, .swiper-button-2:focus, .swiper-button-2:active {
+    outline: none; }
+  .swiper-button-2:after {
+    display: none; }
+
+.swiper-button-next {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.swiper-scrollbar {
+  background: #f4f4f4;
+  height: 4px;
+  display: block;
+  width: 100%; }
+
+.roller-w {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+
+.swiper-scrollbar-drag {
+  background: #92ba1f;
+  width: 196px;
+  height: 4px; }
+
 /*********************/
 /*********************/
 /*********************/
@@ -812,7 +853,7 @@ input[type="checkbox"].get-form-checkbox {
 /*********************/
 /*********************/
 body.active {
-  background: url("../img/375.jpg") no-repeat top -78px center; }
+  background: url("../img/1920.jpg") no-repeat top 0px center; }
   body.active .wrapper {
     opacity: 0.4; }
 

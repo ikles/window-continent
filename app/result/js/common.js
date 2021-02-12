@@ -147,7 +147,7 @@ $('.completed-items').slick({
   autoplay: false,
   autoplaySpeed: 24000,
   cssEase: 'ease-out', 
-   responsive: [
+  responsive: [
   {
     breakpoint: 481,
     settings: {
@@ -319,18 +319,24 @@ $('.overlay').click(function () {
 
 fancySlick('.catalog-slider .catalog-slider-item-img-w', '.catalog-slider', '.catalog-slider .catalog-slider-item', true);
 
-$('select').fancySelect();
+if ($('select').length) {
+  if($.fn.fancySelect){
+   $('select').fancySelect();   
+ }  
+}
+
+
 
 
 
 
 if ( $('.options-products-slider-cont').length ) {
-new Swiper('.options-products-slider-cont', {
+  new Swiper('.options-products-slider-cont', {
 
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  //перетаскивать скролл мышью
-  draggable: true
+    scrollbar: {
+      el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+draggable: true
 },
 slidesPerView: 'auto',
 //перетаскивание на пк
@@ -344,16 +350,16 @@ navigation: {
   prevEl: '.swiper-button-prev'
 },
 breakpoints: {
- 481: {
-   slidesPerView: 'auto', 
-   spaceBetween: 10,   
- },
+  481: {
+    slidesPerView: 'auto', 
+    spaceBetween: 10,   
+  },
 
- 200: {   
-   slidesPerView: 2, 
-   spaceBetween: 8,
-   loop: false,
- },
+  200: {   
+    slidesPerView: 2, 
+    spaceBetween: 8,
+    loop: false,
+  },
 },
 
 });
@@ -361,12 +367,12 @@ breakpoints: {
 
 
 if ( $('.config-block-slider').length ) {
-new Swiper('.config-block-slider', {
+  new Swiper('.config-block-slider', {
 
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  //перетаскивать скролл мышью
-  draggable: true
+    scrollbar: {
+      el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+draggable: true
 },
 slidesPerView: 'auto',
 //перетаскивание на пк
@@ -381,32 +387,32 @@ navigation: {
 },
 loop: true,
 breakpoints: {
- 992: {
-   slidesPerView: 4, 
-   spaceBetween: 10,
-   loop: true,
- },
- 768: {
-   slidesPerView: 3, 
-   spaceBetween: 10,
-   loop: false,
- },
- 200: {   
-   slidesPerView: 2, 
-   spaceBetween: 3,
-   loop: false,
- },
+  992: {
+    slidesPerView: 4, 
+    spaceBetween: 10,
+    loop: true,
+  },
+  768: {
+    slidesPerView: 3, 
+    spaceBetween: 10,
+    loop: false,
+  },
+  200: {   
+    slidesPerView: 2, 
+    spaceBetween: 3,
+    loop: false,
+  },
 },
 });
 }
 
 if ( $('.table-compare-slider').length ) {
-new Swiper('.table-compare-slider', {
+  new Swiper('.table-compare-slider', {
 
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  //перетаскивать скролл мышью
-  draggable: true
+    scrollbar: {
+      el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+draggable: true
 },
 slidesPerView: 'auto',
 //перетаскивание на пк
@@ -421,25 +427,80 @@ navigation: {
 },
 loop: true,
 breakpoints: {
- 992: {
-   slidesPerView: 4, 
-   spaceBetween: 10,
-   loop: true,
- },
- 768: {
-   slidesPerView: 3, 
-   spaceBetween: 10,
-   loop: false,
- },
- 200: {   
-   slidesPerView: 2, 
-   spaceBetween: 3,
-   loop: false,
- },
+  992: {
+    slidesPerView: 4, 
+    spaceBetween: 10,
+    loop: true,
+  },
+  768: {
+    slidesPerView: 3, 
+    spaceBetween: 10,
+    loop: false,
+  },
+  200: {   
+    slidesPerView: 2, 
+    spaceBetween: 3,
+    loop: false,
+  },
 },
 });
 }
 
+
+if ( $('.opening-items').length ) {
+  new Swiper('.opening-items', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+draggable: true
+},
+slidesPerView: 'auto',
+//перетаскивание на пк
+simulateTouch: true,
+//чувствительность свайпа
+touchRatio: 2,
+//угол срабатывания свайпа
+touchAngle: 45,
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev'
+},
+loop: true,
+breakpoints: {
+  1340: {
+    slidesPerView: 6, 
+    spaceBetween: 10,   
+    loop: true,
+  },
+  1200: {
+    slidesPerView: 6, 
+    spaceBetween: 10,   
+    loop: false,
+  },
+  992: {
+    slidesPerView: 4, 
+    spaceBetween: 10,      
+    loop: false,
+  },
+  768: {
+    slidesPerView: 3, 
+    spaceBetween: 10,      
+    loop: false,
+  },
+  375: {   
+    slidesPerView: 2, 
+    spaceBetween: 3,   
+    loop: false,
+  },
+  360: {   
+    slidesPerView: 1, 
+    spaceBetween: 3,
+    loop: false,
+  },
+},
+});
+}
 
 $('.options-products').each(function () {  
   let link = $(this).find('.options-products-top');
