@@ -2214,7 +2214,10 @@ input[type="text"].get-input-1 {
 .get-2 {
   height: 755px;
   padding-top: 95px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transform: translate(20px, 0);
+      -ms-transform: translate(20px, 0);
+          transform: translate(20px, 0); }
   .get-2 .get-txt-1 {
     margin-bottom: 59px; }
 

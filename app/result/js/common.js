@@ -321,13 +321,9 @@ fancySlick('.catalog-slider .catalog-slider-item-img-w', '.catalog-slider', '.ca
 
 if ($('select').length) {
   if($.fn.fancySelect){
-   $('select').fancySelect();   
- }  
+    $('select').fancySelect();   
+  }  
 }
-
-
-
-
 
 
 if ( $('.options-products-slider-cont').length ) {
@@ -498,9 +494,65 @@ breakpoints: {
     spaceBetween: 3,
     loop: false,
   },
+  280: {   
+    slidesPerView: 1, 
+    spaceBetween: 3,
+    loop: false,
+  },
 },
 });
 }
+
+
+
+if ( $('.prof-sist-row-w').length ) {
+  new Swiper('.prof-sist-row-w', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+draggable: true
+},
+slidesPerView: 'auto',
+//перетаскивание на пк
+simulateTouch: true,
+//чувствительность свайпа
+touchRatio: 2,
+//угол срабатывания свайпа
+touchAngle: 45,
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev'
+},
+loop: true,
+breakpoints: {  
+ 1200: {
+    slidesPerView: 4, 
+    spaceBetween: 40,
+    loop: true,    
+  },
+  992: {
+    slidesPerView: 3, 
+    spaceBetween: 10,      
+    loop: false,
+  },
+ 480: {   
+    slidesPerView: 2, 
+    spaceBetween: 3,   
+    loop: false,
+  },  
+  200: {   
+    slidesPerView: 1, 
+    spaceBetween: 3,
+    loop: false,
+  },
+},
+});
+}
+
+
+
+
 
 $('.options-products').each(function () {  
   let link = $(this).find('.options-products-top');
@@ -529,6 +581,34 @@ if (window.matchMedia("(max-width: 480px)").matches) {
   });
 }
 
+
+if ( $(".compare-category-table-w").length ) {
+  if( $(window).width() < 993 ) {
+    $(".compare-category-table-w").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0
+    });    
+  }
+
+  $(window).resize(function() {
+    if( $(window).width() < 993 ) {
+      $(".compare-category-table-w").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-3",
+        mouseWheel: 0
+      });    
+
+    }
+  });
+
+
+  $(window).resize(function() {
+    if( $(window).width() > 992 ) {
+      $(".compare-category-table-w").mCustomScrollbar("destroy");
+    }
+  });
+}
 
 
 }); //ready

@@ -843,6 +843,23 @@ input[type="checkbox"].get-form-checkbox {
   width: 196px;
   height: 4px; }
 
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #F4F4F4;
+  height: 4px; }
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #92BA1F !important;
+  height: 4px; }
+
+.catalog-w-right {
+  padding-left: calc(100% - 1440px); }
+
+@media (min-width: 1721px) {
+  .contain-right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; } }
+
 /*********************/
 /*********************/
 /*********************/
