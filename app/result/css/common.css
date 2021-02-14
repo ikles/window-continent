@@ -854,6 +854,12 @@ input[type="checkbox"].get-form-checkbox {
 .catalog-w-right {
   padding-left: calc(100% - 1440px); }
 
+.bread-reverse li a {
+  color: #fff; }
+
+.bread-reverse li span {
+  color: #92BA1F; }
+
 @media (min-width: 1721px) {
   .contain-right {
     margin-left: auto;

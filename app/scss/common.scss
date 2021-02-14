@@ -713,6 +713,17 @@ input[type="checkbox"].get-form-checkbox {
   }  
 }
 
+.bread-reverse {
+  li {
+    a {
+      color: #fff;
+    }
+    span {
+      color: #92BA1F;
+    }
+  }
+}
+
 @media (min-width: 1721px) {
   .contain-right {
     margin-left: auto;

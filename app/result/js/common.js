@@ -551,6 +551,50 @@ breakpoints: {
 }
 
 
+if ( $('.awards-row-w').length ) {
+  new Swiper('.awards-row-w', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+draggable: true
+},
+slidesPerView: 'auto',
+//перетаскивание на пк
+simulateTouch: true,
+//чувствительность свайпа
+touchRatio: 2,
+//угол срабатывания свайпа
+touchAngle: 45,
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev'
+},
+loop: true,
+breakpoints: {  
+ 1200: {
+    slidesPerView: 4, 
+    spaceBetween: 30,
+    loop: true,    
+  },
+  992: {
+    slidesPerView: 3, 
+    spaceBetween: 10,      
+    loop: false,
+  },
+ 480: {   
+    slidesPerView: 2, 
+    spaceBetween: 3,   
+    loop: false,
+  },  
+  200: {   
+    slidesPerView: 1, 
+    spaceBetween: 3,
+    loop: false,
+  },
+},
+});
+}
 
 
 
