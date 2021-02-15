@@ -860,6 +860,9 @@ input[type="checkbox"].get-form-checkbox {
 .bread-reverse li span {
   color: #92BA1F; }
 
+.bread-reverse a.bread-back {
+  background-image: url("../img/arr-l-mob-w.svg"); }
+
 @media (min-width: 1721px) {
   .contain-right {
     margin-left: auto;
@@ -878,6 +881,8 @@ input[type="checkbox"].get-form-checkbox {
 body.active {
   background: url("../img/1920.jpg") no-repeat top 0px center; }
   body.active .wrapper {
+    opacity: 0.4; }
+  body.active .footer {
     opacity: 0.4; }
 
 .eye-3 {

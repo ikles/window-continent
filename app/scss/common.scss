@@ -722,6 +722,9 @@ input[type="checkbox"].get-form-checkbox {
       color: #92BA1F;
     }
   }
+a.bread-back {
+  background-image: url("../img/arr-l-mob-w.svg");
+}  
 }
 
 @media (min-width: 1721px) {
@@ -750,6 +753,9 @@ body {
     .wrapper {
       opacity: 0.4;
     } 
+    .footer {
+      opacity: 0.4;
+    }
   }    
 
 

@@ -87,10 +87,13 @@ $font2: 'Ubuntu', sans-serif;
   display: flex;  
   justify-content: center;  
   align-items: center;
+  border-bottom: 1px solid #f4f4f4;
+  overflow: hidden;
   img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
+    max-height: 90%;
   }
   &:after {
     content: "";
@@ -120,7 +123,7 @@ $font2: 'Ubuntu', sans-serif;
 .prof-sist {  
   .swiper-button-2 {
     top: calc(50% + 58px);     
- }
+  }
 }
 
 
@@ -131,7 +134,7 @@ $font2: 'Ubuntu', sans-serif;
   .discribe-project-body .catalog-slider-w, .discribe-project-body .catalog-slider-item {
     max-width: 500px;
   }
-  
+
 }
 @media (max-width: 1520px) {
   .prof-sist {  
@@ -155,6 +158,117 @@ $font2: 'Ubuntu', sans-serif;
     display: block;
   }
 }
+
+@media (max-width: 1199px) {
+  .get-img-3 {
+    width: 700px;
+    right: 0;
+    top: 240px;
+  }
+  .prof-sist-img-link img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .prof-sist-row {
+    margin-top: 20px;
+  }
+  .prof-sist {
+    padding: 50px 0;
+  }
+  .get-3 {
+    padding-top: 50px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .get-img-3 {
+    right: -150px;
+    top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-3 {
+    .get-col-l {
+      width: 350px;
+    }
+    .get-txt-1 {
+      margin-bottom: 30px;
+    }
+    .get-txt-2 {
+      margin-bottom: 20px;
+    }
+  }
+  .get-img-3 {
+    right: -200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .get-img-3 {
+    right: -400px;
+    top: 213px;  
+  }
+}
+
+@media (max-width: 570px) {
+  .get-3 {
+    .get-col-l {
+      width: 100%;
+    }
+    .get-col-r {
+      margin-right: 0;
+      display: flex;      
+      flex-direction: column;
+    }    
+    .get-txt-1.show-570 {
+      order: 1; 
+    }
+  } 
+  .get-img-3 {
+    position: static;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    order: 0;
+    max-width: 120%;
+    margin-bottom: 30px;
+  }
+  .discribe-project-body .catalog-col-2 {
+    width: 100%;
+  }
+  .detail-category-butt-w {
+    width: 100%;
+    .btn {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding-right: 10px;
+      padding-left: 43px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .prof-sist-img-link {
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: auto;
+      height: 90%;
+      max-width: 80%;
+    }
+  }
+  .discribe-project-body {
+    .catalog-slider-w img {
+      max-width: 100%;
+      height: 100%;
+    } 
+  }
+  .discribe-project-body .catalog-slider-w, .discribe-project-body .catalog-slider-item {
+    height: 325px;
+  }
+}
+
+
 
 @import "_footer.scss";
 @import "_hides.scss";

@@ -23,7 +23,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('.wrapper').prepend('<span class="eye-3"></span>');
+  /*$('.wrapper').prepend('<span class="eye-3"></span>');*/
 
 
   $('.eye-3').click(function (e) {
@@ -581,14 +581,9 @@ breakpoints: {
     slidesPerView: 3, 
     spaceBetween: 10,      
     loop: false,
-  },
- 480: {   
-    slidesPerView: 2, 
-    spaceBetween: 3,   
-    loop: false,
-  },  
+  }, 
   200: {   
-    slidesPerView: 1, 
+    slidesPerView: 2, 
     spaceBetween: 3,
     loop: false,
   },
