@@ -1224,6 +1224,12 @@ input[type="text"].top-1-input {
   .card-img-w img {
     width: 520px;
     top: -11px;
+    right: -60px; }
+  .card {
+    padding: 100px 0; }
+  .card-img-w img {
+    width: 520px;
+    top: -11px;
     right: -60px; } }
 
 @media (max-width: 992px) {

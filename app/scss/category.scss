@@ -1,0 +1,72 @@
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_top.scss";
+@import "_card-top-columns";
+@import "_cat-grid-item.scss";
+@import "_grid.scss";
+@import "_cats.scss";
+@import "_fabricators.scss";
+@import "_get-form1.scss";
+
+.category-body {
+  .fabricators {
+    margin-top: 110px;
+  }
+  .get-1 {
+    margin-bottom: 176px;
+  }
+  .catalog-txt-2 {
+    text-transform: uppercase;
+  }
+  .catalog-w {
+    margin-bottom: 100px;
+  }
+  .catalog-slider-w {
+    margin-bottom: 0;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .catalog-slider-w,
+  .catalog-slider-item {
+    height: 290px;
+  }
+  .catalog-txt-3 {
+ 
+    p {
+ 
+    }
+  }
+  .catalog {
+ 
+  }
+  .catalog-txt-2 {
+ 
+  }
+}//
+
+
+@media (max-width: 480px) {
+  /**/
+}//480
+
+
+@import "_footer.scss";
+@import "_hides.scss";
+@import "_after-styless.scss";
