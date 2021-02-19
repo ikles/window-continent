@@ -499,6 +499,7 @@ input[type="checkbox"].get-form-checkbox {
       height: 1px;
       background: #F4F4F4;
       margin-left: 10px;
+      margin-top: -1px;
     }
     &:last-child {
       &:after {
@@ -764,7 +765,13 @@ a.td-more {
 }  
 }
 
-
+.bread-w-poa {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
 
 @media (min-width: 1721px) {
   .contain-right {

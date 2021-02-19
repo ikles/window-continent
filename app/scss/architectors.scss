@@ -1,0 +1,131 @@
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_top.scss";
+@import "_slider.scss";
+@import "_about.scss";
+@import "_grid.scss";
+@import "_cats.scss";
+@import "_about-page.scss";
+@import "_fabricators.scss";
+@import "_get-form1.scss";
+@import "_get-form2.scss";
+@import "_get-form3.scss";
+@import "_services.scss";
+
+
+
+
+@import "_compare.scss";
+@import "_projects.scss";
+@import "_form1.scss";
+@import "_recommendations.scss";
+@import "_articles.scss";
+@import "_footer.scss";
+
+
+.architectors-body {
+  .banner-txt {
+    max-width: 867px;
+  }
+}
+
+
+.excellence {
+  margin-bottom: 408px;
+}
+
+.contain {
+}
+
+.excellence-row {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.excellence-col-1 {
+  position: relative;
+  width: 50%;
+  height: 615px;
+}
+
+.excellence-img-1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.excellence-col-2 {
+  width: 50%;
+  margin-left: 131px;
+  display: flex;
+  align-items: center;
+}
+
+.excellence-col-2-w {
+}
+
+.excellence-numb-w {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.excellence-numb {
+  font-weight: 250;
+  font-size: 96px;
+  color: rgb(244, 244, 244);
+  text-align: right;
+  width: 114px;
+  height: 117px;
+}
+
+.excellence-txt-w {
+}
+
+.excellence-txt-1 {
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.excellence-txt-2 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(17, 17, 17);
+}
+
+.excellence-col-3 {
+  width: 50%;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.excellence-img-2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+} 
+
+@media (max-width : 1199px) {
+  /**/
+} 
+
+@import "_hides.scss";
+@import "_after-styless.scss";

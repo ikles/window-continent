@@ -129,6 +129,52 @@
   margin-top: 5px;
 }
 
+.slider-2 {
+  .slider-cont {
+    bottom: 273px;
+    top: auto;    
+  }
+  .slider-txt-1 {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  .slick-arrow {
+    transform: translate(0, -50%);
+  }  
+  .slick-next {
+    transform: translate(0, -50%) rotate(180deg);
+  }
+  .slider-dots-2 { 
+    position: absolute;
+    right: 275px;
+    top: 50px;
+    z-index: 5;     
+    display: flex;
+    li {
+      width: 10px;
+      height: 10px;
+      flex: none;
+      display: block;      
+      border-radius: 50%;
+      background: none;
+      border: 2px solid #fff;
+      margin-right: 8px;
+      &.slick-active {
+        background-color: #FFF;
+      }
+      button {
+        flex: none;
+        border: none;
+        background: none;
+        font-size: 0;        
+        outline-style: none;
+        display: flex;
+      }
+    }
+  }  
+}
+
+
 @media (max-width : 1720px) {
   .slider-cont {
     top: 200px;

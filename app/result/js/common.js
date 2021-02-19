@@ -193,9 +193,9 @@ if($('.recomm-list').length) {
 }
 
 
-if( $('.slider').length) {
+if( $('.slider-1').length) {
 
-  $('.slider').slick({            
+  $('.slider-1').slick({            
     infinite: true,    
     slidesToShow: 1,
     speed: 500,
@@ -210,6 +210,21 @@ if( $('.slider').length) {
       `;    
     },
     dotsClass: 'slider-dots',
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out',    
+  });
+}
+
+if( $('.slider-2').length) {
+
+  $('.slider-2').slick({            
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,
+    dots: true,
+    dotsClass: 'slider-dots-2',
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 24000,

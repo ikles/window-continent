@@ -1196,6 +1196,13 @@ input[type="text"].top-1-input {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.continent-about-title {
+  font-size: 24px;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-transform: uppercase; }
+
 @media (max-width: 1520px) {
   .awards .swiper-button-next {
     right: -75px; }

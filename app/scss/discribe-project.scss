@@ -17,6 +17,7 @@ $font2: 'Ubuntu', sans-serif;
 @import "_top.scss";
 @import "_card-top-columns.scss";
 @import "_get-form1.scss";
+@import "_get-form2.scss";
 @import "_get-form3.scss";
 
 .discribe-project-body {
@@ -36,10 +37,15 @@ $font2: 'Ubuntu', sans-serif;
   .catalog-w {
     padding-bottom: 50px;
   }
+
+  .catalog {
+    margin-top: 71px;
+  }
   .like-h1 {
     font-size: 36px;
     color: #111;
     margin-bottom: 50px;
+    max-width: 400px;
   }
   .catalog-txt-3 {
     color: #999;
@@ -52,6 +58,7 @@ $font2: 'Ubuntu', sans-serif;
   .swiper-button-prev {
     left: -175px;
   }
+
 }
 
 .prof-sist-row-wrap {
@@ -160,11 +167,7 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 1199px) {
-  .get-img-3 {
-    width: 700px;
-    right: 0;
-    top: 240px;
-  }
+
   .prof-sist-img-link img {
     max-width: 80%;
     height: auto;
@@ -177,63 +180,15 @@ $font2: 'Ubuntu', sans-serif;
   .prof-sist {
     padding: 50px 0;
   }
-  .get-3 {
-    padding-top: 50px;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .get-img-3 {
-    right: -150px;
-    top: 200px;
-  }
+
 }
 
-@media (max-width: 768px) {
-  .get-3 {
-    .get-col-l {
-      width: 350px;
-    }
-    .get-txt-1 {
-      margin-bottom: 30px;
-    }
-    .get-txt-2 {
-      margin-bottom: 20px;
-    }
-  }
-  .get-img-3 {
-    right: -200px;
-  }
-}
 
-@media (max-width: 640px) {
-  .get-img-3 {
-    right: -400px;
-    top: 213px;  
-  }
-}
+
+
 
 @media (max-width: 570px) {
-  .get-3 {
-    .get-col-l {
-      width: 100%;
-    }
-    .get-col-r {
-      margin-right: 0;
-      display: flex;      
-      flex-direction: column;
-    }    
-    .get-txt-1.show-570 {
-      order: 1; 
-    }
-  } 
-  .get-img-3 {
-    position: static;
-    margin-left: 50%;
-    transform: translate(-50%, 0);
-    order: 0;
-    max-width: 120%;
-    margin-bottom: 30px;
-  }
+
   .discribe-project-body .catalog-col-2 {
     width: 100%;
   }
