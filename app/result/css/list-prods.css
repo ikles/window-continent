@@ -1670,6 +1670,43 @@ input[type="text"].measurer-input {
   input[type="text"].measurer-input::placeholder {
     color: #FFF; }
 
+.measurer-call-2 {
+  background-image: url("../img/diller.jpg"); }
+  .measurer-call-2 .measurer-texts {
+    margin-left: auto; }
+  .measurer-call-2 .measurer-form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    max-width: 500px; }
+    .measurer-call-2 .measurer-form .btn {
+      min-width: auto;
+      padding: 0 21px; }
+  .measurer-call-2 input[type="text"].measurer-input {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 100%;
+    margin-bottom: 10px; }
+  .measurer-call-2 .measurer-txt-1 {
+    margin-bottom: 56px; }
+  .measurer-call-2 .get-form-row {
+    width: 100%;
+    margin-top: 38px; }
+  .measurer-call-2 .get-form-cons-txt {
+    color: #FFF; }
+  .measurer-call-2 .get-form-cons-link {
+    color: #92BA1F; }
+
+@media (min-width: 1200px) {
+  .measurer-call-2 {
+    padding-top: 177px;
+    padding-bottom: 139px; }
+    .measurer-call-2 .measurer-texts {
+      max-width: 577px; }
+    .measurer-call-2 .measurer-form {
+      margin-top: 0; } }
+
 @media (max-width: 1199px) {
   .measurer-call {
     background-position: right -340px top; } }

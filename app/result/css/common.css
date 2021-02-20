@@ -918,7 +918,7 @@ a.td-more {
 /*********************/
 /*********************/
 body.active {
-  background: url("../img/1920.jpg") no-repeat top 0px center; }
+  background: url("../img/1920.jpg") no-repeat top -5996px center; }
   body.active .wrapper {
     opacity: 0.4; }
   body.active .footer {

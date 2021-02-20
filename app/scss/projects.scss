@@ -1,0 +1,143 @@
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_top.scss";
+@import "_projects.scss";
+@import "_footer.scss";
+
+
+.projects {
+}
+
+
+
+.projects-w {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-heading {
+  margin-bottom: 62px;
+}
+.contain {
+
+}
+.projects-heading-w {
+  display: flex;  
+  justify-content: space-between;
+  .like-h2 {
+    margin-bottom: 0;
+  }
+}
+.projects-filter-reset {
+  width: 270px;
+  height: 48px;
+  background: #F4F4F4;
+  display: inline-flex;  
+  align-items: center;  
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.projects-item {
+  width: 370px;
+  border-bottom: 1px solid rgb(244, 244, 244);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+
+.projects-img-w {
+  width: 100%;
+  display: block;
+  position: relative;  
+  &:before {
+    display: block;
+    content: "";
+    background-image: url("../img/open-3.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background-position: center;
+  }
+}
+
+.projects-img-slider {
+  overflow: hidden;
+  height: 370px;
+  margin-bottom: 24px;
+}
+
+.projects-more-btn-w {
+  width: 100%;
+  margin-top: -5px;
+  .projects-btn-more {
+    width: 100%;
+  } 
+}
+
+
+.projects-texts {
+}
+
+.projects-link-txt {
+  font-size: 24px;
+  line-height: 1.2;
+  color: rgb(17, 17, 17);
+  display: block;
+  margin-bottom: 24px;
+}
+
+.projects-txt-w {
+}
+
+.projects-txt-1 {
+  font-size: 13px;
+  color: rgb(146, 186, 31);
+  margin-bottom: 10px;
+}
+
+.projects-txt-2 {
+  font-size: 24px;
+  color: rgb(17, 17, 17);
+  display: flex;
+}
+
+.projects-txt-span {
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(153, 153, 153);
+  margin-left: 5px;
+}
+
+
+.projects-body {
+
+}
+
+
+@media (max-width : 1199px) {
+  /**/
+} 
+
+@import "_hides.scss";
+@import "_after-styless.scss";

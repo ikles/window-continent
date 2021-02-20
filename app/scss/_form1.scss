@@ -58,6 +58,55 @@ input[type="text"].measurer-input {
    color: #FFF; 
  }
 }
+
+
+.measurer-call-2 {
+  background-image: url("../img/diller.jpg");  
+  .measurer-texts {
+    margin-left: auto;
+  }
+  .measurer-form {   
+    flex-wrap: wrap; 
+    max-width: 500px;
+    .btn {
+      min-width: auto;
+      padding: 0 21px;
+    }
+  }
+  input[type="text"].measurer-input {
+    flex: 1 1 auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .measurer-txt-1 {
+    margin-bottom: 56px;
+  }
+  .get-form-row {
+    width: 100%;
+    margin-top: 38px;
+  }
+  .get-form-cons-txt {
+    color: #FFF;
+  }
+  .get-form-cons-link {
+    color: #92BA1F;  
+  }
+  .get-form-cons {    
+  }
+}
+
+@media (min-width: 1200px) {
+  .measurer-call-2 {
+   padding-top: 177px; 
+   padding-bottom: 139px;
+   .measurer-texts {
+     max-width: 577px;
+   }
+   .measurer-form {
+     margin-top: 0;
+   }
+  }//    
+}//1200
 @media (max-width: 1199px) {
   .measurer-call {
     background-position: right -340px top;
