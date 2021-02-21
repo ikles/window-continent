@@ -201,9 +201,12 @@ $font2: 'Ubuntu', sans-serif;
   background-image: url("../img/coop-bg.jpg");
   background-repeat: no-repeat;
   background-position: left top;
-  padding-top: 100px;
+  padding-top: 104px;
   padding-bottom: 100px;  
   position: relative;
+  margin-top: 101px;
+  margin-bottom: 70px;  
+  background-size: cover;
   &:before {
     display: block;
     content: ""; 
@@ -231,7 +234,7 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .cooper-row {
-  margin-top: 104px;
+  margin-top: 111px;
   margin-bottom: 90px;
   display: flex;
 }
@@ -259,6 +262,7 @@ $font2: 'Ubuntu', sans-serif;
 
 .cooper-img-w {
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .cooper-txt-22 {
@@ -302,17 +306,22 @@ $font2: 'Ubuntu', sans-serif;
   background-repeat: no-repeat;
   background-position: left top;
   padding-top: 88px;
-  padding-bottom: 88px;
-  margin-bottom: 322px;
+  padding-bottom: 88px;  
+  margin-top: 100px;
 }
 
 .map-w {
-  max-width: 442px;
+  max-width: 442px;  
 }
+
+.map-wrap {
+  margin-bottom: 110px;
+}
+
 
 .map-input-w {
   background: rgb(146, 186, 31);
-  width: 442px;
+  width: 100%;
   height: 81px;
   display: flex;
   flex-direction: column;
@@ -402,7 +411,33 @@ input[type="text"].map-input-text {
 
 
 
+.map-chice-auto {
+  overflow: auto;
+  height: 440px;
+  
+  .mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #F4F4F4;
+    width: 3px;    
+    border-radius: 90px;
+  }
 
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #92BA1F !important;
+    width: 3px;
+    border-radius: 90px;
+  }
+  .mCSB_inside>.mCSB_container {
+    margin-right: 0;
+  }
+  .mCSB_scrollTools {
+    right: 14px;
+    top: 20px;
+  }
+}
+
+.map-chice-inner {
+  height: auto;
+}
 
 
 
@@ -412,11 +447,41 @@ input[type="text"].map-input-text {
   }
   .why {
     margin-top: 0;
-  }
+  }  
 }
 
 @media (min-width : 1200px) {
-  /**/
+  .diler-body {
+    .continent-about-txt {
+      p {
+        margin-bottom: 32px;
+      }
+    }
+    .continent-about {
+      margin-bottom: 80px;
+    }
+    .excellence-w {
+      margin-top: 89px;
+    }
+    .excellence-row {
+      margin-bottom: 118px;
+    }
+    .excellence-row-2 {
+      margin-bottom: 97px;
+    }
+    .excellence-row-3 {
+      margin-bottom: 0;
+    }
+    .why-w {
+      margin-top: 111px;
+    }
+    .why {
+      margin-bottom: 101px;
+    }
+    .measurer-call-2 {
+      margin-bottom: 120px;
+    }
+  }//
 }//1200
 
 @media (max-width : 1199px) {  
@@ -449,6 +514,13 @@ input[type="text"].map-input-text {
   .excellence-col-top {
     padding-top: 60px !important;
   }
+  .diler-body {
+    .excellence-col-top {
+      padding-top: 0 !important;
+    }  
+  }
+
+
 } 
 
 @media (max-width : 992px) {
@@ -519,6 +591,13 @@ input[type="text"].map-input-text {
   .excellence-w {
     margin-top: 50px;
   }  
+  .map {
+    margin-top: 50px;
+  }
+  .cooper-info-1,
+  .cooper-info-2 {
+    height: 510px;
+  }
 }
 
 @media (max-width : 768px) {
@@ -530,8 +609,44 @@ input[type="text"].map-input-text {
   .excellence-numb {
     font-size: 51px;
   }
+  .measurer-call-2 .measurer-form {
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .diler-body {
+    .why-item {
+      width: 100% !important;
+    }
+  }
+  .map-wrap {
+    margin-bottom: 50px;
+  }
+  .cooper-row {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .cooper {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
+@media (max-width : 768px) {
+  .cooper-row {    
+            flex-wrap: wrap;
+  }
+  .cooper-col-1 {
+    width: 100%;
+  }
+  .cooper-info-1, .cooper-info-2 {
+    height: auto;
+  }
+  .cooper-txt-1 {
+    font-size: 34px;
+  }
+}
 @media (max-width : 480px) {
   .excellence-txt-1 {
     padding-left: 78px;
@@ -542,6 +657,22 @@ input[type="text"].map-input-text {
   }
   .excellence-numb {
     text-align: left;
+  }
+  .cooper-info-1, .cooper-info-2 {
+    padding: 20px;
+  }
+  .cooper-txt-22 {
+    font-size: 18px;
+  }
+  .cooper-img-w {
+    margin-bottom: 20px;
+  }
+  .cooper-btn {
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
+    -webkit-justify-content: center;
+            justify-content: center;
   }
 }
 

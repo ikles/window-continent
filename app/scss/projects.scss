@@ -19,14 +19,12 @@ $font2: 'Ubuntu', sans-serif;
 @import "_footer.scss";
 
 
-.projects {
-}
-
-
 
 .projects-w {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
+  flex-wrap: wrap;
+  padding-top: 50px;  
 }
 
 .projects-heading {
@@ -53,13 +51,41 @@ $font2: 'Ubuntu', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #999999;
+  &:hover {    
+    color: #FFF;
+    background-color: rgb(12, 54, 156);
+  }
 }
 
-.projects-item {
-  width: 370px;
+.projects-item {  
+  width: calc(100% / 3 - 20px);
   border-bottom: 1px solid rgb(244, 244, 244);
   padding-bottom: 24px;
   margin-bottom: 30px;
+  .completed-slde-dots {
+    li {
+      &:focus,
+      &:hover,
+      &:active {
+        outline: none;
+      }
+      button {
+        background: none;
+        border: none;
+        font-size: 0;
+        &:focus,
+        &:hover,
+        &:active {
+          outline: none;
+        }
+      }
+      &.slick-active {
+        button {
+          background-color: #FFF;
+        }
+      }
+    }
+  }
 }
 
 .projects-img-w {
@@ -130,14 +156,75 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 
+.projects {
+  margin-bottom: 50px;
+  .completed-nav {
+    background: #F4F4F4;
+    backdrop-filter: blur(20px);
+    li.active {
+      .completed-nav-link {
+        color: #0C369C;
+        border-top: 2px solid #0C369C;
+      }
+    }
+    .completed-nav-link {
+      color: #999;
+      &:hover {
+        color: #0C369C;
+        border-top: 2px solid #0C369C;
+      }
+    }
+  }
+  .completed-tab-top {
+    padding-bottom: 20px;
+  }
+}
+
+
 .projects-body {
 
 }
 
 
-@media (max-width : 1199px) {
-  /**/
+@media (max-width : 992px) {
+  .projects-item {  
+    width: calc(100% / 2 - 15px);
+  }
 } 
+
+@media (max-width : 768px) {
+  .projects-img-slider {
+    height: 270px;
+  }
+}
+
+@media (max-width : 640px) {
+  .projects-item {  
+    width: calc(100% / 2 - 7px);
+  }
+  .projects-heading-w {    
+    flex-wrap: wrap;
+    .like-h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .projects-filter-reset {
+    width: 100%;
+  }
+}
+@media (max-width : 570px) {
+  /**/  
+}
+
+@media (max-width : 480px) {
+  .projects-item { 
+    width: 100%;
+  }
+}
+
+@media (max-width : 360px) {
+  /**/  
+}
 
 @import "_hides.scss";
 @import "_after-styless.scss";

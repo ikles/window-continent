@@ -97,9 +97,9 @@ function fancySlick(fancyLink, sliderClass, oneSlideClass, dotsStatus=true, arws
     }    
     $.fancybox.open(gallery1,{
       arrows: arws,
-    infobar: infbr,
-    smallBtn: smlbtn,
-    toolbar: toolbr
+      infobar: infbr,
+      smallBtn: smlbtn,
+      toolbar: toolbr
     }, trueIndex1);
     return false;
   });
@@ -123,8 +123,42 @@ fancySlick('.completed-slder-5 .completed-slde-link', '.completed-slder-5', '.co
 fancySlick('.completed-slder-6 .completed-slde-link', '.completed-slder-6', '.completed-slder-6 .completed-slde', true);
 
 
-if ( $('.projects-img-slider').length ) {
-  fancySlick('.projects-img-slider .projects-img-w', '.projects-img-slider', '.projects-img-slider .projects-img-slide', true, false, false, true, false, false);
+
+
+
+
+
+$('.projects-img-slider').slick({
+  infinite: true,    
+  slidesToShow: 1,
+  speed: 500,  
+  arrows: false,    
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 24000,
+  cssEase: 'ease-out', 
+  dots: true, 
+  dotsClass: 'completed-slde-dots',
+});
+
+
+if ( $('.projects-item').length ) {
+  $('.projects-item').each(function (i) {
+    let ii = +i+1;
+
+    $('[data-fancybox="gallery'+ii+'"]').fancybox({  
+      arrows: false,
+      infobar: false,
+      smallBtn: true,
+      toolbar: false,
+      iframe : {
+        css : {
+          width : '950px'
+        }
+      },
+    });    
+
+  });
 }
 
 
@@ -152,6 +186,10 @@ function tabs(controlClass, ContentClass) {
 
 tabs('.tabs-control-1', '.tabs_content-1');
 tabs('.tabs-control-2', '.tabs_content-2');
+
+
+
+$(".map-chice-auto").mCustomScrollbar({ axis: "y",   mouseWheel: 1 });    
 
 
 
@@ -330,23 +368,23 @@ if ( $('#slider-range').length ) {
 }
 
 $('.product-filter-open-link').click(function (e) {
-//e.preventDefault();
-//$('.filter-left').toggleClass('on');
-$('.filter-left').slideToggle({
-  duration: 500,
-  easing: "swing"
-});
-$('.overlay').fadeToggle();
+  //e.preventDefault();
+  //$('.filter-left').toggleClass('on');
+  $('.filter-left').slideToggle({
+    duration: 500,
+    easing: "swing"
+  });
+  $('.overlay').fadeToggle();
 });
 
 $('.fil-close').click(function (e) {
   e.preventDefault();
-//$('.filter-left').removeClass('on');
-$('.filter-left').slideUp({
-  duration: 500,
-  easing: "swing"
-});
-$('.overlay').fadeOut();
+  //$('.filter-left').removeClass('on');
+  $('.filter-left').slideUp({
+    duration: 500,
+    easing: "swing"
+  });
+  $('.overlay').fadeOut();
 });
 
 $('.overlay').click(function () {
@@ -368,34 +406,34 @@ if ( $('.options-products-slider-cont').length ) {
 
     scrollbar: {
       el: '.swiper-scrollbar',
-//перетаскивать скролл мышью
-draggable: true
-},
-slidesPerView: 'auto',
-//перетаскивание на пк
-simulateTouch: true,
-//чувствительность свайпа
-touchRatio: 2,
-//угол срабатывания свайпа
-touchAngle: 45,
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev'
-},
-breakpoints: {
-  481: {
-    slidesPerView: 'auto', 
-    spaceBetween: 10,   
-  },
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      481: {
+        slidesPerView: 'auto', 
+        spaceBetween: 10,   
+      },
 
-  200: {   
-    slidesPerView: 2, 
-    spaceBetween: 8,
-    loop: false,
-  },
-},
+      200: {   
+        slidesPerView: 2, 
+        spaceBetween: 8,
+        loop: false,
+      },
+    },
 
-});
+  });
 }
 
 
@@ -404,39 +442,39 @@ if ( $('.config-block-slider').length ) {
 
     scrollbar: {
       el: '.swiper-scrollbar',
-//перетаскивать скролл мышью
-draggable: true
-},
-slidesPerView: 'auto',
-//перетаскивание на пк
-simulateTouch: true,
-//чувствительность свайпа
-touchRatio: 2,
-//угол срабатывания свайпа
-touchAngle: 45,
-navigation: {
-  nextEl: '.swiper-button-next-2',
-  prevEl: '.swiper-button-prev-2'
-},
-loop: true,
-breakpoints: {
-  992: {
-    slidesPerView: 4, 
-    spaceBetween: 10,
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next-2',
+      prevEl: '.swiper-button-prev-2'
+    },
     loop: true,
-  },
-  768: {
-    slidesPerView: 3, 
-    spaceBetween: 10,
-    loop: false,
-  },
-  200: {   
-    slidesPerView: 2, 
-    spaceBetween: 3,
-    loop: false,
-  },
-},
-});
+    breakpoints: {
+      992: {
+        slidesPerView: 4, 
+        spaceBetween: 10,
+        loop: true,
+      },
+      768: {
+        slidesPerView: 3, 
+        spaceBetween: 10,
+        loop: false,
+      },
+      200: {   
+        slidesPerView: 2, 
+        spaceBetween: 3,
+        loop: false,
+      },
+    },
+  });
 }
 
 if ( $('.table-compare-slider').length ) {
@@ -444,39 +482,39 @@ if ( $('.table-compare-slider').length ) {
 
     scrollbar: {
       el: '.swiper-scrollbar',
-//перетаскивать скролл мышью
-draggable: true
-},
-slidesPerView: 'auto',
-//перетаскивание на пк
-simulateTouch: true,
-//чувствительность свайпа
-touchRatio: 2,
-//угол срабатывания свайпа
-touchAngle: 45,
-navigation: {
-  nextEl: '.swiper-button-next-3',
-  prevEl: '.swiper-button-prev-3'
-},
-loop: true,
-breakpoints: {
-  992: {
-    slidesPerView: 4, 
-    spaceBetween: 10,
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next-3',
+      prevEl: '.swiper-button-prev-3'
+    },
     loop: true,
-  },
-  768: {
-    slidesPerView: 3, 
-    spaceBetween: 10,
-    loop: false,
-  },
-  200: {   
-    slidesPerView: 2, 
-    spaceBetween: 3,
-    loop: false,
-  },
-},
-});
+    breakpoints: {
+      992: {
+        slidesPerView: 4, 
+        spaceBetween: 10,
+        loop: true,
+      },
+      768: {
+        slidesPerView: 3, 
+        spaceBetween: 10,
+        loop: false,
+      },
+      200: {   
+        slidesPerView: 2, 
+        spaceBetween: 3,
+        loop: false,
+      },
+    },
+  });
 }
 
 
@@ -485,59 +523,59 @@ if ( $('.opening-items').length ) {
 
     scrollbar: {
       el: '.swiper-scrollbar',
-//перетаскивать скролл мышью
-draggable: true
-},
-slidesPerView: 'auto',
-//перетаскивание на пк
-simulateTouch: true,
-//чувствительность свайпа
-touchRatio: 2,
-//угол срабатывания свайпа
-touchAngle: 45,
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev'
-},
-loop: true,
-breakpoints: {
-  1340: {
-    slidesPerView: 6, 
-    spaceBetween: 10,   
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
     loop: true,
-  },
-  1200: {
-    slidesPerView: 6, 
-    spaceBetween: 10,   
-    loop: false,
-  },
-  992: {
-    slidesPerView: 4, 
-    spaceBetween: 10,      
-    loop: false,
-  },
-  768: {
-    slidesPerView: 3, 
-    spaceBetween: 10,      
-    loop: false,
-  },
-  375: {   
-    slidesPerView: 2, 
-    spaceBetween: 3,   
-    loop: false,
-  },
-  360: {   
-    slidesPerView: 1, 
-    spaceBetween: 3,
-    loop: false,
-  },
-  280: {   
-    slidesPerView: 1, 
-    spaceBetween: 3,
-    loop: false,
-  },
-},
-});
+    breakpoints: {
+      1340: {
+        slidesPerView: 6, 
+        spaceBetween: 10,   
+        loop: true,
+      },
+      1200: {
+        slidesPerView: 6, 
+        spaceBetween: 10,   
+        loop: false,
+      },
+      992: {
+        slidesPerView: 4, 
+        spaceBetween: 10,      
+        loop: false,
+      },
+      768: {
+        slidesPerView: 3, 
+        spaceBetween: 10,      
+        loop: false,
+      },
+      375: {   
+        slidesPerView: 2, 
+        spaceBetween: 3,   
+        loop: false,
+      },
+      360: {   
+        slidesPerView: 1, 
+        spaceBetween: 3,
+        loop: false,
+      },
+      280: {   
+        slidesPerView: 1, 
+        spaceBetween: 3,
+        loop: false,
+      },
+    },
+  });
 }
 
 
@@ -547,43 +585,43 @@ if ( $('.prof-sist-row-w').length ) {
 
     scrollbar: {
       el: '.swiper-scrollbar',
-//перетаскивать скролл мышью
-draggable: true
-},
-slidesPerView: 'auto',
-//перетаскивание на пк
-simulateTouch: true,
-//чувствительность свайпа
-touchRatio: 2,
-//угол срабатывания свайпа
-touchAngle: 45,
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev'
-},
-loop: true,
-breakpoints: {  
- 1200: {
-  slidesPerView: 4, 
-  spaceBetween: 40,
-  loop: true,    
-},
-992: {
-  slidesPerView: 3, 
-  spaceBetween: 10,      
-  loop: false,
-},
-480: {   
-  slidesPerView: 2, 
-  spaceBetween: 3,   
-  loop: false,
-},  
-200: {   
-  slidesPerView: 1, 
-  spaceBetween: 3,
-  loop: false,
-},
-},
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    loop: true,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 4, 
+      spaceBetween: 40,
+      loop: true,    
+    },
+    992: {
+      slidesPerView: 3, 
+      spaceBetween: 10,      
+      loop: false,
+    },
+    480: {   
+      slidesPerView: 2, 
+      spaceBetween: 3,   
+      loop: false,
+    },  
+    200: {   
+      slidesPerView: 1, 
+      spaceBetween: 3,
+      loop: false,
+    },
+  },
 });
 }
 
@@ -593,38 +631,38 @@ if ( $('.awards-row-w').length ) {
 
     scrollbar: {
       el: '.swiper-scrollbar',
-//перетаскивать скролл мышью
-draggable: true
-},
-slidesPerView: 'auto',
-//перетаскивание на пк
-simulateTouch: true,
-//чувствительность свайпа
-touchRatio: 2,
-//угол срабатывания свайпа
-touchAngle: 45,
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev'
-},
-loop: true,
-breakpoints: {  
- 1200: {
-  slidesPerView: 4, 
-  spaceBetween: 30,
-  loop: true,    
-},
-992: {
-  slidesPerView: 3, 
-  spaceBetween: 10,      
-  loop: false,
-}, 
-200: {   
-  slidesPerView: 2, 
-  spaceBetween: 3,
-  loop: false,
-},
-},
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    loop: true,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 4, 
+      spaceBetween: 30,
+      loop: true,    
+    },
+    992: {
+      slidesPerView: 3, 
+      spaceBetween: 10,      
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 2, 
+      spaceBetween: 3,
+      loop: false,
+    },
+  },
 });
 }
 
