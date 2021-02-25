@@ -23,7 +23,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('.wrapper').prepend('<span class="eye-3"></span>');
+  // $('.wrapper').prepend('<span class="eye-3"></span>');
 
 
   $('.eye-3').click(function (e) {
@@ -188,8 +188,9 @@ tabs('.tabs-control-1', '.tabs_content-1');
 tabs('.tabs-control-2', '.tabs_content-2');
 
 
-
+if($('.map-chice-auto').length) {
 $(".map-chice-auto").mCustomScrollbar({ axis: "y",   mouseWheel: 1 });    
+}
 
 
 

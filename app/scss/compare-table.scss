@@ -1,0 +1,157 @@
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_top.scss";
+@import "_product-of-list.scss";
+@import "_compare.scss";
+@import "_footer.scss";
+@import "_list-of-manufacturers.scss";
+
+
+
+.comparison-page {
+}
+
+.comparison-tabs {
+}
+
+.comparison-tabs-nav-wrap {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.comparison-tabs-ul {
+  display: flex;
+  align-items: center;
+}
+
+.comparison-tabs-li {
+  margin-right: 70px;
+}
+
+.comparison-prods {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 79px;
+}
+
+.comparison-tabs-a-act {
+  color: rgb(12, 54, 156);
+  font-size: 30px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  border-bottom: 5px solid #92BA1F;
+}
+
+.comparison-tabs-a {
+  color: #999;
+  font-size: 30px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  border-bottom: 5px solid transparent;
+}
+
+.comparison-tabs-num {
+  width: 24px;
+  height: 24px;
+  background: rgb(146, 186, 31);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin-left: 16px;
+  margin-top: 6px;
+}
+
+.comparison-row {
+  margin-bottom: 101px;
+  padding-top: 50px;
+}
+
+.like-h2-nums {
+  display: flex;
+  align-items: center;
+  color: rgb(12, 54, 156);
+  font-size: 30px;
+  line-height: 1.7;
+}
+
+.like-h2-num {
+  width: 48px;
+  height: 48px;
+  background: rgb(146, 186, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  flex: none;
+}
+
+.comparison-row-content {
+  margin-top: 50px;
+}
+
+
+
+
+
+.comparison-table-heading {
+  font-size: 24px;
+  line-height: 1.4;
+  color: rgb(17, 17, 17);
+  display: inline-block;
+  max-width: 420px;
+}
+
+.comparison-table-heading-span {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(17, 17, 17);
+  height: 37px;
+  background-color: rgb(244, 244, 244);
+  display: inline-flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  margin-left: 10px;
+}
+
+
+
+.compare-table-body {
+
+}
+
+@import "_trmore2.scss";
+
+
+
+
+
+@media (max-width : 1199px) {
+  /**/
+} 
+
+@import "_hides.scss";
+@import "_after-styless.scss";

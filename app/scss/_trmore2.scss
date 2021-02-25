@@ -1,0 +1,178 @@
+.syst-table-row-heading {
+  display: flex;
+}
+
+.syst-table-left {
+  flex-grow: 1;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: -0.24px;
+  color: rgb(17, 17, 17);
+  padding-right: 70px;
+}
+
+.syst-table-right {
+  width: 770px;
+  flex: 0 0 auto;
+  display: flex;
+}
+
+.syst-table-item {
+  width: 33.333%;
+  &:last-child {
+    .syst-table-item-td {
+      border-right: 1px solid #F3F0E6;
+    }
+  }
+}
+
+.syst-table-item-img-w {
+  height: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(244, 244, 244);
+  width: 100%;
+}
+
+.syst-table-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.14px;
+  color: rgb(17, 17, 17);
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.syst-table-item-table-wrap {
+  margin-top: 20px;
+}
+
+
+
+.comparison-labels {
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+.comparison-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.comparison-checkbox {
+  display: none;
+  + span {
+    height: 32px;
+    border: 1px solid #f4f4f4;
+    background-color: #f4f4f4; 
+    display: inline-flex;    
+    align-items: center;    
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #111111;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase; 
+  }  
+  &:checked {
+    + span {
+      background-color: #0C369C;
+      color: #fff;
+    }
+  }
+  &:hover {
+    + span {
+     background-color: #0C369C;
+     color: #fff; 
+   }
+ }
+}
+
+.compare-label {
+  width: 100%;
+  display: block;
+  border-right: 1px solid #fff;
+}
+.compare-checkbox {
+  display: none;
+  + span {
+    display: flex;    
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  &:checked {
+    + span {
+      background: #92BA1F url('../img/check-5.svg') $nr left 23px center;
+      color: #FFF;
+    }
+  }
+}
+
+.compare-label-2 {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.compare-checkbox-2 {
+  display: none;
+  + span {
+    background: #F4F4F4;
+    width: 24px;
+    height: 24px;
+    display: flex;    
+    align-items: center;  
+    justify-content: center;
+  }
+  &:checked {
+    + span {
+      background: #92BA1F url('../img/check-5.svg') $nr center;
+    }
+  }
+}
+
+
+.compare-label-span-txt {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+}
+
+.tr-more-2 {  
+ td {
+   padding: 0;
+   border-top: none;
+ } 
+}
+
+.syst-table-item-td {
+ height: 56px; 
+ padding: 16px 18px;
+ border-top: 1px solid #F3F0E6;
+ border-left: 1px solid #F3F0E6;
+ color: #999;
+ font-size: 18px;
+ &:last-child {
+   border-bottom: 1px solid #F3F0E6;
+ }
+}
+
+.td-more-2 {
+  padding: 0;
+  height: auto;
+  border: none;
+}

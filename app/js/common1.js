@@ -1664,7 +1664,19 @@ $('.coll-h5').click(function () {
 });
 
 $('.coll-h6').click(function () {
-  $('#active').append(coll_h6);
+  $('#active').append(`
+    <label class="label">
+<input class="label-checkbox" type="checkbox">
+<span class="label-span"></span>
+<span class="label-span-txt">Текст</span>
+</label>
+
+<label class="label-checked">
+<input class="label-checkbox" type="checkbox">
+<span class="label-span-checked"></span>
+<span class="label-span-txt">Текст</span>
+</label>
+   `);
   main_function();
 });
 
