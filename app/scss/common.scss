@@ -773,6 +773,17 @@ a.td-more {
   z-index: 5;
 }
 
+.tabs_content_item {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.nobord {
+ border: none !important; 
+}
+
 @media (min-width: 1721px) {
   .contain-right {
     margin-left: auto;

@@ -902,6 +902,14 @@ a.td-more {
   left: 0;
   z-index: 5; }
 
+.tabs_content_item {
+  display: none; }
+  .tabs_content_item.active {
+    display: block; }
+
+.nobord {
+  border: none !important; }
+
 @media (min-width: 1721px) {
   .contain-right {
     margin-left: auto;

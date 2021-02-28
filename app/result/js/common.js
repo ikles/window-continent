@@ -23,7 +23,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  // $('.wrapper').prepend('<span class="eye-3"></span>');
+  $('.wrapper').prepend('<span class="eye-3"></span>');
 
 
   $('.eye-3').click(function (e) {
@@ -186,6 +186,11 @@ function tabs(controlClass, ContentClass) {
 
 tabs('.tabs-control-1', '.tabs_content-1');
 tabs('.tabs-control-2', '.tabs_content-2');
+tabs('.comparison-tabs-ul', '.comparison-tabs-content');
+
+
+
+
 
 
 if($('.map-chice-auto').length) {
@@ -661,6 +666,44 @@ if ( $('.awards-row-w').length ) {
     200: {   
       slidesPerView: 2, 
       spaceBetween: 3,
+      loop: false,
+    },
+  },
+});
+}
+
+
+if ( $('.syst-table-right').length ) {
+  new Swiper('.syst-table-right', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 3,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 2,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
       loop: false,
     },
   },

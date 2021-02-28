@@ -5,8 +5,9 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Compare table - Оконный континент</title>     
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">  
+  <title>Compare table - Оконный континент</title>       
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/compare-table.css">
   @@include('var/_favicon.html')
@@ -41,390 +42,542 @@
           <div class="comparison-tabs">
             <div class="comparison-tabs-nav-wrap">
               <ul class="comparison-tabs-ul">
-                <li class="comparison-tabs-li"><a href="#" class="comparison-tabs-a-act">Сравнительные таблицы</a></li>
-                <li class="comparison-tabs-li">
-                  <a href="#" class="comparison-tabs-a">Выбранные товары<span class="comparison-tabs-num">3</span></a>
+                <li class="comparison-tabs-li tabs_control_item active"><a href="#" class="comparison-tabs-a tabs_control_link">Сравнительные таблицы</a></li>
+                <li class="comparison-tabs-li tabs_control_item">
+                  <a href="#" class="comparison-tabs-a tabs_control_link">Выбранные товары<span class="comparison-tabs-num">3</span></a>
                 </li>
               </ul>
             </div>
-            <div class="comparison-row">
-              <div class="like-h2-nums">
-                <div class="like-h2-num">1</div>
-                Выберите тип продукта:
-              </div>
-              <div class="comparison-row-content">
-                <div class="comparison-labels">
-                  <label class="comparison-label">
-                    <input class="comparison-checkbox" type="checkbox">
-                    <span>окна</span>
-                  </label>
-                  <label class="comparison-label">
-                    <input class="comparison-checkbox" type="checkbox" checked>
-                    <span>двери</span>
-                  </label>
-                  <label class="comparison-label">
-                    <input class="comparison-checkbox" type="checkbox">
-                    <span>Зимние сады</span>
-                  </label>
-                  <label class="comparison-label">
-                    <input class="comparison-checkbox" type="checkbox">
-                    <span>Остекление</span>
-                  </label>
-                  <label class="comparison-label">
-                    <input class="comparison-checkbox" type="checkbox">
-                    <span>Офисные перегородки</span>
-                  </label>
-                  <label class="comparison-label">
-                    <input class="comparison-checkbox" type="checkbox">
-                    <span>Двери гармошки</span>
-                  </label>
-                  <label class="comparison-label">
-                    <input class="comparison-checkbox" type="checkbox">
-                    <span>подъемно раздвижные двери</span>
-                  </label>
-                </div><!--comparison-labels-->
-              </div>
-            </div>
-            <div class="comparison-row">
-              <div class="like-h2-nums">
-                <div class="like-h2-num">2</div>
-                Выберите производителя:
-              </div>
-              <div class="comparison-row-content">
-                <div class="comparison-table-heading">В таблице показаны особенности для продукта: <span class="comparison-table-heading-span">двери</span></div>
-              </div>
-            </div>
-
-
-            <div class="compare-category-table-w">
-              <table>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td><img src="img/logo-fabric-1.jpg" alt="logo-fabric-1" title="logo-fabric-1"></td>
-                    <td><img src="img/logo-fabric-2.jpg" alt="logo-fabric-2" title="logo-fabric-2"></td>
-                    <td><img src="img/logo-fabric-3.jpg" alt="logo-fabric-3" title="logo-fabric-3"></td>
-                    <td><img src="img/logo-fabric-4.jpg" alt="logo-fabric-4" title="logo-fabric-4"></td>            
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="compare-cat-txt">Ценовой сегмент</div>
-                      <div class="compare-cat-img-w"></div>        
-                    </td>
-                    <td><span class="orange">Премиум</span></td>
-                    <td><span class="green">Комфорт</span></td>
-                    <td><span class="orange">Премиум</span></td>
-                    <td><span class="blue">Эконом</span></td>
-                  </tr>
-                  <tr>
-                    <td>              
-                      <div class="compare-cat-txt">Страна производителя</div>
-                      <div class="compare-cat-img-w"></div>        
-                    </td>
-                    <td>
-                      <div class="compare-cat-txt">
-                        <img class="country-icon" src="img/russia.svg" alt="russia" title="russia">
-                        Россия
-                      </div>
-                    </td>
-                    <td>
-                     <div class="compare-cat-txt">
-                      <img class="country-icon" src="img/germany1.svg" alt="germany" title="germany">
-                      Германия
-                    </div>
-                  </td>
-                  <td>
-                   <div class="compare-cat-txt">
-                    <img class="country-icon" src="img/belgium.svg" alt="belgium" title="belgium">
-                    Бельгия
+            <ul class="comparison-tabs-content">
+              <li class="tabs_content_item active">
+                <div class="comparison-row">
+                  <div class="like-h2-nums">
+                    <div class="like-h2-num">1</div>
+                    Выберите тип продукта:
                   </div>
-                </td>
-                <td>
-                 <div class="compare-cat-txt">
-                  <img class="country-icon" src="img/germany1.svg" alt="germany" title="germany">
-                  Германия
+                  <div class="comparison-row-content">
+                    <div class="comparison-labels">
+                      <label class="comparison-label">
+                        <input class="comparison-checkbox" type="checkbox">
+                        <span>окна</span>
+                      </label>
+                      <label class="comparison-label">
+                        <input class="comparison-checkbox" type="checkbox" checked>
+                        <span>двери</span>
+                      </label>
+                      <label class="comparison-label">
+                        <input class="comparison-checkbox" type="checkbox">
+                        <span>Зимние сады</span>
+                      </label>
+                      <label class="comparison-label">
+                        <input class="comparison-checkbox" type="checkbox">
+                        <span>Остекление</span>
+                      </label>
+                      <label class="comparison-label">
+                        <input class="comparison-checkbox" type="checkbox">
+                        <span>Офисные перегородки</span>
+                      </label>
+                      <label class="comparison-label">
+                        <input class="comparison-checkbox" type="checkbox">
+                        <span>Двери гармошки</span>
+                      </label>
+                      <label class="comparison-label">
+                        <input class="comparison-checkbox" type="checkbox">
+                        <span>подъемно раздвижные двери</span>
+                      </label>
+                    </div><!--comparison-labels-->
+                  </div>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>              
-                <div class="compare-cat-txt">Стоимость за 1 м2</div>
-                <div class="compare-cat-img-w"></div>        
-              </td>
-              <td><a href="#">1 270 руб.</a></td>
-              <td><a href="#">1 270 руб.</a></td>
-              <td><a href="#">1 270 руб.</a></td>
-              <td><a href="#">1 270 руб.</a></td>          
-            </tr>
-            <tr>
-              <td>              
-                <div class="compare-cat-txt">Срок поставки</div>
-                <div class="compare-cat-img-w"></div>        
-              </td>
-              <td>
-                Под заказ <br>1,5 - 2 мес.
-              </td>          
-              <td>
-                В наличии
-              </td>          
-              <td>
-                Под заказ <br>1,5 - 2 мес.
-              </td>          
-              <td>
-                В наличии
-              </td>          
-            </tr>
-            <tr>
-              <td>              
-                <div class="compare-cat-txt">Гарантия</div>
-                <div class="compare-cat-img-w"></div>        
-              </td>
-              <td>50 лет</td>          
-              <td>50 лет</td>          
-              <td>50 лет</td>          
-              <td>50 лет</td>          
-            </tr>
-            <tr class="tr-more tr-more-2">
-              <td></td>
-              <td>
-                <label class="compare-label">
-                  <input class="compare-checkbox" type="checkbox" checked>
-                  <span>Выбрать</span>
-                </label>
-              </td> 
-              <td>
-                <label class="compare-label">
-                  <input class="compare-checkbox" type="checkbox" checked>
-                  <span>Выбрать</span>
-                </label>
-              </td>
-              <td>
-                <label class="compare-label">
-                  <input class="compare-checkbox" type="checkbox">
-                  <span>Выбрать</span>
-                </label>
-              </td>
-              <td>
-                <label class="compare-label">
-                  <input class="compare-checkbox" type="checkbox">
-                  <span>Выбрать</span>
-                </label>
-              </td>             
-            </tr>
-          </tbody></table>
-        </div>
-
-
-
-        <div class="comparison-row">
-          <div class="like-h2-nums">
-            <div class="like-h2-num">3</div>
-            Выберите систему
-          </div>
-          <div class="comparison-row-content">
-            <div class="syst-table-row-heading">
-              <div class="syst-table-left">Двери из профиля Reynaers можно произвести с использованием одной из систем:</div>
-              <div class="syst-table-right">
-                <div class="syst-table-item">
-                  <div class="syst-table-item-img-w"><img src="img/syst-table-item-1.svg" /></div>
-                  <a href="#" class="syst-table-item-name">ALT C48</a>
-                  <div class="syst-table-item-table-wrap">
-                    <div class="syst-table-item-td">Холодный</div>
-                    <div class="syst-table-item-td">48 мм</div>
-                    <div class="syst-table-item-td">4-28 мм</div>
-                    <div class="syst-table-item-td">-</div>
-                    <div class="syst-table-item-td">5-6 категория</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">
-                      <label class="compare-label-2">
-                        <input class="compare-checkbox-2" type="checkbox" checked="">
-                        <span></span>
-                        <span class="compare-label-span-txt">В сравнение</span>
-                      </label>
-                    </div>
-                    <div class="syst-table-item-td td-more-2">
-                      <label class="compare-label">
-                        <input class="compare-checkbox" type="checkbox" checked="">
-                        <span>Выбрать</span>
-                      </label>
-                    </div>                    
-                  </div><!--syst-table-item-table-wrap-->
+                <div class="comparison-row nobord">
+                  <div class="like-h2-nums">
+                    <div class="like-h2-num">2</div>
+                    Выберите производителя:
+                  </div>
+                  <div class="comparison-row-content">
+                    <div class="comparison-table-heading">В таблице показаны особенности для продукта: <span class="comparison-table-heading-span">двери</span></div>
+                  </div>
                 </div>
-                <div class="syst-table-item">
-                  <div class="syst-table-item-img-w"><img src="img/syst-table-item-2.svg" /></div>
-                  <a href="#" class="syst-table-item-name">ALT C48</a>
-                  <div class="syst-table-item-table-wrap">
-                    <div class="syst-table-item-td">Холодный</div>
-                    <div class="syst-table-item-td">48 мм</div>
-                    <div class="syst-table-item-td">4-28 мм</div>
-                    <div class="syst-table-item-td">-</div>
-                    <div class="syst-table-item-td">5-6 категория</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">
-                      <label class="compare-label-2">
-                        <input class="compare-checkbox-2" type="checkbox">
-                        <span></span>
-                        <span class="compare-label-span-txt">В сравнение</span>
-                      </label>
-                    </div>
-                    <div class="syst-table-item-td td-more-2">
-                      <label class="compare-label">
-                        <input class="compare-checkbox" type="checkbox">
-                        <span>Выбрать</span>
-                      </label>
-                    </div>                    
-                  </div><!--syst-table-item-table-wrap-->
+                <div class="compare-category-table-w">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td><img src="img/logo-fabric-1.jpg" alt="logo-fabric-1" title="logo-fabric-1"></td>
+                        <td><img src="img/logo-fabric-2.jpg" alt="logo-fabric-2" title="logo-fabric-2"></td>
+                        <td><img src="img/logo-fabric-3.jpg" alt="logo-fabric-3" title="logo-fabric-3"></td>
+                        <td><img src="img/logo-fabric-4.jpg" alt="logo-fabric-4" title="logo-fabric-4"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="compare-cat-txt">Ценовой сегмент</div>
+                          <div class="compare-cat-img-w"></div>        
+                        </td>
+                        <td><span class="orange">Премиум</span></td>
+                        <td><span class="green">Комфорт</span></td>
+                        <td><span class="orange">Премиум</span></td>
+                        <td><span class="blue">Эконом</span></td>
+                      </tr>
+                      <tr>
+                        <td>              
+                          <div class="compare-cat-txt">Страна производителя</div>
+                          <div class="compare-cat-img-w"></div>        
+                        </td>
+                        <td>
+                          <div class="compare-cat-txt">
+                            <img class="country-icon" src="img/russia.svg" alt="russia" title="russia">
+                            Россия
+                          </div>
+                        </td>
+                        <td>
+                          <div class="compare-cat-txt">
+                            <img class="country-icon" src="img/germany1.svg" alt="germany" title="germany" />
+                            Германия
+                          </div>
+                        </td>
+                        <td>
+                          <div class="compare-cat-txt">
+                            <img class="country-icon" src="img/belgium.svg" alt="belgium" title="belgium" />
+                            Бельгия
+                          </div>
+                        </td>
+                        <td>
+                          <div class="compare-cat-txt">
+                            <img class="country-icon" src="img/germany1.svg" alt="germany" title="germany" />
+                            Германия
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>              
+                          <div class="compare-cat-txt">Стоимость за 1 м2</div>
+                          <div class="compare-cat-img-w"></div>        
+                        </td>
+                        <td><a href="#">1 270 руб.</a></td>
+                        <td><a href="#">1 270 руб.</a></td>
+                        <td><a href="#">1 270 руб.</a></td>
+                        <td><a href="#">1 270 руб.</a></td>          
+                      </tr>
+                      <tr>
+                        <td>              
+                          <div class="compare-cat-txt">Срок поставки</div>
+                          <div class="compare-cat-img-w"></div>        
+                        </td>
+                        <td>
+                          Под заказ <br>1,5 - 2 мес.
+                        </td>          
+                        <td>
+                          В наличии
+                        </td>          
+                        <td>
+                          Под заказ <br>1,5 - 2 мес.
+                        </td>          
+                        <td>
+                          В наличии
+                        </td>          
+                      </tr>
+                      <tr>
+                        <td>              
+                          <div class="compare-cat-txt">Гарантия</div>
+                          <div class="compare-cat-img-w"></div>        
+                        </td>
+                        <td>50 лет</td>          
+                        <td>50 лет</td>          
+                        <td>50 лет</td>          
+                        <td>50 лет</td>          
+                      </tr>
+                      <tr class="tr-more tr-more-2">
+                        <td></td>
+                        <td>
+                          <label class="compare-label">
+                            <input class="compare-checkbox" type="checkbox" checked>
+                            <span>Выбрать</span>
+                          </label>
+                        </td> 
+                        <td>
+                          <label class="compare-label">
+                            <input class="compare-checkbox" type="checkbox" checked>
+                            <span>Выбрать</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label class="compare-label">
+                            <input class="compare-checkbox" type="checkbox">
+                            <span>Выбрать</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label class="compare-label">
+                            <input class="compare-checkbox" type="checkbox">
+                            <span>Выбрать</span>
+                          </label>
+                        </td>             
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <div class="syst-table-item">
-                  <div class="syst-table-item-img-w"><img src="img/syst-table-item-3.svg" /></div>
-                  <a href="#" class="syst-table-item-name">ALT C48</a>
-                  <div class="syst-table-item-table-wrap">
-                    <div class="syst-table-item-td">Холодный</div>
-                    <div class="syst-table-item-td">48 мм</div>
-                    <div class="syst-table-item-td">4-28 мм</div>
-                    <div class="syst-table-item-td">-</div>
-                    <div class="syst-table-item-td">5-6 категория</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">
-                      <label class="compare-label-2">
-                        <input class="compare-checkbox-2" type="checkbox">
-                        <span></span>
-                        <span class="compare-label-span-txt">В сравнение</span>
-                      </label>
+                <div class="comparison-row">
+                  <div class="like-h2-nums">
+                    <div class="like-h2-num">3</div>
+                    Выберите систему
+                  </div>
+                  <div class="comparison-row-content">
+                    <div class="syst-table-row-heading">
+                      <div class="syst-table-left">
+                        <div class="syst-table-left-title">
+                          Двери из профиля Reynaers можно произвести с использованием одной из систем:
+                        </div>
+                        <div class="syst-table-item-table-wrap-left">
+                          <div class="syst-table-item-td">    
+                            Тип профиля <div class="compare-cat-img-w"></div>
+                          </div>
+                          <div class="syst-table-item-td">    
+                            Монтажная глубина <div class="compare-cat-img-w"></div>
+                          </div>
+                          <div class="syst-table-item-td">    
+                            Толщина заполнения, max <div class="compare-cat-img-w"></div>
+                          </div>
+                          <div class="syst-table-item-td">    
+                            Теплоизоляция: <div class="compare-cat-img-w"></div>
+                          </div>
+                          <div class="syst-table-item-td">    
+                            Звукоизоляция <div class="compare-cat-img-w"></div>
+                          </div>
+                          <div class="syst-table-item-td">    
+                            Воздухопроницаемость <div class="compare-cat-img-w"></div>
+                          </div>
+                          <div class="syst-table-item-td">    
+                            Водопроницаемость <div class="compare-cat-img-w"></div>
+                          </div>
+                        </div><!--syst-table-item-table-wrap-left-->
+                      </div><!--syst-table-left-->
+                      <div class="syst-table-right-w">
+                        <div class="syst-table-right swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="syst-table-item swiper-slide">
+                              <div class="syst-table-item-img-w"><img src="img/syst-table-item-1.svg" /></div>
+                              <a href="#" class="syst-table-item-name">ALT C48</a>
+                              <div class="syst-table-item-table-wrap">
+                                <div class="syst-table-item-td">Холодный</div>
+                                <div class="syst-table-item-td">48 мм</div>
+                                <div class="syst-table-item-td">4-28 мм</div>
+                                <div class="syst-table-item-td">-</div>
+                                <div class="syst-table-item-td">5-6 категория</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">
+                                  <label class="compare-label-2">
+                                    <input class="compare-checkbox-2" type="checkbox" checked="">
+                                    <span></span>
+                                    <span class="compare-label-span-txt">В сравнение</span>
+                                  </label>
+                                </div>
+                                <div class="syst-table-item-td td-more-2">
+                                  <label class="compare-label">
+                                    <input class="compare-checkbox" type="checkbox" checked="">
+                                    <span>Выбрать</span>
+                                  </label>
+                                </div>                    
+                              </div><!--syst-table-item-table-wrap-->
+                            </div>
+                            <div class="syst-table-item swiper-slide">
+                              <div class="syst-table-item-img-w"><img src="img/syst-table-item-2.svg" /></div>
+                              <a href="#" class="syst-table-item-name">ALT C48</a>
+                              <div class="syst-table-item-table-wrap">
+                                <div class="syst-table-item-td">Холодный</div>
+                                <div class="syst-table-item-td">48 мм</div>
+                                <div class="syst-table-item-td">4-28 мм</div>
+                                <div class="syst-table-item-td">-</div>
+                                <div class="syst-table-item-td">5-6 категория</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">
+                                  <label class="compare-label-2">
+                                    <input class="compare-checkbox-2" type="checkbox">
+                                    <span></span>
+                                    <span class="compare-label-span-txt">В сравнение</span>
+                                  </label>
+                                </div>
+                                <div class="syst-table-item-td td-more-2">
+                                  <label class="compare-label">
+                                    <input class="compare-checkbox" type="checkbox">
+                                    <span>Выбрать</span>
+                                  </label>
+                                </div>                    
+                              </div><!--syst-table-item-table-wrap-->
+                            </div>
+                            <div class="syst-table-item swiper-slide">
+                              <div class="syst-table-item-img-w"><img src="img/syst-table-item-3.svg" /></div>
+                              <a href="#" class="syst-table-item-name">ALT C48</a>
+                              <div class="syst-table-item-table-wrap">
+                                <div class="syst-table-item-td">Холодный</div>
+                                <div class="syst-table-item-td">48 мм</div>
+                                <div class="syst-table-item-td">4-28 мм</div>
+                                <div class="syst-table-item-td">-</div>
+                                <div class="syst-table-item-td">5-6 категория</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">
+                                  <label class="compare-label-2">
+                                    <input class="compare-checkbox-2" type="checkbox">
+                                    <span></span>
+                                    <span class="compare-label-span-txt">В сравнение</span>
+                                  </label>
+                                </div>
+                                <div class="syst-table-item-td td-more-2">
+                                  <label class="compare-label">
+                                    <input class="compare-checkbox" type="checkbox">
+                                    <span>Выбрать</span>
+                                  </label>
+                                </div>                    
+                              </div><!--syst-table-item-table-wrap-->
+                            </div><!--syst-table-item-->
+                            <div class="syst-table-item swiper-slide">
+                              <div class="syst-table-item-img-w"><img src="img/syst-table-item-3.svg" /></div>
+                              <a href="#" class="syst-table-item-name">ALT C48</a>
+                              <div class="syst-table-item-table-wrap">
+                                <div class="syst-table-item-td">Холодный</div>
+                                <div class="syst-table-item-td">48 мм</div>
+                                <div class="syst-table-item-td">4-28 мм</div>
+                                <div class="syst-table-item-td">-</div>
+                                <div class="syst-table-item-td">5-6 категория</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">класс А</div>
+                                <div class="syst-table-item-td">
+                                  <label class="compare-label-2">
+                                    <input class="compare-checkbox-2" type="checkbox">
+                                    <span></span>
+                                    <span class="compare-label-span-txt">В сравнение</span>
+                                  </label>
+                                </div>
+                                <div class="syst-table-item-td td-more-2">
+                                  <label class="compare-label">
+                                    <input class="compare-checkbox" type="checkbox">
+                                    <span>Выбрать</span>
+                                  </label>
+                                </div>
+                              </div><!--syst-table-item-table-wrap-->
+                            </div><!--syst-table-item-->
+                          </div>                  
+                        </div>
+                        <div class="options-products-roller-w">
+                          <div class="swiper-button swiper-button-prev"></div>
+                          <div class="swiper-scrollbar"></div>
+                          <div class="swiper-button swiper-button-next"></div>
+                        </div>
+                      </div><!--syst-table-right-->
                     </div>
-                    <div class="syst-table-item-td td-more-2">
-                      <label class="compare-label">
-                        <input class="compare-checkbox" type="checkbox">
-                        <span>Выбрать</span>
-                      </label>
-                    </div>                    
-                  </div><!--syst-table-item-table-wrap-->
-                </div><!--syst-table-item-->
-                <div class="syst-table-item">
-                  <div class="syst-table-item-img-w"><img src="img/syst-table-item-3.svg" /></div>
-                  <a href="#" class="syst-table-item-name">ALT C48</a>
-                  <div class="syst-table-item-table-wrap">
-                    <div class="syst-table-item-td">Холодный</div>
-                    <div class="syst-table-item-td">48 мм</div>
-                    <div class="syst-table-item-td">4-28 мм</div>
-                    <div class="syst-table-item-td">-</div>
-                    <div class="syst-table-item-td">5-6 категория</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">класс А</div>
-                    <div class="syst-table-item-td">
-                      <label class="compare-label-2">
-                        <input class="compare-checkbox-2" type="checkbox">
-                        <span></span>
-                        <span class="compare-label-span-txt">В сравнение</span>
-                      </label>
+                  </div>
+                </div>
+                <div class="compar">
+                  <div class="contain">
+                    <div class="compar-w">
+                      <div class="compar-col-1">
+                        <div class="compar-txt-1">Вы выбрали:</div>
+                        <div class="compar-txt-w">
+                          <div class="compar-txt-row">
+                            <div class="compar-txt-2">Продукт:</div>
+                            <div class="compar-txt-3">Двери</div>
+                          </div>
+                          <div class="compar-txt-row">
+                            <div class="compar-txt-2">Производитель:</div>
+                            <div class="compar-txt-3">Reynaers</div>
+                          </div>
+                          <div class="compar-txt-row">
+                            <div class="compar-txt-2">Система:</div>
+                            <div class="compar-txt-3">ALT C48</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compar-col-2">
+                        <a class="compar-logo"><img src="img/logo-fabric-3.jpg" class="compar-logo-img" /></a><a class="compar-product"><img src="img/opening-1.png" /><span class="compar-product-span">ALT&nbsp;C48</span></a>
+                      </div>
+                      <div class="compar-col-3"><img src="img/room.jpg" class="compar-img" /></div>
                     </div>
-                    <div class="syst-table-item-td td-more-2">
-                      <label class="compare-label">
-                        <input class="compare-checkbox" type="checkbox">
-                        <span>Выбрать</span>
-                      </label>
+                  </div>
+                </div>
+
+
+                <div class="solutions">
+                  <div class="contain">
+                    <div class="solutions-w">
+                      <div class="solutions-txt">Найдено <span class="solutions-span">5</span> готовых решений в каталоге<br>
+                      по цене от 1 500р до 70 000р</div>
+                      <div class="solutions-underline">
+
+                      </div>
                     </div>
-                  </div><!--syst-table-item-table-wrap-->
-                </div><!--syst-table-item-->
-              </div>
-            </div>
+                  </div>
+                </div>
+
+
+                <div class="comparison-prods">
+                  <div class="product-item swiper-slide">
+                    <a href="#" class="product-img-w">
+                      <img alt="door" title="door" src="img/door-4.jpg">
+                      <span class="product-item-open"></span>
+                    </a>
+                    <div class="product-info">
+                      <a href="#" class="product-item-title">
+                        Дверь без порожка Reynaers "MasterLine 8 Zero threshold"
+                      </a>
+                      <div class="product-item-tbl">
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Производитель</div>
+                          <div class="product-item-col-2">Reynaers</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Профильная система</div>
+                          <div class="product-item-col-2">7A (300 Pa)</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Габариты</div>
+                          <div class="product-item-col-2">270x90x15</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Сопротивление теплопередачи</div>
+                          <div class="product-item-col-2">внутр. открывание</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип ручки</div>
+                          <div class="product-item-col-2">4 (600 Pa)</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип петель</div>
+                          <div class="product-item-col-2">Пассивный</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип замка</div>
+                          <div class="product-item-col-2">153 HI: 2,2; HI+: 1,4 W/m2K</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип доводчика</div>
+                          <div class="product-item-col-2">С3 (1200 Pa)</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип СКУД</div>
+                          <div class="product-item-col-2">Rw (C; Ctr) = 43 (-1;-4 dB)</div>
+                        </div>
+                        <div class="prod-item-more-w">
+                          <a href="#" class="prod-item-more">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item-price">
+                      <span class="product-item-price-txt-1">от</span>74 300<span class="product-item-price-txt-2">руб.</span>
+                    </div>
+                    <div class="product-item-hide">
+                      <div class="product-item-price product-item-price-hide">
+                        <span class="product-item-price-txt-1">от</span>74 300<span class="product-item-price-txt-2">руб.</span>
+                      </div><!--product-item-price-->
+                      <div class="product-item-actions">
+                        <label class="get-form-cons">
+                          <input class="get-form-checkbox" type="checkbox" value="yes" checked="">
+                          <div class="get-form-cons-check"></div>
+                          <div class="get-form-cons-txt">сравнить</div>
+                        </label>
+                        <a href="#" class="btn">Заказать</a>
+                      </div><!--product-item-actions-->
+                    </div><!--product-item-hide-->
+                  </div>
+                  @@include('var/_three-product.html')
+                </div>
+              </li>              
+              <li class="tabs_content_item">
+                <div class="comparison-prods">
+                  <div class="product-item swiper-slide">
+                    <a href="#" class="product-img-w">
+                      <img alt="door" title="door" src="img/door-4.jpg">
+                      <span class="product-item-open"></span>
+                    </a>
+                    <div class="product-info">
+                      <a href="#" class="product-item-title">
+                        Дверь без порожка Reynaers "MasterLine 8 Zero threshold"
+                      </a>
+                      <div class="product-item-tbl">
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Производитель</div>
+                          <div class="product-item-col-2">Reynaers</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Профильная система</div>
+                          <div class="product-item-col-2">7A (300 Pa)</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Габариты</div>
+                          <div class="product-item-col-2">270x90x15</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Сопротивление теплопередачи</div>
+                          <div class="product-item-col-2">внутр. открывание</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип ручки</div>
+                          <div class="product-item-col-2">4 (600 Pa)</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип петель</div>
+                          <div class="product-item-col-2">Пассивный</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип замка</div>
+                          <div class="product-item-col-2">153 HI: 2,2; HI+: 1,4 W/m2K</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип доводчика</div>
+                          <div class="product-item-col-2">С3 (1200 Pa)</div>
+                        </div>
+                        <div class="product-item-row">
+                          <div class="product-item-col-1">Тип СКУД</div>
+                          <div class="product-item-col-2">Rw (C; Ctr) = 43 (-1;-4 dB)</div>
+                        </div>
+                        <div class="prod-item-more-w">
+                          <a href="#" class="prod-item-more">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-item-price">
+                      <span class="product-item-price-txt-1">от</span>74 300<span class="product-item-price-txt-2">руб.</span>
+                    </div>
+                    <div class="product-item-hide">
+                      <div class="product-item-price product-item-price-hide">
+                        <span class="product-item-price-txt-1">от</span>74 300<span class="product-item-price-txt-2">руб.</span>
+                      </div><!--product-item-price-->
+                      <div class="product-item-actions">
+                        <label class="get-form-cons">
+                          <input class="get-form-checkbox" type="checkbox" value="yes" checked="">
+                          <div class="get-form-cons-check"></div>
+                          <div class="get-form-cons-txt">сравнить</div>
+                        </label>
+                        <a href="#" class="btn">Заказать</a>
+                      </div><!--product-item-actions-->
+                    </div><!--product-item-hide-->
+                  </div>
+                  @@include('var/_three-product.html')
+                </div>  
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-
-      <div class="comparison-prods">
-        <div class="product-item swiper-slide">
-          <a href="#" class="product-img-w">
-            <img alt="door" title="door" src="img/door-4.jpg">
-            <span class="product-item-open"></span>
-          </a>
-          <div class="product-info">
-            <a href="#" class="product-item-title">
-              Дверь без порожка Reynaers "MasterLine 8 Zero threshold"
-            </a>
-            <div class="product-item-tbl">
-              <div class="product-item-row">
-                <div class="product-item-col-1">Производитель</div>
-                <div class="product-item-col-2">Reynaers</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Профильная система</div>
-                <div class="product-item-col-2">7A (300 Pa)</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Габариты</div>
-                <div class="product-item-col-2">270x90x15</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Сопротивление теплопередачи</div>
-                <div class="product-item-col-2">внутр. открывание</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Тип ручки</div>
-                <div class="product-item-col-2">4 (600 Pa)</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Тип петель</div>
-                <div class="product-item-col-2">Пассивный</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Тип замка</div>
-                <div class="product-item-col-2">153 HI: 2,2; HI+: 1,4 W/m2K</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Тип доводчика</div>
-                <div class="product-item-col-2">С3 (1200 Pa)</div>
-              </div>
-              <div class="product-item-row">
-                <div class="product-item-col-1">Тип СКУД</div>
-                <div class="product-item-col-2">Rw (C; Ctr) = 43 (-1;-4 dB)</div>
-              </div>
-              <div class="prod-item-more-w">
-                <a href="#" class="prod-item-more">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="product-item-price">
-            <span class="product-item-price-txt-1">от</span>74 300<span class="product-item-price-txt-2">руб.</span>
-          </div>
-          <div class="product-item-hide">
-            <div class="product-item-price product-item-price-hide">
-              <span class="product-item-price-txt-1">от</span>74 300<span class="product-item-price-txt-2">руб.</span>
-            </div><!--product-item-price-->
-            <div class="product-item-actions">
-              <label class="get-form-cons">
-                <input class="get-form-checkbox" type="checkbox" value="yes" checked="">
-                <div class="get-form-cons-check"></div>
-                <div class="get-form-cons-txt">сравнить</div>
-              </label>
-              <a href="#" class="btn">Заказать</a>
-            </div><!--product-item-actions-->
-          </div><!--product-item-hide-->
-        </div>
-        @@include('var/_three-product.html')
-      </div>
-
-
-    </div><!--contain-->
-  </div><!--comparison-page-->
 
 
 
-</div><!--wrapper-->
-</div><!--wrapper-w-->  
 
 
+        </div><!--contain-->
+      </div><!--comparison-page-->
+
+
+
+    </div><!--wrapper-->
+  </div><!--wrapper-w-->  
+
+@@include('var/_footer.html')
 
 </div><!--wrapper-main-->
 <div class="overlay"></div>
-<script src="js/jquery-3.4.1.min.js"></script>      
-<script src="js/slick.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/fancySelect.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/lazyload.js"></script>
 <script src="js/common.js"></script>
 </body>
