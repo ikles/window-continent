@@ -1,0 +1,89 @@
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+@import "_top.scss";
+
+
+.error-img-w > img {
+  max-width: 80%;
+}
+
+.error {
+  padding-top: 100px;
+  padding-bottom: 121px;
+}
+
+.contain {
+}
+
+.error-w {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-txt {
+  font-size: 48px;
+  color: rgb(17, 17, 17);
+  text-align: center;
+  margin-bottom: 63px;
+}
+
+.error-img-w {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.error-btn {
+  display: inline-flex;
+  background: rgb(12, 54, 156);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 370px;
+  width: 100%;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #FFF;
+    color: rgb(12, 54, 156);
+    border: 1px solid rgb(12, 54, 156);
+  }
+}
+
+@import "_footer.scss";
+
+
+.page-404-body {
+
+}
+
+
+@media (max-width : 480px) {
+  .error-txt {
+    font-size: 38px;
+  }
+} 
+
+@import "_hides.scss";
+@import "_after-styless.scss";

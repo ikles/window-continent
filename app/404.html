@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Оконный континент</title>   
+  <link rel="stylesheet" href="css/slick.css">  
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/404.css">
+  @@include('var/_favicon.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="page-404-body">
+  <div class="wrapper-main">
+    @@include('var/_top.html')
+    <div class="wrapper-w">
+      <div class="wrapper">     
+       <div class="bread-w">
+        <div class="contain">
+          <ul class="bread hide-992">
+            <li><a href="#">Главная страница</a></li>            
+            <li><span>404</span></li>
+          </ul>
+          <ul class="bread show-992">          
+            <li><a class="bread-back" href="#">Главная страница</a></li>          
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="error">
+        <div class="contain">
+          <div class="error-w">
+            <div class="error-txt">К сожалению страница не найдена</div>
+            <div class="error-img-w"><img src="img/404.svg"></div>
+            <a href="#" class="error-btn">вернуться на главную</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div><!--wrapper-->
+  </div><!--wrapper-w-->  
+
+  @@include('var/_footer.html')
+
+</div><!--wrapper-main-->
+<div class="overlay"></div>
+<script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/slick.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/fancySelect.js"></script>
+<script src="js/lazyload.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+

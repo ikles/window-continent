@@ -309,7 +309,8 @@ body {
   width: 100%;
   overflow: hidden;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative; }
 
 .wrapper-w {
   max-width: 1920px;
@@ -532,6 +533,9 @@ img.lazy {
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
+
+.compare-label {
+  cursor: pointer; }
 
 @media (max-width: 1720px) {
   .wrapper {
@@ -915,6 +919,14 @@ a.td-more {
     margin-left: auto;
     margin-right: auto;
     width: 100%; } }
+
+@media (min-width: 768px) {
+  .product-item-row {
+    display: none; }
+  .product-item-row:nth-child(1), .product-item-row:nth-child(2), .product-item-row:nth-child(3) {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /*********************/
 /*********************/

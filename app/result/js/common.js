@@ -23,7 +23,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('.wrapper').prepend('<span class="eye-3"></span>');
+  //$('.wrapper').prepend('<span class="eye-3"></span>');
 
 
   $('.eye-3').click(function (e) {
@@ -771,6 +771,38 @@ if ( $(".compare-category-table-w").length ) {
     }
   });
 }
+
+
+$('.js-calculator-1').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-1').addClass('on');
+});
+
+$('.js-calculator-2').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-2').addClass('on');
+});
+
+$('.js-calculator-3').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-3').addClass('on');
+});
+
+$('.js-calculator-4').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-4').addClass('on');
+});
+
+$('.js-calculator-5').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-5').addClass('on');
+});
+
 
 
 }); //ready

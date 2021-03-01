@@ -221,6 +221,12 @@
   .product-item-price-txt-2 {
     font-size: 12px;
   }
+    .product-item-row {
+    display: none;
+  }
+  .product-item-row:nth-child(1), .product-item-row:nth-child(2), .product-item-row:nth-child(3) {
+    display: flex;
+  }
 }
 
 @media (max-width: 640px) {

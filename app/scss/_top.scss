@@ -1,3 +1,5 @@
+@import "_ui.scss";
+
 .top {  
   padding: 14px 15px 10px 15px;
 }
@@ -244,6 +246,10 @@ input[type="text"].top-1-input {
   width: 11px;
   height: 6px;
 }
+
+
+
+
 
 @media (max-width: 1720px) {
   .top, .top-1 {
