@@ -63,11 +63,17 @@ $font2: 'Ubuntu', sans-serif;
   margin-top: 16px;
 }
 
+
+
+
+
 .compare-cat-img-w {
   margin-left: 17px;
   background: url('../img/question.svg') no-repeat center;
   width: 23px;
   height: 23px;
+  position: relative;
+  cursor: pointer;
 }
 
 .compare-cat-txt {
@@ -423,7 +429,13 @@ $font2: 'Ubuntu', sans-serif;
   .equipment-item {
     width: 100%;
   }
-
+  .detail-category-butt-w {
+    width: 100%;
+    .btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
 }//480
 
 

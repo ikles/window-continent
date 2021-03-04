@@ -1519,6 +1519,13 @@ input[type="text"].product-filter-input-2 {
 .banner-hor-w {
   height: 170px; }
 
+.banner-hor-w-pda {
+  display: none; }
+
+@media (max-width: 570px) {
+  .banner-hor-w-pda {
+    margin: 30px 0; } }
+
 .product-item-hide {
   position: absolute;
   bottom: 0;

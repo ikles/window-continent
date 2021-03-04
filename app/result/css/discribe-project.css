@@ -1476,7 +1476,9 @@ input[type="text"].get-input-1 {
   .get-3 .get-txt-2 {
     margin-bottom: 20px; }
   .get-3 .get-img-3 {
-    right: -200px; } }
+    right: -200px; }
+  .get-3 .get-form-link-1 {
+    margin-bottom: 20px; } }
 
 @media (max-width: 640px) {
   .get-3 .get-img-3 {

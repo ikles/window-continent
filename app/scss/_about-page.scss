@@ -576,7 +576,7 @@
     img {
       width: 520px;
       top: -11px;
-      right: -60px;
+      right: 0px;
     }
   }
   .select-img-w {
@@ -811,9 +811,14 @@
     padding-top: 30px;
   }  
   .about-body {
-    .about-txt-1:before {
-      display: none;
+    .about-txt-1:before {      
     }  
+    .about-w {
+      border-top: none;
+    }
+    .about-col-2 {
+      margin-top: 0;
+    }
   }
   .banner-2 .banner-txt {
     font-size: 21px;

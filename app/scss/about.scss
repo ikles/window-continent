@@ -19,6 +19,11 @@ $font2: 'Ubuntu', sans-serif;
 @import "_about-page.scss";
 
 
+.about-body {
+  .about-btn-w {
+    display: none;
+  }  
+}
 
 
 @import "_footer.scss";

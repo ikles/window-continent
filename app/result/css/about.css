@@ -1423,7 +1423,7 @@ input[type="text"].top-1-input {
   .card-img-w img {
     width: 520px;
     top: -11px;
-    right: -60px; }
+    right: 0px; }
   .card {
     padding: 100px 0; }
   .card-img-w img {
@@ -1590,8 +1590,10 @@ input[type="text"].top-1-input {
 @media (max-width: 480px) {
   .continent-about {
     padding-top: 30px; }
-  .about-body .about-txt-1:before {
-    display: none; }
+  .about-body .about-w {
+    border-top: none; }
+  .about-body .about-col-2 {
+    margin-top: 0; }
   .banner-2 .banner-txt {
     font-size: 21px; }
   .awards-txt-1 {
@@ -1617,6 +1619,9 @@ input[type="text"].top-1-input {
     padding-bottom: 30px; }
   .about-body .about-w {
     padding-top: 30px; } }
+
+.about-body .about-btn-w {
+  display: none; }
 
 .footer {
   background-color: #111111;

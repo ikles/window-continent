@@ -23,7 +23,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('.wrapper').prepend('<span class="eye-3"></span>');
+  //$('.wrapper').prepend('<span class="eye-3"></span>');
 
 
   $('.eye-3').click(function (e) {
@@ -115,17 +115,114 @@ function fancySlick(fancyLink, sliderClass, oneSlideClass, dotsStatus=true, arws
 }
 
 
-fancySlick('.completed-slder-1 .completed-slde-link', '.completed-slder-1', '.completed-slder-1 .completed-slde', true);
+/*fancySlick('.completed-slder-1 .completed-slde-link', '.completed-slder-1', '.completed-slder-1 .completed-slde', true);
 fancySlick('.completed-slder-2 .completed-slde-link', '.completed-slder-2', '.completed-slder-2 .completed-slde', true);
 fancySlick('.completed-slder-3 .completed-slde-link', '.completed-slder-3', '.completed-slder-3 .completed-slde', true);
 fancySlick('.completed-slder-4 .completed-slde-link', '.completed-slder-4', '.completed-slder-4 .completed-slde', true);
 fancySlick('.completed-slder-5 .completed-slde-link', '.completed-slder-5', '.completed-slder-5 .completed-slde', true);
-fancySlick('.completed-slder-6 .completed-slde-link', '.completed-slder-6', '.completed-slder-6 .completed-slde', true);
+fancySlick('.completed-slder-6 .completed-slde-link', '.completed-slder-6', '.completed-slder-6 .completed-slde', true);*/
+
+
+
+
+if ( $('.completed-slder-1').length ) {
+  $('.completed-slder-1').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,  
+    arrows: false,    
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out', 
+    dots: true, 
+    dotsClass: 'completed-slde-dots',
+  });
+}
+
+if ( $('.completed-slder-2').length ) {
+  $('.completed-slder-2').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,  
+    arrows: false,    
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out', 
+    dots: true, 
+    dotsClass: 'completed-slde-dots',
+  });
+}
 
 
 
 
 
+
+
+if ( $('.completed-slder-3').length ) {
+  $('.completed-slder-3').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,  
+    arrows: false,    
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out', 
+    dots: true, 
+    dotsClass: 'completed-slde-dots',
+  });
+}
+
+
+if ( $('.completed-slder-4').length ) {
+  $('.completed-slder-4').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,  
+    arrows: false,    
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out', 
+    dots: true, 
+    dotsClass: 'completed-slde-dots',
+  });
+}
+
+
+if ( $('.completed-slder-5').length ) {
+  $('.completed-slder-5').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,  
+    arrows: false,    
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out', 
+    dots: true, 
+    dotsClass: 'completed-slde-dots',
+  });
+}
+
+
+if ( $('.completed-slder-6').length ) {
+  $('.completed-slder-6').slick({
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 500,  
+    arrows: false,    
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 24000,
+    cssEase: 'ease-out', 
+    dots: true, 
+    dotsClass: 'completed-slde-dots',
+  });
+}
 
 
 $('.projects-img-slider').slick({
@@ -156,13 +253,30 @@ if ( $('.projects-item').length ) {
           width : '950px'
         }
       },
-    });    
+    });
+  });
+}
 
+if ( $('.completed-slder').length ) {
+  $('.completed-slder').each(function (i) {
+    let uu = +i+1;
+
+    $('[data-fancybox="compl-sl-'+uu+'"]').fancybox({  
+      arrows: false,
+      infobar: false,
+      smallBtn: true,
+      toolbar: false,
+      iframe : {
+        css : {
+          width : '950px'
+        }
+      },
+    });
   });
 }
 
 
-
+//.completed-slder-1
 
 
 
@@ -186,6 +300,8 @@ function tabs(controlClass, ContentClass) {
 
 tabs('.tabs-control-1', '.tabs_content-1');
 tabs('.tabs-control-2', '.tabs_content-2');
+tabs('.tabs-control-3', '.tabs_content-3');
+tabs('.tabs-control-4', '.tabs_content-4');
 tabs('.comparison-tabs-ul', '.comparison-tabs-content');
 
 
@@ -194,12 +310,14 @@ tabs('.comparison-tabs-ul', '.comparison-tabs-content');
 
 
 if($('.map-chice-auto').length) {
-$(".map-chice-auto").mCustomScrollbar({ axis: "y",   mouseWheel: 1 });    
+  $(".map-chice-auto").mCustomScrollbar({ axis: "y",   mouseWheel: 1 });    
 }
 
 
 
-if($('.completed-items').length) {
+//Реализованные проекты slick
+
+/*if($('.completed-items').length) {
   $('.completed-items').slick({
     infinite: true,    
     slidesToShow: 1,
@@ -220,9 +338,60 @@ if($('.completed-items').length) {
     },
     ]   
   });
+}*/
+
+
+
+
+
+//Реализованные проекты swiper
+
+
+if ( $('.completed-items-cont').length ) {
+  new Swiper('.completed-items-cont', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 1,
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      481: {
+        slidesPerView: 1, 
+        spaceBetween: 0,
+        loop: false,
+      },
+
+      200: {   
+        slidesPerView: 1, 
+        spaceBetween: 0,
+        loop: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },
+    },
+
+  });
 }
-/*  setTimeout(function () {
-},7000);*/
+
 
 
 
@@ -673,9 +842,8 @@ if ( $('.awards-row-w').length ) {
 }
 
 
-if ( $('.syst-table-right').length ) {
-  new Swiper('.syst-table-right', {
-
+if ( $('.compare-table-body .syst-table-right').length ) {
+  new Swiper('.compare-table-body .syst-table-right', {
     scrollbar: {
       el: '.swiper-scrollbar',
       //перетаскивать скролл мышью
@@ -771,6 +939,101 @@ if ( $(".compare-category-table-w").length ) {
     }
   });
 }
+
+
+
+if ( $(".calculator-help-scroll").length ) {
+
+  if( $(window).width() < 769 ) {
+    $(".calculator-help-scroll").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0
+    });    
+  }
+
+  $(window).resize(function() {
+
+    if( $(window).width() < 769 ) {
+      $(".calculator-help-scroll").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-3",
+        mouseWheel: 0
+      });    
+    }
+
+  });
+
+  $(window).resize(function() {
+    if( $(window).width() > 768 ) {
+      $(".calculator-help-scroll").mCustomScrollbar("destroy");
+    }
+  });
+
+}//if
+
+
+if ( $(".calculator-form-choice-row-w-2").length ) {
+
+  if( $(window).width() < 769 ) {
+    $(".calculator-form-choice-row-w-2").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0
+    });    
+  }
+
+  $(window).resize(function() {
+    if( $(window).width() < 769 ) {
+      $(".calculator-form-choice-row-w-2").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-3",
+        mouseWheel: 0
+      });    
+    }
+  });
+
+
+  $(window).resize(function() {
+    if( $(window).width() > 768 ) {
+      $(".calculator-form-choice-row-w-2").mCustomScrollbar("destroy");
+    }
+  });
+
+}//if
+
+
+
+$('.js-calculator-1').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-1').addClass('on');
+});
+
+$('.js-calculator-2').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-2').addClass('on');
+});
+
+$('.js-calculator-3').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-3').addClass('on');
+});
+
+$('.js-calculator-4').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-4').addClass('on');
+});
+
+$('.js-calculator-5').click(function (e) {
+  e.preventDefault();
+  $('.calculator-choiсe-product-item').removeClass('on');
+  $('.js-calculator-item-5').addClass('on');
+});
+
 
 
 }); //ready

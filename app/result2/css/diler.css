@@ -1193,7 +1193,7 @@ input[type="text"].top-1-input {
   .card-img-w img {
     width: 520px;
     top: -11px;
-    right: -60px; }
+    right: 0px; }
   .card {
     padding: 100px 0; }
   .card-img-w img {
@@ -1360,8 +1360,10 @@ input[type="text"].top-1-input {
 @media (max-width: 480px) {
   .continent-about {
     padding-top: 30px; }
-  .about-body .about-txt-1:before {
-    display: none; }
+  .about-body .about-w {
+    border-top: none; }
+  .about-body .about-col-2 {
+    margin-top: 0; }
   .banner-2 .banner-txt {
     font-size: 21px; }
   .awards-txt-1 {
@@ -2657,12 +2659,10 @@ input[type="text"].map-input-text {
       object-fit: cover;
       height: 200px; }
   .excellence-row-1 .excellence-col-1 img {
-    object-fit: unset;
     height: 200px;
-    width: auto;
+    width: 100%;
     margin-left: auto;
-    margin-right: auto;
-    display: none; }
+    margin-right: auto; }
   .excellence-row-4 .excellence-col-1,
   .excellence-row-2 .excellence-col-1,
   .excellence-row-6 .excellence-col-1 {
@@ -2719,13 +2719,17 @@ input[type="text"].map-input-text {
 @media (max-width: 480px) {
   .excellence-txt-1 {
     padding-left: 78px;
+    padding-left: 0;
     font-size: 28px; }
   .excellence-numb-w {
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
   .excellence-numb {
-    text-align: left; }
+    text-align: left;
+    text-align: right; }
   .cooper-info-1, .cooper-info-2 {
     padding: 20px; }
   .cooper-txt-22 {

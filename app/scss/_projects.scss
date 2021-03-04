@@ -32,12 +32,44 @@ div.fancy-select div.trigger {
   margin-bottom: 106px;
 }
 
+.completed-items-cont-wrap {
+  position: relative;
+}
+
+.completed {
+  .swiper-button {
+    background: url('../img/arrow-l.svg') center center no-repeat;
+    font-size: 0px;
+    bottom: 250px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid white;
+    z-index: 10;
+    position: absolute;
+    bottom: 300px;
+    top: auto;
+    &:after {
+      display: none;
+    }
+    &:hover {
+      background-color: #FFF;
+      background-image: url('../img/arrow-l-b.svg');
+    }
+  }  
+  .swiper-button-next {
+    right: -100px;
+  }
+  .swiper-button-prev {
+    left: -100px;
+  }
+}
+
 .completed-w {
 }
 
 .completed-items {
   margin-top: 101px;
-  height: 640px;
+  height: auto;
   .slick-arrow {
     top: auto;
     bottom: 173px;
@@ -300,9 +332,14 @@ input[type="radio"].completed-radio {
 }
 
 
+
+
+
+
+
 @media (max-width: 1199px) {
   .completed-items {
-    height: 800px;
+
   } 
   .completed-bot-r {
     flex: 0 0 400px;
@@ -324,7 +361,7 @@ input[type="radio"].completed-radio {
     }
   }
   .completed-items {
-    height: 890px;
+
     margin-top: 50px;
   } 
   input[type="radio"].completed-radio + span img {
@@ -367,7 +404,7 @@ input[type="radio"].completed-radio {
 
 @media (max-width: 768px) {
   .completed-items{
-    height: 930px;
+
   }
   .completed-nav {
     li {
@@ -388,7 +425,7 @@ input[type="radio"].completed-radio {
     display: block;
   }
   .completed-items {
-    height: 650px;
+
   }  
 }
 
@@ -403,7 +440,7 @@ input[type="radio"].completed-radio {
     border-bottom: 1px solid #fff;
   }
   .completed-items {
-    height: 780px;
+
   }
 }
 
@@ -470,7 +507,7 @@ input[type="radio"].completed-radio {
     z-index: 2;
   }
   .completed-items {
-    height: 1070px;
+
     position: relative;    
     z-index: 2;
     &:after {

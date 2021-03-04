@@ -563,14 +563,11 @@ input[type="text"].map-input-text {
   }
   .excellence-row-1 {
     .excellence-col-1 {
-
-      img {
-        object-fit: unset;
+      img {        
         height: 200px;
-        width: auto;
+        width: 100%;        
         margin-left: auto;
-        margin-right: auto;
-        display: none;
+        margin-right: auto;        
       }
     } 
   }
@@ -650,13 +647,17 @@ input[type="text"].map-input-text {
 @media (max-width : 480px) {
   .excellence-txt-1 {
     padding-left: 78px;
+    padding-left: 0;
     font-size: 28px;
   }
   .excellence-numb-w {    
     justify-content: flex-start;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
   }
   .excellence-numb {
     text-align: left;
+    text-align: right;
   }
   .cooper-info-1, .cooper-info-2 {
     padding: 20px;

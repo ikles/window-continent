@@ -1713,14 +1713,31 @@ input[type="text"].get-input-1 {
   .category-body .catalog-slider-w img {
     object-fit: cover;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    max-width: 100%; }
 
 .category-body .catalog-slider-w,
 .category-body .catalog-slider-item {
   height: 290px; }
 
+@media (max-width: 992px) {
+  .category-body .catalog-slider-w {
+    margin-bottom: 40px; } }
+
+@media (max-width: 768px) {
+  .category-body .catalog-w {
+    margin-bottom: 40px;
+    padding-bottom: 30px; }
+  .category-body .get-1 {
+    margin-bottom: 40px; } }
+
 @media (max-width: 480px) {
-  /**/ }
+  .category-body .fabricators-w {
+    padding-top: 40px; }
+  .category-body .catalog-slider-w {
+    margin-bottom: 20px; }
+  .category-body .fabricators {
+    margin-top: 20px; } }
 
 .footer {
   background-color: #111111;
