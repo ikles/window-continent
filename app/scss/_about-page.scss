@@ -574,7 +574,7 @@
   }
   .card-img-w {    
     img {
-      width: 520px;
+      width: 480px;
       top: -11px;
       right: 0px;
     }
@@ -589,9 +589,9 @@
   }
   .card-img-w {    
     img {
-      width: 520px;
-      top: -11px;
-      right: -60px;
+      width: 480px;
+      top: 19px;
+      right: -10px;
     }
   }
 }
@@ -754,7 +754,9 @@
   }
   .card-img-w img {
     max-width: 350px;
-    width: 90%;    
+    width: 90%;
+    top: 50px;
+    right: 0;
   }
 }
 
@@ -830,7 +832,7 @@
     width: 100% !important;
   }
   .select-img-w {  
-    right: -80px;  
+    right: -70px;  
     top: 31px;
     img {
       width: 150px;      

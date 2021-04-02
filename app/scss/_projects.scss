@@ -378,12 +378,14 @@ input[type="radio"].completed-radio {
     margin-top: 20px;
   }
   .completed-bot-r {
-    flex: 0 0 300px;    
+    flex: 1 1 auto;    
     order: 0;
   }
   .completed-slder {
     width: 300px;
     height: 222px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .completed-slde {
     height: 222px;

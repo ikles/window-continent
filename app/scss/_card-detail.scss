@@ -156,6 +156,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 0;
+	flex: none;
 	&:after {
 		display: none;
 	}
@@ -511,6 +512,7 @@
 		}
 		.options-products-roller-w {
 			display: none;
+			display: flex;
 		}
 	}
 	.options-products {
@@ -524,6 +526,7 @@
 	}
 	.options-products {
 		margin-top: 0;
+		margin-top: 20px;
 	}
 	.chars-table-block-w {
 		padding-top: 49px;

@@ -21,10 +21,11 @@ $font2: 'Ubuntu', sans-serif;
 
 
 .projects-w {
-  display: flex;
-  justify-content: space-between;  
+  display: flex;  
   flex-wrap: wrap;
   padding-top: 50px;  
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .projects-heading {
@@ -62,6 +63,8 @@ $font2: 'Ubuntu', sans-serif;
   border-bottom: 1px solid rgb(244, 244, 244);
   padding-bottom: 24px;
   margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   .completed-slde-dots {
     li {
       &:focus,
@@ -188,7 +191,7 @@ $font2: 'Ubuntu', sans-serif;
 
 @media (max-width : 992px) {
   .projects-item {  
-    width: calc(100% / 2 - 15px);
+    width: calc(100% / 2 - 20px);
   }
 } 
 
@@ -200,7 +203,7 @@ $font2: 'Ubuntu', sans-serif;
 
 @media (max-width : 640px) {
   .projects-item {  
-    width: calc(100% / 2 - 7px);
+
   }
   .projects-heading-w {    
     flex-wrap: wrap;
@@ -217,8 +220,14 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 @media (max-width : 480px) {
+  .projects-w { 
+    margin-left: 0;
+    margin-right: 0;
+  }
   .projects-item { 
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

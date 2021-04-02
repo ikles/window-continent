@@ -2,14 +2,32 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">  
-  <meta name="viewport" content="width=1200px">
-  <!--meta http-equiv="X-UA-Compatible" content="IE=edge" />            
-  <meta name="viewport" content="width=device-width, initial-scale=1"-->
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>   
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">    
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">    
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main-page.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -18,123 +36,127 @@
 <![endif]-->
 </head>
 <body class="main-body">
-  <div class="wrapper-w">
-    <div class="wrapper">          
-      <div class="top">  
-  <div class="top-1-w">
-    <ul class="top-ul">
-      <li><a href="#">Архитекторам</a></li>
-      <li><a href="#">Дилерам</a></li>
-      <li><a href="#">Оплата и доставка</a></li>
-      <li><a href="#">Статьи</a></li>
-      <li><a href="#">Полезные видео</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-    <a href="#" class="top-compare">
-      <div class="top-compare-txt-1">Сравнить продукцию</div>
-      <div class="top-compare-txt-2">3</div>
-    </a>
-  </div>  
-</div><!--top-->
-<div class="top-1">
-  <div class="top-1-w">
-    <div class="top-1-col-1">
-      <a href="index.html" class="top-1-logo"><img alt="logo" title="logo" src="img/logo.svg" /></a>
-      <div class="top-1-socials show-1199">
-        <a href="#" class="top-1-social"><img alt="whatsapp" title="whatsapp" src="img/whatsapp.svg" /></a>
-        <a href="#" class="top-1-social"><img alt="telegram" title="telegram" src="img/telegram.svg" /></a>
-      </div>
-      <div class="col-mnu">
-        <div class="hidden-mnu">
-          <a href="#" class="toggle-mnu"><span></span></a>
+  <div class="wrapper-main">
+    <div class="top-main-w">
+  <div class="top">
+    <div class="top-1-w">
+      <ul class="top-ul">
+        <li><a href="#">Архитекторам</a></li>
+        <li><a href="#">Дилерам</a></li>
+        <li><a href="#">Оплата и доставка</a></li>
+        <li><a href="#">Статьи</a></li>
+        <li><a href="#">Полезные видео</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a href="#" class="top-compare">
+        <div class="top-compare-txt-1">Сравнить продукцию</div>
+        <div class="top-compare-txt-2">3</div>
+      </a>
+    </div>  
+  </div><!--top-->
+  <div class="top-1">
+    <div class="top-1-w">
+      <div class="top-1-col-1">
+        <a href="index.html" class="top-1-logo"><img alt="logo" title="logo" src="img/logo.svg" /></a>
+        <div class="top-1-socials show-1199">
+          <a href="#" class="top-1-social"><img alt="whatsapp" title="whatsapp" src="img/whatsapp.svg" /></a>
+          <a href="#" class="top-1-social"><img alt="telegram" title="telegram" src="img/telegram.svg" /></a>
         </div>
-        <div class="top-mnu">
-          <div class="contain">
-            <div class="top-close-w">
-              <a href="#" class="top-close"></a>
-            </div>
-                  <div class="mega-mnu">
-        <div class="mega-mnu-col">
-          <div class="mega-mnu-title">Каталог товаров</div>
-          <a href="#" class="mega-mnu-butt">Двери</a>
-          <ul class="mega-mnu-ul">
-            <li><a href="#">Алюминиевые двери</a></li>
-            <li><a href="#">Раздвижные двери</a></li>
-            <li><a href="#">Двери гармошка</a></li>
-            <li><a href="#">Подъемно раздвижные двери</a></li>
-            <li><a href="#">Автоматические двери</a></li>            
-          </ul>
-          <div class="mega-mnu-block">
-            <a href="#" class="mega-mnu-butt">окна</a>
-            <ul class="mega-mnu-ul">
-              <li><a href="#">Алюминиевые окна</a></li>
-              <li><a href="#">Деревянно-алюминиевые окна</a></li>
-              <li><a href="#">Алюмо-деревянные окна</a></li>
-            </ul>
+        <div class="col-mnu">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
           </div>
-        </div>
-        <div class="mega-mnu-col">
-          <ul class="mega-mnu-ul">
-           <li><a href="#">Панорамное остекление (теплое)</a></li>
-           <li><a href="#">Зимние сады из алюминия</a></li>
-           <li><a href="#">Алюминиевые входные группы</a></li>
-           <li><a href="#">Алюминиевые фасады</a></li>
-           <li><a href="#">Безрамное остекление (холодное)</a></li>
-           <li><a href="#">Зенитные фонари из алюминия</a></li>
-           <li><a href="#">Офисные перегородки</a></li>
-           <li><a href="#">фасадное остекление</a></li>
-           <li><a href="#">Цельностеклянные перегородки</a></li>
-           <li><a href="#">Безрамное ограждение</a></li>
-           <li><a href="#">стеклянные козырьки</a></li>
-           <li><a href="#">Спайдерное осткление</a></li>           
-           <li><a href="#">Ручки и фурнитура</a></li>
-           <li><a href="#">Стекло</a></li>
-         </ul>
-       </div>
-       <div class="mega-mnu-col">
-        <div class="mega-mnu-title">Услуги</div>
-        <div class="mega-mnu-block3">
-          <ul class="mega-mnu-ul">              
-            <li><a href="#">Остекление коттеджей </a></li>
-            <li><a href="#">Остекление терассы</a></li>
-            <li><a href="#">Остекление зимнего сада</a></li>
-            <li><a href="#">Остекление веранды </a></li>
-            <li><a href="#">Устройство внутренних перегородок</a></li>
-            <li><a href="#">Остекление крыльца</a></li>
-            <li><a href="#">Остекление фасадов зданий</a></li>
-            <li><a href="#">Остекление беседки</a></li>
-            <li><a href="#">Безрамное остекление балкона</a></li>
-            <li><a href="#">Остекление витрины магазина </a></li>
-            <li><a href="#">Устройство стеклянной крыши </a></li>
-            <li><a href="#">Остекление загородного дома </a></li>
-            <li><a href="#">Ремонт алюминеевых окон</a></li>
-            <li><a href="#">Витражное остекление  балкона </a></li>
-            <li><a href="#">Автоматические</a></li>            
-          </ul>
-        </div>
-      </div>
-      <div class="mega-mnu-col">
-        <ul class="mega-mnu-ul-big">
-          <li class="show-768"><a href="#">Каталог товаров</a></li>
-          <li class="show-768"><a href="#">Услуги</a></li>
-          <li><a href="#">Проекты</a></li>
-          <li><a href="#">Таблицы сравнения</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Архитекторам</a></li>
-          <li><a href="#">Дилерам</a></li>
-          <li><a href="#">Оплата и доставка</a></li>
-          <li><a href="#">Статьи</a></li>
-          <li><a href="#">Полезные видео</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="mega-mnu-soc-w">
-          <a href="#"><img alt="insta-g" title="insta-g" src="img/insta-g.svg" /></a>
-          <a href="#"><img alt="you-g" title="you-g" src="img/you-g.svg" /></a>
-          <a href="#"><img alt="fb-g" title="fb-g" src="img/fb-g.svg" /></a>
-          <a href="#"><img alt="vk-g" title="vk-g" src="img/vk-g.svg" /></a>
-        </div>
-      </div>
-      </div><!--mega-mnu-->
+          <div class="top-mnu">
+            <div class="contain">
+              <div class="top-close-w">
+                <a href="#" class="top-close"></a>
+              </div>
+              
+              <div class="mega-mnu">
+                <div class="mega-mnu-col">
+                  <div class="mega-mnu-title">Каталог товаров</div>
+                  <a href="#" class="mega-mnu-butt">Двери</a>
+                  <ul class="mega-mnu-ul">
+                    <li><a href="#">Алюминиевые двери</a></li>
+                    <li><a href="#">Раздвижные двери</a></li>
+                    <li><a href="#">Двери гармошка</a></li>
+                    <li><a href="#">Подъемно раздвижные двери</a></li>
+                    <li><a href="#">Автоматические двери</a></li>            
+                  </ul>
+                  <div class="mega-mnu-block">
+                    <a href="#" class="mega-mnu-butt">окна</a>
+                    <ul class="mega-mnu-ul">
+                      <li><a href="#">Алюминиевые окна</a></li>
+                      <li><a href="#">Деревянно-алюминиевые окна</a></li>
+                      <li><a href="#">Алюмо-деревянные окна</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mega-mnu-col">
+                  <ul class="mega-mnu-ul">
+                   <li><a href="#">Панорамное остекление (теплое)</a></li>
+                   <li><a href="#">Зимние сады из алюминия</a></li>
+                   <li><a href="#">Алюминиевые входные группы</a></li>
+                   <li><a href="#">Алюминиевые фасады</a></li>
+                   <li><a href="#">Безрамное остекление (холодное)</a></li>
+                   <li><a href="#">Зенитные фонари из алюминия</a></li>
+                   <li><a href="#">Офисные перегородки</a></li>
+                   <li><a href="#">фасадное остекление</a></li>
+                   <li><a href="#">Цельностеклянные перегородки</a></li>
+                   <li><a href="#">Безрамное ограждение</a></li>
+                   <li><a href="#">стеклянные козырьки</a></li>
+                   <li><a href="#">Спайдерное осткление</a></li>           
+                   <li><a href="#">Ручки и фурнитура</a></li>
+                   <li><a href="#">Стекло</a></li>
+                 </ul>
+               </div>
+               <div class="mega-mnu-col">
+                <div class="mega-mnu-title">Услуги</div>
+                <div class="mega-mnu-block3">
+                  <ul class="mega-mnu-ul">              
+                    <li><a href="#">Остекление коттеджей </a></li>
+                    <li><a href="#">Остекление терассы</a></li>
+                    <li><a href="#">Остекление зимнего сада</a></li>
+                    <li><a href="#">Остекление веранды </a></li>
+                    <li><a href="#">Устройство внутренних перегородок</a></li>
+                    <li><a href="#">Остекление крыльца</a></li>
+                    <li><a href="#">Остекление фасадов зданий</a></li>
+                    <li><a href="#">Остекление беседки</a></li>
+                    <li><a href="#">Безрамное остекление балкона</a></li>
+                    <li><a href="#">Остекление витрины магазина </a></li>
+                    <li><a href="#">Устройство стеклянной крыши </a></li>
+                    <li><a href="#">Остекление загородного дома </a></li>
+                    <li><a href="#">Ремонт алюминеевых окон</a></li>
+                    <li><a href="#">Витражное остекление  балкона </a></li>
+                    <li><a href="#">Автоматические</a></li>            
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-mnu-col">
+                <a href="#" class="show-1199 menu-link-butt menu-link-butt-1">Рассчитать проект</a>
+                <ul class="mega-mnu-ul-big">
+                  <li class="show-768"><a href="#">Каталог товаров</a></li>
+                  <li class="show-768"><a href="#">Услуги</a></li>
+                  <li><a href="#">Проекты</a></li>
+                  <li><a href="#">Таблицы сравнения</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Архитекторам</a></li>
+                  <li><a href="#">Дилерам</a></li>
+                  <li><a href="#">Оплата и доставка</a></li>
+                  <li><a href="#">Статьи</a></li>
+                  <li><a href="#">Полезные видео</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="show-480 menu-link-butt menu-link-butt-2">Рассчитать проект</a>
+                <div class="mega-mnu-soc-w">
+                  <a href="#"><img alt="insta-g" title="insta-g" src="img/insta-g.svg" /></a>
+                  <a href="#"><img alt="you-g" title="you-g" src="img/you-g.svg" /></a>
+                  <a href="#"><img alt="fb-g" title="fb-g" src="img/fb-g.svg" /></a>
+                  <a href="#"><img alt="vk-g" title="vk-g" src="img/vk-g.svg" /></a>
+                </div>
+              </div>
+            </div><!--mega-mnu-->
+
           </div>
         </div><!--top-mnu-->
       </div>
@@ -172,7 +194,7 @@
   <li><a href="#">Реализованные проекты</a></li>
   <li><a href="#">Производство</a></li>
   <li><a href="#">О нас</a></li>
-  <li><a href="#" class="menu-link-butt">Посчитать проект</a></li>
+  <li><a href="#" class="menu-link-butt">Рассчитать проект</a></li>
 </ul><!--top-mnu--> 
 
 
@@ -209,7 +231,10 @@
   <div class="cont-txt">свзяться с менеджером</div>
   <div class="cont-img-w-1"><img src="img/cont.svg"></div>  
 </a>
-            <div class="slider-w">
+</div>  
+    <div class="wrapper-w">
+      <div class="wrapper">
+              <div class="slider-w">
         <div class="slider slider-1">
           <div class="slider-item" data-title="Производство">
             <div class="slider-cont">
@@ -282,7 +307,7 @@
 
 
 
-      <div class="about">
+        <div class="about">
   <div class="contain">
     <div class="about-w">
       <div class="about-col-1">
@@ -329,7 +354,7 @@
   </div>
 </div>
 
-      <div class="cat-grid">
+        <div class="cat-grid">
   <div class="contain">
     <div class="cat-grid-w hide-768">
       <div class="grid-col-l">
@@ -569,7 +594,7 @@
   </div>
 </div>
 
-      <div class="fabricators">
+        <div class="fabricators">
   <div class="contain">
     <div class="fabricators-w">
       <div class="like-h2-l">Алюминиевые профили ведущих производителей</div>
@@ -583,7 +608,9 @@
     </div>
   </div>
 </div>      
-      <div class="get get-1">
+      </div><!--wrapper-->        
+    </div><!--wrapper-w-->        
+    <div class="get get-1">
   <div class="contain">
     <div class="get-w">
       <div class="get-col-l">
@@ -612,7 +639,9 @@
     </div>
   </div>
 </div>
-      <div class="services">
+    <div class="wrapper-w">
+      <div class="wrapper">
+        <div class="services">
   <div class="contain">
     <div class="like-h2">Наши услуги</div>
     <div class="services-w hide-768">
@@ -752,7 +781,9 @@
     </div><!--services-w-->
   </div>
 </div>
-      <div class="get get-2">
+      </div>
+    </div>
+    <div class="get get-2">
   <div class="contain">
     <div class="get-w">
       <div class="get-col-l">
@@ -777,7 +808,7 @@
       <div class="get-col-r">
         <div class="get-txt-1 show-570">Получите каталог для загородного остекления</div>
         <picture>
-          <source class="lazy" srcset="img/catalog.png" type="image/jpeg" media="(min-width:640px)" />                
+          <source class="lazy" srcset="img/catalog.png" type="image/jpeg" media="(min-width:769px)" />                
           <source class="lazy" srcset="img/catalog@375.png" type="image/jpeg" media="(min-width:200px)" />
           <img alt="catalog" title="catalog" class="get-img-2 lazy" src="img/catalog.png" />
         </picture>
@@ -786,12 +817,14 @@
     </div>
   </div>
 </div>      
-      <div class="useful-videos">
-        <div class="contain">
-          <div class="useful-videos-w">            
-            <div class="like-h2">Полезные видео</div>            
-            <a href="#" class="all-link">все видео</a>      
-            <div class="recomm-videos-w">
+    <div class="wrapper-w">
+      <div class="wrapper">
+        <div class="useful-videos">
+          <div class="contain">
+            <div class="useful-videos-w">            
+              <div class="like-h2">Полезные видео</div>            
+              <a href="#" class="all-link">все видео</a>      
+              <div class="recomm-videos-w">
   <div class="recomm-videos">
     <div class="recomm-videos-item">
       <a href="#" class="recomm-videos-img-w">
@@ -813,10 +846,10 @@
     </div>
   </div>
 </div><!--recomm-videos-w-->            
+            </div>
           </div>
         </div>
-      </div>
-      <div class="compare">
+        <div class="compare">
   <div class="contain">
     <div class="compare-w">
 
@@ -854,7 +887,15 @@
       <div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Защита от холода</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -909,7 +950,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Возможности декорирования </div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -964,7 +1013,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Прочность</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1019,7 +1076,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Устойчивость к воздействию окружающей среды</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1074,7 +1139,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Ремонтопригодность</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1129,7 +1202,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Долговечность</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1184,7 +1265,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Возможный размер конструкций</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1239,7 +1328,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Экологичность</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1294,7 +1391,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Устойчивость к пожару</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1349,7 +1454,15 @@
       </div><div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Архитектурные возможности</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1405,7 +1518,15 @@
       <div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Светопропускная способность</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1458,10 +1579,18 @@
           <div class="compare-table-item"></div>            
         </div>
       </div>
-            <div class="compare-table-row">
+      <div class="compare-table-row">
         <div class="compare-col compare-col-1">
           <div class="compare-table-txt">Стоимость</div>
-          <div class="compare-table-img-w"></div>
+          <div class="compare-table-img-w">
+            <div class="tooltip-col-2">
+              <div class="tooltip-txt-2">Распашной</div>
+              <div class="tooltip-txt-3">
+                Петли, ручки, доводчики, механизмы открывания мы подбираем для каждой двери индивидуально, исходя из типа конструкции, степени нагрузки на двери (интенсивности использования), места установки и пожеланий заказчика. Работаем с
+                каталогами немецких производителей Schuco, Reynaers, Siegenia Aubi, Titan.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="compare-col compare-col-2">
           <div class="compare-table-item green"></div>
@@ -1518,7 +1647,7 @@
   </div>
 </div>
 </div>
-      <div class="completed">
+        <div class="completed">
   <div class="contain">
     <div class="completed-w">
       <div class="like-h2-w">Реализовынные проекты</div><a href="#" class="all-link-w">все проекты</a>
@@ -2288,7 +2417,7 @@
     </div>
   </div>
 </div>
-      <div class="measurer-call">
+        <div class="measurer-call">
   <div class="contain">
     <div class="measurer-call-w">
       <div class="measurer-texts">
@@ -2305,7 +2434,7 @@
     </div>
   </div>
 </div>
-      <div class="recommendations">
+        <div class="recommendations">
   <div class="contain">
     <div class="recomm-w">
       <div class="like-h2-wrap">      
@@ -2391,7 +2520,7 @@
     </div>
   </div>
 </div>
-      
+        
 <div class="articles">
   <div class="contain">
     <div class="articles-w">
@@ -2417,8 +2546,10 @@
   </div>
 </div>
 
-
-      <div class="footer">
+      
+      </div><!--wrapper-->
+    </div><!--wrapper-w-->  
+    <div class="footer">
   <div class="contain">
     <div class="footer-row-1">
       <div class="mega-mnu">
@@ -2553,11 +2684,29 @@
   </div>
 </div>
 </div><!--footer-->
-    </div><!--wrapper-->
-  </div><!--wrapper-w-->  
+
+
+<div class="back-call-w">
+  <div class="back-call-item-2">
+    <div class="back-call-txt-1">Спасибо!</div>
+    <div class="back-call-txt-2">
+      Ваше заявка успешно отправлена. <br />
+      Будьте на связи, скоро мы <br />
+      с вами свяжемся
+    </div>
+    <a href="#" class="back-call-btn">я понял</a>
+    <div class="back-call-img-w"><img src="img/back-call.png" /></div>
+  </div>
+</div>
+
+
+  </div><!--wrapper-main-->
   <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/fancySelect.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/lazyload.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

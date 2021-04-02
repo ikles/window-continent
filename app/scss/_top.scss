@@ -195,6 +195,29 @@ input[type="text"].top-1-input {
   margin-left: 13px;    
 }
 
+a.menu-link-butt {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  align-items: center;
+  height: 48px;
+  background-color: rgb(146, 186, 31);
+  background-image: url("../img/calculator.svg");
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  display: flex;
+  padding-left: 60px;
+  justify-content: center;
+  padding-right: 15px;
+}
+
+a.menu-link-butt.show-1199 {
+  display: none;
+}
+
+a.menu-link-butt.show-480 {
+  display: none;
+}
+
 
 @import "_mnu.scss";
 
@@ -237,6 +260,8 @@ input[type="text"].top-1-input {
     padding-right: 15px;
   }
 }
+
+
 
 .menu-span {
   background-image: url("../img/arr-b.svg");
@@ -306,16 +331,25 @@ input[type="text"].top-1-input {
     order: 4;
   }
   .top-1-socials.show-1199 {
-   order: 0; 
-   display: flex !important;   
-   align-items: center;
-   margin-right: 24px;
- }
- .toggle-mnu {
-  width: 32px;
-}
+    order: 0; 
+    display: flex !important;   
+    align-items: center;
+    margin-right: 24px;
+  }
+  .toggle-mnu {
+    width: 32px;
+  }
+  .mega-mnu-col {
+    a.menu-link-butt-1 {
+      margin-bottom: 30px; 
+      display: flex;
+      max-width: 270px;
+    }  
+  }
+
 
 }
+
 
 @media (max-width: 768px) {
   .top-1-logo {
@@ -323,11 +357,11 @@ input[type="text"].top-1-input {
     height: 48px;
   }
   .top-1-social {
-   width: 24px;
-   height: 24px;
-   img {
-     max-width: 100%;
-   } 
+    width: 24px;
+    height: 24px;
+    img {
+      max-width: 100%;
+    } 
   }
   input[type="text"].top-1-input {
     display: none;
@@ -348,7 +382,7 @@ input[type="text"].top-1-input {
     width: 0;
   }
   .top-1-col-1 {    
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   .top-1-form {
     padding-left: 20px;
@@ -372,6 +406,16 @@ input[type="text"].top-1-input {
   }
   .top-1-logo {
     margin-right: auto;
+  }
+  .mega-mnu-col {
+    a.menu-link-butt-1 {
+      display: none;
+    }  
+    a.menu-link-butt-2 {
+      display: flex;
+      max-width: 270px;
+      margin-top: 30px;
+    }
   }
 }
 @media (max-width: 375px) {

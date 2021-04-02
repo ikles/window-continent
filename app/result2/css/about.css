@@ -392,6 +392,32 @@ input[type="text"].top-1-input {
   display: block;
   margin-left: 13px; }
 
+a.menu-link-butt {
+  color: white;
+  font-size: 16px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  background-color: #92ba1f;
+  background-image: url("../img/calculator.svg");
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 60px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 15px; }
+
+a.menu-link-butt.show-1199 {
+  display: none; }
+
+a.menu-link-butt.show-480 {
+  display: none; }
+
 .top-mnu {
   display: none;
   position: absolute;
@@ -614,7 +640,13 @@ input[type="text"].top-1-input {
             align-items: center;
     margin-right: 24px; }
   .toggle-mnu {
-    width: 32px; } }
+    width: 32px; }
+  .mega-mnu-col a.menu-link-butt-1 {
+    margin-bottom: 30px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 270px; } }
 
 @media (max-width: 768px) {
   .top-1-logo {
@@ -657,7 +689,15 @@ input[type="text"].top-1-input {
   .top-1-social {
     margin-left: 21px; }
   .top-1-logo {
-    margin-right: auto; } }
+    margin-right: auto; }
+  .mega-mnu-col a.menu-link-butt-1 {
+    display: none; }
+  .mega-mnu-col a.menu-link-butt-2 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 270px;
+    margin-top: 30px; } }
 
 @media (max-width: 359px) {
   .top-1-social {
@@ -1421,15 +1461,15 @@ input[type="text"].top-1-input {
   .card {
     padding: 100px 0; }
   .card-img-w img {
-    width: 520px;
+    width: 480px;
     top: -11px;
     right: 0px; }
   .card {
     padding: 100px 0; }
   .card-img-w img {
-    width: 520px;
-    top: -11px;
-    right: -60px; } }
+    width: 480px;
+    top: 19px;
+    right: -10px; } }
 
 @media (max-width: 992px) {
   .banner-txt {
@@ -1552,7 +1592,9 @@ input[type="text"].top-1-input {
     padding-left: 78px; }
   .card-img-w img {
     max-width: 350px;
-    width: 90%; } }
+    width: 90%;
+    top: 50px;
+    right: 0; } }
 
 @media (max-width: 640px) {
   .select-txt {
@@ -1601,7 +1643,7 @@ input[type="text"].top-1-input {
   .why-item {
     width: 100% !important; }
   .select-img-w {
-    right: -80px;
+    right: -70px;
     top: 31px; }
     .select-img-w img {
       width: 150px; }
