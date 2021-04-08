@@ -3312,27 +3312,59 @@ div.fancy-select div.trigger {
   position: relative; }
 
 .completed .swiper-button {
-  background: url("../img/arrow-l.svg") center center no-repeat;
-  font-size: 0px;
-  bottom: 250px;
+  background: none;
+  border: 1px solid #ccc;
+  background-image: url("../img/arrow-l-gray.svg");
+  font-size: 0;
   width: 56px;
   height: 56px;
-  border: 1px solid white;
-  z-index: 10;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 11;
   position: absolute;
-  bottom: 300px;
+  bottom: 36px;
   top: auto; }
   .completed .swiper-button:after {
     display: none; }
   .completed .swiper-button:hover {
-    background-color: #FFF;
-    background-image: url("../img/arrow-l-b.svg"); }
+    background-color: #0C369C;
+    border-color: #0C369C;
+    background-image: url("../img/arrow-l.svg"); }
 
 .completed .swiper-button-next {
-  right: -100px; }
+  right: 70px; }
 
 .completed .swiper-button-prev {
-  left: -100px; }
+  left: 70px; }
+
+.completed .swiper-pagination {
+  bottom: 58px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  z-index: 9; }
+
+.completed .swiper-pagination-bullet {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #d1d1d1;
+  background: none;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: pointer; }
+  .completed .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #0C369C;
+    border-color: #0C369C; }
 
 .completed-items {
   margin-top: 101px;
@@ -3440,7 +3472,7 @@ div.fancy-select div.trigger {
     border: 1px solid #0c369c; }
 
 .completed-tab-bot {
-  padding: 52px 70px 60px;
+  padding: 52px 70px 134px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
@@ -3636,7 +3668,17 @@ input[type="radio"].completed-radio {
   .completed-tab-top--brands {
     padding: 20px; }
   .completed {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .completed-tab-bot {
+    padding-bottom: 100px; }
+  .completed .swiper-button-prev {
+    left: 15px; }
+  .completed .swiper-button-next {
+    right: 15px; }
+  .completed .swiper-button {
+    bottom: 23px; }
+  .completed .swiper-pagination {
+    bottom: 45px; } }
 
 @media (max-width: 768px) {
   .completed-nav li {

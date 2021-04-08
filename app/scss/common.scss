@@ -872,28 +872,22 @@ a.td-more {
  } 
 
  .completed-item-arrows {
-  width: 100%;
-  display: flex;  
-  justify-content: center;
-  position: relative;
-  width: 303px;
-  margin-left: auto;
-  margin-right: auto;
+  
   .swiper-pagination {
     display: flex;
     width: auto;
   }
   display: flex;  
   justify-content: center;
-  margin-top: 40px;
+  
   .swiper-button {
-    position: static !important;
+    
   }
   .swiper-button-next {
-    margin-left: auto;
+    
   }
   .swiper-button-prev {
-    margin-right: auto;
+    
   }
 
 }
@@ -955,7 +949,22 @@ a.td-more {
   display: none;
 }
 
+.completed-bot-wrap-wrap {
+  position: relative;
+}
 
+.arrrr {
+  border: 1px solid #ccc;
+  background-image: url('../img/arrow-l-gray.svg');
+  background: none;
+  font-size: 0;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+  position: absolute;
+}
 
 @media (max-width : 1720px) {
   .wrapper {
@@ -992,7 +1001,9 @@ a.td-more {
   .tooltip-txt-3 {
     width: 100%;
   }
-
+.cont-item {
+  right: 0 !important;
+}
 } 
 
 @media (max-width : 992px) {
