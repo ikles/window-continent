@@ -602,15 +602,22 @@ $font2: 'Ubuntu', sans-serif;
       font-size: 13px;
     }
   } 
-  .syst-table-right-w {
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-    width: auto; 
+  .syst-table-right-w {    
+    width: 530px;
+    flex: none;
+    position: relative;
+    .swiper-scrollbar {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      margin-left: 0;
+    }
   }
   .syst-table-right {    
     display: flex;  
     width: 100%;   
   }
+
 
 
   .compare-category-table-w {

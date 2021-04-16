@@ -277,6 +277,58 @@ if ( $('.completed-slder').length ) {
 }
 
 
+
+
+
+
+
+if ( $('.completed-bot-cont').length ) {
+  new Swiper('.completed-bot-cont', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 1,
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    loop: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      481: {
+        slidesPerView: 1, 
+        spaceBetween: 0,
+        loop: false,
+      },
+
+      200: {   
+        slidesPerView: 1, 
+        spaceBetween: 0,
+        loop: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },
+    },
+
+  });
+}
+
+
+
 //.completed-slder-1
 
 
@@ -348,7 +400,7 @@ if($('.map-chice-auto').length) {
 //Реализованные проекты swiper
 
 
-if ( $('.completed-items-cont').length ) {
+/*if ( $('.completed-items-cont').length ) {
   new Swiper('.completed-items-cont', {
 
     scrollbar: {
@@ -391,7 +443,7 @@ if ( $('.completed-items-cont').length ) {
     },
 
   });
-}
+}*/
 
 
 
@@ -844,10 +896,10 @@ if ( $('.awards-row-w').length ) {
 }
 
 
-if ( $('.compare-table-body .syst-table-right').length ) {
-  new Swiper('.compare-table-body .syst-table-right', {
+if ( $('.compare-table-body .syst-table-right-1').length ) {
+  new Swiper('.compare-table-body .syst-table-right-1', {
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.swiper-scrollbar-1',
       //перетаскивать скролл мышью
       draggable: true
     },
@@ -859,8 +911,8 @@ if ( $('.compare-table-body .syst-table-right').length ) {
     //угол срабатывания свайпа
     touchAngle: 45,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.swiper-button-next-1',
+      prevEl: '.swiper-button-prev-1'
     },
     loop: false,
     breakpoints: {  
@@ -881,6 +933,94 @@ if ( $('.compare-table-body .syst-table-right').length ) {
 }
 
 
+if( $(window).width() < 1200 ) {
+  if ( $('.compare-table-body .syst-table-right-2').length ) {
+    new Swiper('.compare-table-body .syst-table-right-2', {
+      scrollbar: {
+        el: '.swiper-scrollbar-2',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next-2',
+      prevEl: '.swiper-button-prev-2'
+    },
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 1,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 1,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
+      loop: false,
+    },
+  },
+});
+  }
+}//1200
+
+
+
+$(window).resize(function() {
+  if( $(window).width() < 1200 ) {
+    if ( $('.compare-table-body .syst-table-right-2').length ) {
+      mySwiper1 = new Swiper('.compare-table-body .syst-table-right-2', {
+        scrollbar: {
+          el: '.swiper-scrollbar-2',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next-2',
+      prevEl: '.swiper-button-prev-2'
+    },
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 2,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 1,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
+      loop: false,
+    },
+  },
+});
+    }
+    }//1200
+  });//resize
+
+
+$(window).resize(function() {
+  if( $(window).width() > 1199 ) {
+    if ( $('.compare-table-body .syst-table-right-2').length ) {
+      
+    }
+    } //>1199
+  });//resize
 
 $('.options-products').each(function () {  
   let link = $(this).find('.options-products-top');

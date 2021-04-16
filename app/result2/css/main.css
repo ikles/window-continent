@@ -2337,6 +2337,17 @@ div.fancy-select div.trigger {
 .nobrd {
   border: none; }
 
+@media (min-width: 1199px) {
+  .syst-table-right-2 {
+    width: 100%; }
+    .syst-table-right-2 .syst-table-item {
+      width: 50%; } }
+
+.syst-table-right-3 {
+  width: 100%; }
+  .syst-table-right-3 .syst-table-item {
+    width: 100%; }
+
 @media (max-width: 640px) {
   .help-call .measurer-form .btn {
     margin-top: 0; } }

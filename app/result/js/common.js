@@ -329,6 +329,48 @@ if ( $('.completed-bot-cont').length ) {
 
 
 
+
+if ( $('.calculator-help-w .syst-table-right').length ) {
+  new Swiper('.calculator-help-w .syst-table-right', {
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: '3',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 3,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 1,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
+      loop: false,
+    },
+  },
+});
+}
+
+
+
+
+
+
 //.completed-slder-1
 
 
@@ -896,10 +938,10 @@ if ( $('.awards-row-w').length ) {
 }
 
 
-if ( $('.compare-table-body .syst-table-right').length ) {
-  new Swiper('.compare-table-body .syst-table-right', {
+if ( $('.compare-table-body .syst-table-right-1').length ) {
+  new Swiper('.compare-table-body .syst-table-right-1', {
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.swiper-scrollbar-1',
       //перетаскивать скролл мышью
       draggable: true
     },
@@ -911,8 +953,8 @@ if ( $('.compare-table-body .syst-table-right').length ) {
     //угол срабатывания свайпа
     touchAngle: 45,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.swiper-button-next-1',
+      prevEl: '.swiper-button-prev-1'
     },
     loop: false,
     breakpoints: {  
@@ -933,6 +975,94 @@ if ( $('.compare-table-body .syst-table-right').length ) {
 }
 
 
+if( $(window).width() < 1200 ) {
+  if ( $('.compare-table-body .syst-table-right-2').length ) {
+    new Swiper('.compare-table-body .syst-table-right-2', {
+      scrollbar: {
+        el: '.swiper-scrollbar-2',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next-2',
+      prevEl: '.swiper-button-prev-2'
+    },
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 1,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 1,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
+      loop: false,
+    },
+  },
+});
+  }
+}//1200
+
+
+
+$(window).resize(function() {
+  if( $(window).width() < 1200 ) {
+    if ( $('.compare-table-body .syst-table-right-2').length ) {
+      mySwiper1 = new Swiper('.compare-table-body .syst-table-right-2', {
+        scrollbar: {
+          el: '.swiper-scrollbar-2',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: 'auto',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next-2',
+      prevEl: '.swiper-button-prev-2'
+    },
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 2,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 1,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
+      loop: false,
+    },
+  },
+});
+    }
+    }//1200
+  });//resize
+
+
+$(window).resize(function() {
+  if( $(window).width() > 1199 ) {
+    if ( $('.compare-table-body .syst-table-right-2').length ) {
+
+    }
+    } //>1199
+  });//resize
 
 $('.options-products').each(function () {  
   let link = $(this).find('.options-products-top');
@@ -1116,5 +1246,18 @@ $('.get-form-btn-pop .btn').click(function (e) {
   $('.thanks-inn').slideDown();
 });
 
+
+if ($('.catalog-col-2-row').length) {
+var topPos = $('.catalog-col-2-row').offset().top; 
+$(window).scroll(function() {
+  var top = $(document).scrollTop();
+  if (top > topPos) {
+    $('.catalog-col-2-row').addClass('fixed');      
+  }
+  else {
+    $('.catalog-col-2-row').removeClass('fixed');     
+  }
+});
+}
 
 }); //ready

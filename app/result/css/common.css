@@ -317,6 +317,16 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.catalog-col-2-row.fixed {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 15px;
+  z-index: 12;
+  box-shadow: 0px 20px 50px rgba(132, 147, 160, 0.1);
+  margin-top: 0; }
+
 .wrapper-w {
   max-width: 1920px;
   margin-left: auto;
