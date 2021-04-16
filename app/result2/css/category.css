@@ -1680,7 +1680,8 @@ input[type="text"].get-input-1 {
   .get-txt-1 {
     margin-bottom: 30px; }
   .get-img-1 {
-    width: 876px; }
+    width: 876px;
+    max-width: none; }
   .get-1 {
     padding-top: 0; } }
 
@@ -1692,8 +1693,13 @@ input[type="text"].get-input-1 {
   .get-txt-2 {
     font-size: 16px; }
   .get-img-1 {
-    max-width: 100%;
-    width: auto; } }
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: 50%; } }
 
 @media (max-width: 768px) {
   .get-txt-1 {
@@ -1738,8 +1744,7 @@ input[type="text"].get-input-1 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 556px;
-    margin-left: -25px; }
+    width: 800px; }
   .get-txt-1 {
     margin-bottom: 30px; } }
 
@@ -1766,7 +1771,9 @@ input[type="text"].get-input-1 {
     margin-bottom: 24px; }
   .get-txt-1 {
     max-width: 360px;
-    font-weight: 400; } }
+    font-weight: 400; }
+  .get-1 .get-col-l {
+    margin-top: -30px; } }
 
 @media (max-width: 360px) {
   .get-txt-1 {

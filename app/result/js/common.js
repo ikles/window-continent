@@ -1128,7 +1128,7 @@ if ( $(".compare-category-table-w").length ) {
 
 if ( $(".calculator-help-scroll").length ) {
 
-  if( $(window).width() < 769 ) {
+  if( $(window).width() < 481 ) {
     $(".calculator-help-scroll").mCustomScrollbar({
       axis: "x",
       theme: "dark-3",
@@ -1138,7 +1138,7 @@ if ( $(".calculator-help-scroll").length ) {
 
   $(window).resize(function() {
 
-    if( $(window).width() < 769 ) {
+    if( $(window).width() < 481 ) {
       $(".calculator-help-scroll").mCustomScrollbar({
         axis: "x",
         theme: "dark-3",
@@ -1149,7 +1149,7 @@ if ( $(".calculator-help-scroll").length ) {
   });
 
   $(window).resize(function() {
-    if( $(window).width() > 768 ) {
+    if( $(window).width() > 480 ) {
       $(".calculator-help-scroll").mCustomScrollbar("destroy");
     }
   });

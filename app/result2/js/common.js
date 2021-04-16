@@ -329,6 +329,48 @@ if ( $('.completed-bot-cont').length ) {
 
 
 
+
+if ( $('.calculator-help-w .syst-table-right').length ) {
+  new Swiper('.calculator-help-w .syst-table-right', {
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: '3',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 3,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 1,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
+      loop: false,
+    },
+  },
+});
+}
+
+
+
+
+
+
 //.completed-slder-1
 
 
@@ -1017,7 +1059,7 @@ $(window).resize(function() {
 $(window).resize(function() {
   if( $(window).width() > 1199 ) {
     if ( $('.compare-table-body .syst-table-right-2').length ) {
-      
+
     }
     } //>1199
   });//resize
@@ -1086,7 +1128,7 @@ if ( $(".compare-category-table-w").length ) {
 
 if ( $(".calculator-help-scroll").length ) {
 
-  if( $(window).width() < 769 ) {
+  if( $(window).width() < 481 ) {
     $(".calculator-help-scroll").mCustomScrollbar({
       axis: "x",
       theme: "dark-3",
@@ -1096,7 +1138,7 @@ if ( $(".calculator-help-scroll").length ) {
 
   $(window).resize(function() {
 
-    if( $(window).width() < 769 ) {
+    if( $(window).width() < 481 ) {
       $(".calculator-help-scroll").mCustomScrollbar({
         axis: "x",
         theme: "dark-3",
@@ -1107,7 +1149,7 @@ if ( $(".calculator-help-scroll").length ) {
   });
 
   $(window).resize(function() {
-    if( $(window).width() > 768 ) {
+    if( $(window).width() > 480 ) {
       $(".calculator-help-scroll").mCustomScrollbar("destroy");
     }
   });
@@ -1204,5 +1246,18 @@ $('.get-form-btn-pop .btn').click(function (e) {
   $('.thanks-inn').slideDown();
 });
 
+
+if ($('.catalog-col-2-row').length) {
+var topPos = $('.catalog-col-2-row').offset().top; 
+$(window).scroll(function() {
+  var top = $(document).scrollTop();
+  if (top > topPos) {
+    $('.catalog-col-2-row').addClass('fixed');      
+  }
+  else {
+    $('.catalog-col-2-row').removeClass('fixed');     
+  }
+});
+}
 
 }); //ready
