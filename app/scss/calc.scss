@@ -629,15 +629,23 @@ $font2: 'Ubuntu', sans-serif;
     display: flex;  
     width: 100%;   
   }
-
+  
+  .syst-table-right-2 {
+    
+  }
 
 
   .compare-category-table-w {
     margin-top: 27px;
     padding-bottom: 0;
     border-bottom: none;
+    .tr-more-2 td {
+      padding-left: 0;
+      padding-right: 0;
+    }
     td {
       font-size: 14px;
+      padding: 18px 15px 20px 15px;
       img {
         max-width: 70%;
       }

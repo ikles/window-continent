@@ -1343,7 +1343,8 @@ a.menu-link-butt.show-480 {
       -ms-flex-pack: center;
           justify-content: center;
   background: url("../img/arr-r-b.svg") no-repeat center;
-  transition: 0.7s; }
+  transition: 0.7s;
+  display: none; }
 
 .cat-grid-img-w {
   text-align: center; }
@@ -1357,20 +1358,31 @@ a.menu-link-butt.show-480 {
     width: 100%;
     height: 100%; }
 
-.cat-grid-row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
+/* .cat-grid-row {
   display: flex;
   width: 100%;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 20px;
   position: absolute;
-  bottom: 0px;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+  bottom: 0px;  
+  align-items: flex-end;
+} */
+.cat-grid-row {
+  color: #0c369c;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 20px 13px;
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  display: inline-block;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  z-index: 10;
+  background: #FFF; }
 
 .cat-grid-txt {
   color: #0c369c;
@@ -1383,8 +1395,9 @@ a.menu-link-butt.show-480 {
       -ms-flex-align: end;
           align-items: flex-end;
   text-transform: uppercase;
+  line-height: 1.2;
   padding-bottom: 13px;
-  line-height: 1.2; }
+  padding-bottom: 0; }
 
 .cat-grid-span-txt {
   color: #92ba1f;
@@ -5163,6 +5176,20 @@ div.fancy-select div.trigger {
 .nobrd {
   border: none; }
 
+.catalog-col-2-row .catalog-txt-1 {
+  display: none;
+  font-size: 28px;
+  margin-bottom: 0; }
+
+.catalog-col-2-row.fixed .catalog-txt-1 {
+  display: block; }
+
+.catalog-col-2-row.fixed .catalog-col-2-btn {
+  margin-left: 20px; }
+
+.catalog-col-2-row.fixed .catalog-check-wrap {
+  margin-left: auto; }
+
 @media (min-width: 1199px) {
   .syst-table-right-2 {
     width: 100%; }
@@ -5174,6 +5201,31 @@ div.fancy-select div.trigger {
   .syst-table-right-3 .syst-table-item {
     width: 100%; }
 
+@media (max-width: 992px) {
+  .catalog-col-2-row.fixed {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .catalog-col-2-row.fixed .catalog-check-wrap {
+      margin-left: 0;
+      margin-right: 0; }
+    .catalog-col-2-row.fixed .product-item-price-w {
+      margin-left: 20px; }
+    .catalog-col-2-row.fixed .catalog-col-2-btn {
+      margin-left: auto; }
+  .catalog-col-2-row .catalog-txt-1 {
+    width: 100%;
+    margin-bottom: 20px; } }
+
+@media (max-width: 570px) {
+  .catalog-check-wrap {
+    width: 100%;
+    margin-bottom: 24px; } }
+
 @media (max-width: 640px) {
   .help-call .measurer-form .btn {
     margin-top: 0; } }
+
+@media (max-width: 375px) {
+  .catalog-col-2-row.fixed .product-item-price-w {
+    margin-left: 0; } }

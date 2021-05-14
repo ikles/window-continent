@@ -330,10 +330,10 @@ if ( $('.completed-bot-cont').length ) {
 
 
 
-if ( $('.calculator-help-w .syst-table-right').length ) {
-  new Swiper('.calculator-help-w .syst-table-right', {
+if ( $('.calculator-help-w .syst-table-right-1').length ) {
+  new Swiper('.calculator-help-w .syst-table-right-1', {
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.swiper-scrollbar-1',
       //перетаскивать скролл мышью
       draggable: true
     },
@@ -344,10 +344,7 @@ if ( $('.calculator-help-w .syst-table-right').length ) {
     touchRatio: 2,
     //угол срабатывания свайпа
     touchAngle: 45,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
+
     loop: false,
     breakpoints: {  
      1200: {
@@ -366,7 +363,38 @@ if ( $('.calculator-help-w .syst-table-right').length ) {
 });
 }
 
+if ( $('.calculator-help-w .syst-table-right-2').length ) {
+  new Swiper('.calculator-help-w .syst-table-right-2', {
+    scrollbar: {
+      el: '.swiper-scrollbar-2',
+      //перетаскивать скролл мышью
+      draggable: true
+    },
+    slidesPerView: '2',
+    //перетаскивание на пк
+    simulateTouch: true,
+    //чувствительность свайпа
+    touchRatio: 2,
+    //угол срабатывания свайпа
+    touchAngle: 45,
 
+    loop: false,
+    breakpoints: {  
+     1200: {
+      slidesPerView: 2,       
+      loop: false,
+    },
+    992: {
+      slidesPerView: 1,
+      loop: false,
+    }, 
+    200: {   
+      slidesPerView: 1,       
+      loop: false,
+    },
+  },
+});
+}
 
 
 

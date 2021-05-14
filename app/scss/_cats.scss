@@ -54,6 +54,7 @@
   justify-content: center;
   background: url("../img/arr-r-b.svg") $nr center;  
   transition: 0.7s;
+  display: none;
 }
 
 .cat-grid-img-w {
@@ -71,7 +72,7 @@
   }
 }
 
-.cat-grid-row {
+/* .cat-grid-row {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -79,6 +80,22 @@
   position: absolute;
   bottom: 0px;  
   align-items: flex-end;
+} */
+
+
+.cat-grid-row {
+  color: rgb(12, 54, 156);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 20px 13px;
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  display: inline-block;
+  align-items: center;  
+  z-index: 10;  
+  background: #FFF;
 }
 
 .cat-grid-txt {
@@ -88,8 +105,9 @@
   display: flex;
   align-items: flex-end;
   text-transform: uppercase;
-  padding-bottom: 13px;
   line-height: 1.2;
+  padding-bottom: 13px;
+  padding-bottom: 0;
 }
 
 .cat-grid-span-txt {

@@ -2592,6 +2592,20 @@ div.fancy-select div.trigger {
 .nobrd {
   border: none; }
 
+.catalog-col-2-row .catalog-txt-1 {
+  display: none;
+  font-size: 28px;
+  margin-bottom: 0; }
+
+.catalog-col-2-row.fixed .catalog-txt-1 {
+  display: block; }
+
+.catalog-col-2-row.fixed .catalog-col-2-btn {
+  margin-left: 20px; }
+
+.catalog-col-2-row.fixed .catalog-check-wrap {
+  margin-left: auto; }
+
 @media (min-width: 1199px) {
   .syst-table-right-2 {
     width: 100%; }
@@ -2603,6 +2617,31 @@ div.fancy-select div.trigger {
   .syst-table-right-3 .syst-table-item {
     width: 100%; }
 
+@media (max-width: 992px) {
+  .catalog-col-2-row.fixed {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .catalog-col-2-row.fixed .catalog-check-wrap {
+      margin-left: 0;
+      margin-right: 0; }
+    .catalog-col-2-row.fixed .product-item-price-w {
+      margin-left: 20px; }
+    .catalog-col-2-row.fixed .catalog-col-2-btn {
+      margin-left: auto; }
+  .catalog-col-2-row .catalog-txt-1 {
+    width: 100%;
+    margin-bottom: 20px; } }
+
+@media (max-width: 570px) {
+  .catalog-check-wrap {
+    width: 100%;
+    margin-bottom: 24px; } }
+
 @media (max-width: 640px) {
   .help-call .measurer-form .btn {
     margin-top: 0; } }
+
+@media (max-width: 375px) {
+  .catalog-col-2-row.fixed .product-item-price-w {
+    margin-left: 0; } }
