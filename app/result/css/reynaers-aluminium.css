@@ -2009,6 +2009,17 @@ input[type="text"].measurer-input {
       -ms-flex-align: end;
           align-items: flex-end; }
 
+.cat-grid-obb {
+  padding-top: 1px; }
+  .cat-grid-obb .cat-grid-img-w {
+    width: 100%;
+    height: 100%; }
+    .cat-grid-obb .cat-grid-img-w img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.cat-grid-obb .cat-grid-img-w
 .cat-grid-txt {
   color: #0c369c;
   font-size: 20px;
@@ -2061,6 +2072,11 @@ input[type="text"].measurer-input {
   .cat-grid-item img {
     max-height: 142px;
     width: auto;
+    max-width: 100%; }
+  .cat-grid-obb .cat-grid-item img {
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
     max-width: 100%; } }
 
 .reynaers-aluminium-body .catalog-slider-item,
@@ -2099,6 +2115,16 @@ input[type="text"].measurer-input {
     height: 590px;
     margin-bottom: 30px;
     border: none; }
+
+.manufacturers-grid-items-obb .cat-grid-item {
+  height: 370px; }
+  .manufacturers-grid-items-obb .cat-grid-item .cat-grid-img-w {
+    width: 100%;
+    height: 100%; }
+    .manufacturers-grid-items-obb .cat-grid-item .cat-grid-img-w img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 @media (max-width: 1199px) {
   .manufacturers-grid-items .cat-grid-item {

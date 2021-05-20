@@ -64,6 +64,29 @@ jQuery(document).ready(function( $ ) {
       baseClass: "myclass"
     });
   }
+
+
+  if( $('.test-dr-l').length ) {
+
+
+    $().fancybox({
+      selector: '.test-dr-l',    
+      arrows: false,
+      infobar: false,
+      smallBtn: false,
+      toolbar: true,
+      iframe : {
+        css : {
+          width : '950px'
+        }
+      },    
+      slideClass: "myClass",
+      baseClass: "myclass"
+    });
+  }
+
+
+
 /*
 
 $('.completed-slder-1').slick({

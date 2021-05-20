@@ -2009,6 +2009,17 @@ input[type="text"].measurer-input {
       -ms-flex-align: end;
           align-items: flex-end; }
 
+.cat-grid-obb {
+  padding-top: 1px; }
+  .cat-grid-obb .cat-grid-img-w {
+    width: 100%;
+    height: 100%; }
+    .cat-grid-obb .cat-grid-img-w img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.cat-grid-obb .cat-grid-img-w
 .cat-grid-txt {
   color: #0c369c;
   font-size: 20px;
@@ -2061,6 +2072,11 @@ input[type="text"].measurer-input {
   .cat-grid-item img {
     max-height: 142px;
     width: auto;
+    max-width: 100%; }
+  .cat-grid-obb .cat-grid-item img {
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
     max-width: 100%; } }
 
 .detail-category-body .catalog-w {
@@ -2100,6 +2116,11 @@ input[type="text"].measurer-input {
 
 .detail-category-butt-w {
   margin-top: 16px; }
+
+.catalog-slider-obb .catalog-slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .compare-cat-img-w {
   margin-left: 17px;
