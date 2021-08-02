@@ -2465,7 +2465,8 @@ input[type="text"].measurer-input {
   position: relative;
   margin-top: 101px;
   margin-bottom: 70px;
-  background-size: cover; }
+  background-size: cover;
+  background: none; }
   .cooper:before {
     display: block;
     content: "";
@@ -2475,7 +2476,8 @@ input[type="text"].measurer-input {
     top: 0;
     left: 0;
     background: #111111;
-    opacity: 0.5; }
+    opacity: 0.5;
+    display: none; }
 
 .cooper-w {
   position: relative;
@@ -2503,7 +2505,8 @@ input[type="text"].measurer-input {
   font-size: 20px;
   text-transform: uppercase;
   color: white;
-  padding: 31px 44px 30px; }
+  padding: 31px 44px 30px;
+  color: #0C369C; }
 
 .cooper-info-1 {
   background: white;
@@ -2726,7 +2729,10 @@ input[type="text"].map-input-text {
   .excellence-col-top {
     padding-top: 60px !important; }
   .diler-body .excellence-col-top {
-    padding-top: 0 !important; } }
+    padding-top: 0 !important; }
+  .cooper-img-w img {
+    width: 100%;
+    height: auto; } }
 
 @media (max-width: 992px) {
   .excellence-img-1,
@@ -2767,7 +2773,9 @@ input[type="text"].map-input-text {
     height: 200px;
     width: 100%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    object-fit: cover;
+    object-position: right top; }
   .excellence-row-4 .excellence-col-1,
   .excellence-row-2 .excellence-col-1,
   .excellence-row-6 .excellence-col-1 {

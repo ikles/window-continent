@@ -207,6 +207,7 @@ $font2: 'Ubuntu', sans-serif;
   margin-top: 101px;
   margin-bottom: 70px;  
   background-size: cover;
+  background: none;
   &:before {
     display: block;
     content: ""; 
@@ -217,6 +218,7 @@ $font2: 'Ubuntu', sans-serif;
     left: 0;
     background: #111111;
     opacity: 0.5;  
+    display: none;
   }
 }
 
@@ -251,6 +253,7 @@ $font2: 'Ubuntu', sans-serif;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   padding: 31px 44px 30px;
+  color: #0C369C;
 }
 
 
@@ -520,7 +523,12 @@ input[type="text"].map-input-text {
     }  
   }
 
-
+.cooper-img-w {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 } 
 
 @media (max-width : 992px) {
@@ -567,7 +575,9 @@ input[type="text"].map-input-text {
         height: 200px;
         width: 100%;        
         margin-left: auto;
-        margin-right: auto;        
+        margin-right: auto;
+        object-fit: cover;
+        object-position: right top;      
       }
     } 
   }

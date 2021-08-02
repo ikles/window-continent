@@ -3231,6 +3231,10 @@ div.fancy-select div.trigger {
   width: 100%;
   z-index: 9; }
 
+.completed .swiper-pagination-fraction {
+  font-size: 20px;
+  bottom: 50px; }
+
 .completed .swiper-pagination-bullet {
   font-size: 0;
   padding: 0;
@@ -3561,7 +3565,9 @@ input[type="radio"].completed-radio {
   .completed .swiper-button {
     bottom: 23px; }
   .completed .swiper-pagination {
-    bottom: 45px; } }
+    bottom: 45px; }
+  .completed .swiper-pagination-fraction {
+    bottom: 39px; } }
 
 @media (max-width: 768px) {
   .completed-nav li {

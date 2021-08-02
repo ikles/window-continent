@@ -327,7 +327,7 @@ if ( $('.completed-bot-cont').length ) {
     },
     pagination: {
       el: '.swiper-pagination',
-      clickable: true
+      type: 'fraction',
     },
     breakpoints: {
       481: {

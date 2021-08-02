@@ -76,6 +76,10 @@ div.fancy-select div.trigger {
     width: 100%;
     z-index: 9;
   }
+  .swiper-pagination-fraction {
+    font-size: 20px;
+    bottom: 50px;
+  }
   .swiper-pagination-bullet {
     font-size: 0;
     padding: 0;
@@ -449,6 +453,9 @@ input[type="radio"].completed-radio {
   }
   .completed .swiper-pagination {
     bottom: 45px;
+  }
+  .completed .swiper-pagination-fraction {
+    bottom: 39px;
   }
 }
 
